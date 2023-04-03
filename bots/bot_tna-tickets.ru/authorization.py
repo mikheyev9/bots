@@ -1,13 +1,10 @@
-import os
-import sys
 import requests
 from requests.utils import dict_from_cookiejar
 
-s_path = os.path.dirname(os.path.abspath(__file__)).split('\\')[:-1]
-sys.path.insert(0, '\\'.join(s_path) + '\\cores_src')
-import authorize
-from vis import *
-from cores import *
+from cores_src import authorize
+from cores_src.vis import *
+from cores_src.cores import *
+
 
 class CSKAHQueue(authorize.AccountsQueue):
     def __init__(self, *args, **kwargs):
@@ -66,7 +63,7 @@ class CSKAHQueue(authorize.AccountsQueue):
         
         url = 'https://tickets.cska-hockey.ru/user/login'
         r = account.get(url, headers=headers)
-       #while 'queue.infomatika' in r.url:
+        # while 'queue.infomatika' in r.url:
         #    queue_site = double_split(r.text, '<span class="d-block">', '</span>')
         #    print(f'Очередь при входе в аккаунт, номер в очереди - {queue_site}')
         #    time.sleep(10)
@@ -79,7 +76,7 @@ class CSKAHQueue(authorize.AccountsQueue):
         try:
             captcha_sitekey = double_split(r.text, 'ecaptcha" data-sitekey="', '"')
         except Exception as err:
-            authorize.screen_r(r.text)
+            screen_r(r.text)
             raise RuntimeError('NO SITEKEY (auth): ' + str(err))
             
         
@@ -104,9 +101,8 @@ class CSKAHQueue(authorize.AccountsQueue):
             'upgrade-insecure-requests': '1',
             'user-agent': self.user_agent
         }
-        
-        solved = BotCore.non_selenium_recaptcha(None,
-            captcha_sitekey, url, print_logs=False)
+
+        solved = BotCore.non_selenium_recaptcha(captcha_sitekey, url, print_logs=False)
             
         params = [
             ('_csrf-frontend', _csrf_frontend),

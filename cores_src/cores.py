@@ -798,14 +798,6 @@ class BotCore(threading.Thread):
                            .replace(' ', '_')
         self.driver.save_screenshot(filename)
         return filename
-        
-    def screen_r(self, text, addition=''):
-        path='screen\\'
-        filename = path + str(time.asctime()) + addition + '.html'
-        filename = filename.replace(':', '') \
-                           .replace(' ', '_')
-        with open(filename, 'w+', encoding='utf-8') as f:
-            f.write(text)
             
     def download(self, url, name=None, session=None, save=True, **kwargs):
         if not os.path.exists('downloads'):
@@ -1872,8 +1864,9 @@ class BotCore(threading.Thread):
         else:
             raise RuntimeError(f'Captcha quest didn\'t started: {response}')
         print('rucaptcha.com: ' + page)
-    
-    def non_selenium_recaptcha(self, googlekey, url,
+
+    @staticmethod
+    def non_selenium_recaptcha(googlekey, url,
                                print_logs=True, timeout=160,
                                invisible=False, proxy=None,
                                user_agent=None):
@@ -2440,6 +2433,16 @@ def start_bots(needed_events, BotInit, auto_chrtab=False, inc=0, first=True, arg
         if first:
             time.sleep(0.1)
     return tabs
+
+
+def screen_r(text, addition=''):
+    path='screen\\'
+    filename = path + str(time.asctime()) + addition + '.html'
+    filename = filename.replace(':', '') \
+                       .replace(' ', '_')
+    with open(filename, 'w+', encoding='utf-8') as f:
+        f.write(text)
+
 
 source_path = main_utils.get_source_path()
 default_fore = Fore.BLACK
