@@ -1,8 +1,3 @@
-import sys
-import os
-
-s_path = os.path.dirname(os.path.abspath(__file__)).split('\\')[:-1]
-sys.path.insert(0, '\\'.join(s_path) + '\\cores_src')
 from cores_src.bot_sample_server import *
 import authorization
 
@@ -402,7 +397,7 @@ if __name__ == '__main__':
     scripted = args_by_os()
 
     # Starting account pool
-    # accounts = start_accounts_queue(authorization.CSKAHQueue, mix=True)
+    accounts = start_accounts_queue(authorization.CSKAHQueue, mix=True)
 
     # Defining global variables
     tickets_q = Queue()

@@ -6,7 +6,7 @@ from cores_src.vis import *
 from cores_src.cores import *
 
 
-class CSKAHQueue(authorize.AccountsQueue):
+class TNAQueue(authorize.AccountsQueue):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
@@ -124,7 +124,7 @@ class CSKAHQueue(authorize.AccountsQueue):
     
     
 if __name__ == '__main__':
-    accounts = CSKAHQueue('authorize_accounts.txt')
+    accounts = TNAQueue('authorize_accounts.txt')
     accounts.start()
     while True:
         input()
