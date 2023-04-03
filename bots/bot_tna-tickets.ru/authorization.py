@@ -9,120 +9,83 @@ from cores_src.cores import *
 class TNAQueue(authorize.AccountsQueue):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.ak_token = ''
 
     def first_check(self, account):
         # пока неизвестно как удалять билеты из корзины поэтому закоменчено
         return True
-    
+
     def is_logined(self, account):
+        url = 'https://api.ak-bars.ru/portal/auth/user'
         headers = {
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-encoding': 'gzip, deflate, br',
-            'accept-language': 'en-US,en;q=0.9',
-            'cache-control': 'no-cache',
-            'connection': 'keep-alive',
-            'host': 'tickets.cska-hockey.ru',
-            'pragma': 'no-cache',
-            'sec-ch-ua': '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+            'Accept': 'application/json, text/plain, */*',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Language': 'ru-RU,ru;q=0.9',
+            'Authorization': f'Bearer {self.ak_token}',
+            'Connection': 'keep-alive',
+            'Host': 'api.ak-bars.ru',
+            'Origin': 'https://www.ak-bars.ru',
+            'Referer': 'https://www.ak-bars.ru/tickets/',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-site',
+            'User-Agent': self.user_agent,
+            'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
             'sec-ch-ua-mobile': '?0',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': self.user_agent
+            'sec-ch-ua-platform': '"Windows"',
         }
-        
-        url = 'https://tickets.cska-hockey.ru/'
-        r = account.get(url, headers=headers)
-        
-        status = True if '>выйти</a>' in r.text else False
+        r = self.session.get(url, headers=headers)
+
+        status = False
+        if 'user' in r.json():
+            if 'login' in r.json()['user']:
+                if r.json()['user']['login'] == account.login:
+                    status = True
+
         return status
-                
+
     def login(self, account):
+        url = 'https://api.ak-bars.ru/portal/auth/login'
         headers = {
-            'authority': 'tickets.cska-hockey.ru',
-            'method': 'GET',
-            'path': '/cart/count',
-            'scheme': 'https',
-            'accept': '*/*',
-            'accept-encoding': 'gzip, deflate, br',
-            'accept-language': 'en-US,en;q=0.9',
-            'cache-control': 'no-cache',
-            'pragma': 'no-cache',
-            'referer': 'https://tickets.cska-hockey.ru/user/login',
-            'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"',
+            'Accept': 'application/json, text/plain, */*',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Language': 'ru-RU,ru;q=0.9',
+            'Connection': 'keep-alive',
+            'Content-Length': '48',
+            'Content-Type': 'application/json;charset=UTF-8',
+            'Host': 'api.ak-bars.ru',
+            'Origin': 'https://auth.ak-bars.ru',
+            'Referer': 'https://auth.ak-bars.ru/',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-site',
+            'User-Agent': self.user_agent,
+            'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
             'sec-ch-ua-mobile': '?0',
             'sec-ch-ua-platform': '"Windows"',
-            'sec-fetch-dest': 'empty',
-            'sec-fetch-mode': 'cors',
-            'sec-fetch-site': 'same-origin',
-            'user-agent': self.user_agent,
-            'x-requested-with': 'XMLHttpRequest'
-        }
-        
-        url = 'https://tickets.cska-hockey.ru/user/login'
-        r = account.get(url, headers=headers)
-        # while 'queue.infomatika' in r.url:
-        #    queue_site = double_split(r.text, '<span class="d-block">', '</span>')
-        #    print(f'Очередь при входе в аккаунт, номер в очереди - {queue_site}')
-        #    time.sleep(10)
-        #    r = account.get(url, headers=headers)
-        #    lprint(r.text)
-        #print('Прошел')
-        
-        x_csrf_token = double_split(r.text, 'name="csrf-token" content="', '"')
-        _csrf_frontend = double_split(r.text, 'name="_csrf-frontend" value="', '"')
-        try:
-            captcha_sitekey = double_split(r.text, 'ecaptcha" data-sitekey="', '"')
-        except Exception as err:
-            screen_r(r.text)
-            raise RuntimeError('NO SITEKEY (auth): ' + str(err))
-            
-        
-        login_url = 'https://tickets.cska-hockey.ru/user/login'
-        headers = {
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-encoding': 'gzip, deflate, br',
-            'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,de;q=0.6',
-            'cache-control': 'no-cache',
-            'content-length': '1272',
-            'content-type': 'application/x-www-form-urlencoded',
-            'origin': 'https://tickets.cska-hockey.ru',
-            'pragma': 'no-cache',
-            'referer': 'https://tickets.cska-hockey.ru',
-            'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-platform': '"Windows"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'same-origin',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': self.user_agent
         }
 
-        solved = BotCore.non_selenium_recaptcha(captcha_sitekey, url, print_logs=False)
-            
-        params = [
-            ('_csrf-frontend', _csrf_frontend),
-            ('login-form[login]', account.login),
-            ('login-form[password]', account.password),
-            ('login-form[reCaptcha]', solved),
-            ('g-recaptcha-response', solved),
-            ('login-form[rememberMe]', 0),
-            ('login-form[rememberMe]', 0)
-        ]
-        r = account.post(login_url, data=params, headers=headers)
-        
-        if r.url != 'https://tickets.cska-hockey.ru':
-            if 'Неверный E-mail или пароль' in r.text:
+        data = {
+            'login': account.login,
+            'password': account.password,
+        }
+
+        r = self.session.post(url, headers=headers, json=data)
+
+        error = r.json().get('error')
+        if error:
+            if 'Неверный логин или пароль' in r.text:
+                print(yellow(f'{r.text}'))
                 self.ban(account)
-                raise RuntimeError('Неправильный логин или пароль')
+                return False
             else:
-                raise RuntimeError(f'Другая ошибка во время логина: {r.text}')
-    
-    
+                raise RuntimeError(f'Неизвестная ошибка авторизации: {error}')
+
+        self.ak_token = r.headers.get('AK-Token', '')
+        if not self.ak_token:
+            raise RuntimeError(f'В ответном headers отсутствует токен авторизации: {r.text}')
+
+
 if __name__ == '__main__':
     accounts = TNAQueue('authorize_accounts.txt')
     accounts.start()
