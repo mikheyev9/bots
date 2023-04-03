@@ -3,15 +3,13 @@ import os
 
 s_path = os.path.dirname(os.path.abspath(__file__)).split('\\')[:-1]
 sys.path.insert(0, '\\'.join(s_path) + '\\cores_src')
-from bot_sample_server import *
+from cores_src.bot_sample_server import *
 import authorization
 
 BotCore.tele_bool = settings['tele_bool']
 BotCore.release = True
 BotCore.proxy_centralized = False
 
-
-# {'http': 'http://JSy7VP:RDx0KmVaTi@46.8.23.248:3000', 'https': 'http://JSy7VP:RDx0KmVaTi@46.8.23.248:3000'}
 
 class ObserverBot(ObserverBotSample):
     driver_source = 'hrenium'
