@@ -1,0 +1,18 @@
+[
+    [
+        "ЦСКА - МЕТАЛЛУРГ МГ. . 28 Апр 19:00",
+        "andrey;valera",
+        "https://tickets.cska-hockey.ru/event/?id=924",
+        {
+            "version": 2,
+            "buy_mode": false,
+            "quantity": "double;alone",
+            "white_list": {},
+            "delay": 30,
+            "notify_all": false,
+            "notify": true,
+            "del_alones": false,
+            "black_list": []
+        }
+    ]
+]

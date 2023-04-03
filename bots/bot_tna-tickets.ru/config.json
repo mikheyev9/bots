@@ -1,0 +1,17 @@
+{
+    "tele_bool": false,
+    "order_threads": 15,
+    "sector_threads": 2,
+    "session_threads": 10,
+    "max_sessions": 100,
+    "session_duration": 1200,
+    "counter_step": 20,
+    "reimport_delay": 5,
+    "tries_to_ban": 5,
+    "ban_time": 30,
+    "limit": 4,
+    "cart_threads": 0,
+    "long_ban_time": 600,
+    "order_multiplier": 1,
+    "del_alones": false
+}

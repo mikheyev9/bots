@@ -1,0 +1,2 @@
+python telecore.py
+pause

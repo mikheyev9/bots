@@ -1,0 +1,556 @@
+Thu Mar 11 19:49:23 2021 Появились билеты. Регистрация наличия перед откупкой: Slovenia. Sochi. 0 Jan БОТ.:
+C207|48,
+A303|2,
+С306|153,
+С305|40,
+A101|33,
+С307|209,
+C109|83,
+C101|41,
+A302|71,
+A301|199,
+A309|255,
+C309|244,
+D309|59,
+D301|27
+https://sochi.kassir.ru/sport/olimpiyskiy-stadion-fisht-58e653d344cbf/chempionat-mira-2022-otborochnyiy-turnir-2-y-tur-rossiya---sloveniya_2021-03-27#792493
+Thu Mar 11 19:49:35 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 1:
+Ряд 8 Место 8 Стоимость 1600 Р.
+Ряд 8 Место 11 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/VZIdVlWD
+https://sochi.kassir.ru/kassir/orders/checkout/18121884?code=30552031
+Thu Mar 11 19:49:35 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 3:
+Ряд 8 Место 20 Стоимость 1600 Р.
+Ряд 8 Место 23 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/CVkKLhri
+https://sochi.kassir.ru/kassir/orders/checkout/18121885?code=45080359
+Thu Mar 11 19:49:35 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 5:
+Ряд 9 Место 4 Стоимость 1600 Р.
+Ряд 9 Место 7 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/WNrHJcaR
+https://sochi.kassir.ru/kassir/orders/checkout/18121883?code=43263276
+Thu Mar 11 19:49:35 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 7:
+Ряд 9 Место 16 Стоимость 1600 Р.
+Ряд 9 Место 19 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/WcQK4O9f
+https://sochi.kassir.ru/kassir/orders/checkout/18121889?code=97394259
+Thu Mar 11 19:49:35 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 13:
+Ряд 10 Место 24 Стоимость 1600 Р.
+Ряд 10 Место 27 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/MXPWrjRv
+https://sochi.kassir.ru/kassir/orders/checkout/18121891?code=12214734
+Thu Mar 11 19:49:35 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 10:
+Ряд 10 Место 6 Стоимость 1600 Р.
+Ряд 10 Место 9 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/IpYfO0VZ
+https://sochi.kassir.ru/kassir/orders/checkout/18121892?code=58106562
+Thu Mar 11 19:49:35 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 16:
+Ряд 11 Место 14 Стоимость 1600 Р.
+Ряд 11 Место 17 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/sKN2nO53
+https://sochi.kassir.ru/kassir/orders/checkout/18121898?code=53452834
+Thu Mar 11 19:49:36 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 8:
+Ряд 9 Место 22 Стоимость 1600 Р.
+Ряд 9 Место 25 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/EkF8GPWV
+https://sochi.kassir.ru/kassir/orders/checkout/18121894?code=56309836
+Thu Mar 11 19:49:36 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 11:
+Ряд 10 Место 12 Стоимость 1600 Р.
+Ряд 10 Место 15 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/ZFqse1P9
+https://sochi.kassir.ru/kassir/orders/checkout/18121893?code=30316246
+Thu Mar 11 19:49:36 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 12:
+Ряд 10 Место 18 Стоимость 1600 Р.
+Ряд 10 Место 21 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/H2nPHd0Q
+https://sochi.kassir.ru/kassir/orders/checkout/18121910?code=22725134
+Thu Mar 11 19:49:36 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 4:
+Ряд 8 Место 26 Стоимость 1600 Р.
+Ряд 9 Место 1 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/xilsTUSV
+https://sochi.kassir.ru/kassir/orders/checkout/18121900?code=13094532
+Thu Mar 11 19:49:36 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 6:
+Ряд 9 Место 10 Стоимость 1600 Р.
+Ряд 9 Место 13 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/LLJT0TRe
+https://sochi.kassir.ru/kassir/orders/checkout/18121903?code=74439779
+Thu Mar 11 19:49:36 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 20:
+Ряд 12 Место 10 Стоимость 1600 Р.
+Ряд 12 Место 13 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/8tf63zu7
+https://sochi.kassir.ru/kassir/orders/checkout/18121902?code=76334257
+Thu Mar 11 19:49:36 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 22:
+Ряд 13 Место 2 Стоимость 1600 Р.
+Ряд 13 Место 5 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/R4jd2k3x
+https://sochi.kassir.ru/kassir/orders/checkout/18121911?code=13018888
+Thu Mar 11 19:49:36 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 21:
+Ряд 12 Место 16 Стоимость 1600 Р.
+Ряд 12 Место 19 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/RRLJQHGU
+https://sochi.kassir.ru/kassir/orders/checkout/18121907?code=56504359
+Thu Mar 11 19:49:36 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 19:
+Ряд 12 Место 4 Стоимость 1600 Р.
+Ряд 12 Место 7 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/rqpdreEZ
+https://sochi.kassir.ru/kassir/orders/checkout/18121912?code=47489634
+Thu Mar 11 19:49:36 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 23:
+Ряд 13 Место 8 Стоимость 1600 Р.
+Ряд 13 Место 11 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/2YGxEAsa
+https://sochi.kassir.ru/kassir/orders/checkout/18121909?code=85629280
+Thu Mar 11 19:49:36 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 24:
+Ряд 13 Место 14 Стоимость 1600 Р.
+Ряд 13 Место 17 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/IhcS7H2R
+https://sochi.kassir.ru/kassir/orders/checkout/18121913?code=85095920
+Thu Mar 11 19:49:36 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 17:
+Ряд 11 Место 20 Стоимость 1600 Р.
+Ряд 11 Место 23 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/YKbqs4WL
+https://sochi.kassir.ru/kassir/orders/checkout/18121908?code=77748477
+Thu Mar 11 19:49:37 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 18:
+Ряд 11 Место 26 Стоимость 1600 Р.
+Ряд 12 Место 1 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/ybNCEDc8
+https://sochi.kassir.ru/kassir/orders/checkout/18121921?code=69786472
+Thu Mar 11 19:49:44 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 14:
+Ряд 11 Место 2 Стоимость 1600 Р.
+Ряд 11 Место 5 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/fVLauuEu
+https://sochi.kassir.ru/kassir/orders/checkout/18121923?code=31679014
+Thu Mar 11 19:49:46 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 25:
+Ряд 8 Место 14 Стоимость 1600 Р.
+Ряд 8 Место 17 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/P1GMgeO5
+https://sochi.kassir.ru/kassir/orders/checkout/18121925?code=48323349
+Thu Mar 11 19:49:46 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 28:
+Ряд 11 Место 8 Стоимость 1600 Р.
+Ряд 11 Место 11 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/gBSR6ngu
+https://sochi.kassir.ru/kassir/orders/checkout/18121927?code=83413654
+Thu Mar 11 19:49:47 2021 Slovenia. Sochi. 0 Jan. C207. Оплата номер 26:
+Ряд 9 Место 28 Стоимость 1600 Р.
+Ряд 10 Место 3 Стоимость 1600 Р.
+https://securepay.tinkoff.ru/new/KAqP4SRT
+https://sochi.kassir.ru/kassir/orders/checkout/18121928?code=12837347
+Thu Mar 11 20:00:37 2021 Появились билеты. Регистрация наличия перед откупкой: Slovenia. Sochi. 0 Jan БОТ.:
+A303|2,
+С306|153,
+С305|37,
+A101|33,
+С307|209,
+C109|83,
+C101|43,
+A302|71,
+A301|199,
+A309|255,
+C309|244,
+D309|59,
+D301|27
+https://sochi.kassir.ru/sport/olimpiyskiy-stadion-fisht-58e653d344cbf/chempionat-mira-2022-otborochnyiy-turnir-2-y-tur-rossiya---sloveniya_2021-03-27#792493
+Thu Mar 11 20:11:31 2021 Появились билеты. Slovenia. Sochi. 0 Jan БОТ.:
+C207|48
+https://sochi.kassir.ru/sport/olimpiyskiy-stadion-fisht-58e653d344cbf/chempionat-mira-2022-otborochnyiy-turnir-2-y-tur-rossiya---sloveniya_2021-03-27#792493
+Thu Mar 11 20:44:21 2021 Билеты исчезли из продажи. Slovenia. Sochi. 0 Jan БОТ.:
+C308
+https://sochi.kassir.ru/sport/olimpiyskiy-stadion-fisht-58e653d344cbf/chempionat-mira-2022-otborochnyiy-turnir-2-y-tur-rossiya---sloveniya_2021-03-27#792493
+Fri Oct  1 14:37:40 2021 Test. Moscow. 0 Jan. Правая ложа бельэтажа. Оплата номер 1:
+Ряд 1 Место 1 Стоимость 4000 Р.
+Ряд 8 Место 1 Стоимость 3500 Р.
+https://securepay.tinkoff.ru/new/zpiduib5
+https://msk.kassir.ru/kassir/orders/checkout/19898768?code=96825178
+Fri Oct  1 14:37:59 2021 Test. Moscow. 0 Jan. VIP Партер. Оплата номер 11:
+Ряд 12 Место 66 Стоимость 7000 Р.
+Ряд 12 Место 67 Стоимость 7000 Р.
+Ряд 12 Место 68 Стоимость 7000 Р.
+Ряд 12 Место 69 Стоимость 7000 Р.
+Ряд 12 Место 70 Стоимость 7000 Р.
+https://securepay.tinkoff.ru/new/yJQiGsIb
+https://msk.kassir.ru/kassir/orders/checkout/19898774?code=18632270
+Fri Oct  1 14:38:01 2021 Test. Moscow. 0 Jan. VIP Партер. Оплата номер 4:
+Ряд 4 Место 4 Стоимость 10000 Р.
+Ряд 4 Место 5 Стоимость 10000 Р.
+Ряд 2 Место 30 Стоимость 12000 Р.
+Ряд 2 Место 31 Стоимость 12000 Р.
+Ряд 2 Место 32 Стоимость 12000 Р.
+Ряд 2 Место 33 Стоимость 12000 Р.
+Ряд 2 Место 34 Стоимость 12000 Р.
+Ряд 4 Место 36 Стоимость 12000 Р.
+https://securepay.tinkoff.ru/new/VicQ1q5F
+https://msk.kassir.ru/kassir/orders/checkout/19898786?code=76867610
+Fri Oct  1 14:38:01 2021 Test. Moscow. 0 Jan. Бельэтаж. Оплата номер 21:
+Ряд 8 Место 40 Стоимость 3500 Р.
+Ряд 8 Место 41 Стоимость 3500 Р.
+Ряд 8 Место 42 Стоимость 3500 Р.
+Ряд 8 Место 43 Стоимость 3500 Р.
+Ряд 8 Место 44 Стоимость 3500 Р.
+Ряд 8 Место 45 Стоимость 3500 Р.
+Ряд 8 Место 46 Стоимость 3500 Р.
+Ряд 8 Место 47 Стоимость 3500 Р.
+https://securepay.tinkoff.ru/new/MS5a81oZ
+https://msk.kassir.ru/kassir/orders/checkout/19898785?code=17692856
+Fri Oct  1 14:38:01 2021 Test. Moscow. 0 Jan. VIP Партер. Оплата номер 6:
+Ряд 2 Место 38 Стоимость 10000 Р.
+Ряд 4 Место 42 Стоимость 10000 Р.
+Ряд 4 Место 43 Стоимость 10000 Р.
+Ряд 4 Место 44 Стоимость 10000 Р.
+Ряд 4 Место 45 Стоимость 10000 Р.
+Ряд 4 Место 46 Стоимость 10000 Р.
+Ряд 6 Место 7 Стоимость 10000 Р.
+Ряд 6 Место 8 Стоимость 10000 Р.
+https://securepay.tinkoff.ru/new/9BC2b3Vh
+https://msk.kassir.ru/kassir/orders/checkout/19898787?code=58917970
+Fri Oct  1 14:38:02 2021 Test. Moscow. 0 Jan. VIP Партер. Оплата номер 2:
+Ряд 5 Место 33 Стоимость 12000 Р.
+Ряд 5 Место 34 Стоимость 12000 Р.
+Ряд 5 Место 35 Стоимость 12000 Р.
+Ряд 7 Место 14 Стоимость 12000 Р.
+Ряд 7 Место 15 Стоимость 12000 Р.
+Ряд 7 Место 16 Стоимость 12000 Р.
+Ряд 7 Место 17 Стоимость 12000 Р.
+Ряд 7 Место 18 Стоимость 12000 Р.
+https://securepay.tinkoff.ru/new/ywv6kqMI
+https://msk.kassir.ru/kassir/orders/checkout/19898790?code=39160798
+Fri Oct  1 14:38:02 2021 Test. Moscow. 0 Jan. Бельэтаж. Оплата номер 15:
+Ряд 5 Место 53 Стоимость 4500 Р.
+Ряд 5 Место 54 Стоимость 4500 Р.
+Ряд 5 Место 55 Стоимость 4500 Р.
+Ряд 5 Место 56 Стоимость 4500 Р.
+Ряд 5 Место 70 Стоимость 4500 Р.
+Ряд 5 Место 71 Стоимость 4500 Р.
+Ряд 5 Место 72 Стоимость 4500 Р.
+Ряд 5 Место 73 Стоимость 4500 Р.
+https://securepay.tinkoff.ru/new/HJ19RhxX
+https://msk.kassir.ru/kassir/orders/checkout/19898784?code=20922497
+Fri Oct  1 14:38:02 2021 Test. Moscow. 0 Jan. VIP Партер. Оплата номер 3:
+Ряд 7 Место 28 Стоимость 12000 Р.
+Ряд 7 Место 29 Стоимость 12000 Р.
+Ряд 7 Место 30 Стоимость 12000 Р.
+Ряд 7 Место 31 Стоимость 12000 Р.
+Ряд 7 Место 34 Стоимость 12000 Р.
+Ряд 7 Место 35 Стоимость 12000 Р.
+Ряд 7 Место 36 Стоимость 12000 Р.
+Ряд 7 Место 37 Стоимость 12000 Р.
+https://securepay.tinkoff.ru/new/CggOMI1l
+https://msk.kassir.ru/kassir/orders/checkout/19898788?code=91771076
+Fri Oct  1 14:38:03 2021 Test. Moscow. 0 Jan. VIP Партер. Оплата номер 5:
+Ряд 4 Место 37 Стоимость 12000 Р.
+Ряд 4 Место 38 Стоимость 12000 Р.
+Ряд 4 Место 39 Стоимость 12000 Р.
+Ряд 4 Место 40 Стоимость 12000 Р.
+Ряд 4 Место 41 Стоимость 12000 Р.
+Ряд 2 Место 35 Стоимость 10000 Р.
+Ряд 2 Место 36 Стоимость 10000 Р.
+Ряд 2 Место 37 Стоимость 10000 Р.
+https://securepay.tinkoff.ru/new/wWclBMfu
+https://msk.kassir.ru/kassir/orders/checkout/19898792?code=60684560
+Fri Oct  1 14:38:03 2021 Test. Moscow. 0 Jan. VIP Партер. Оплата номер 7:
+Ряд 8 Место 57 Стоимость 8500 Р.
+Ряд 8 Место 58 Стоимость 8500 Р.
+Ряд 8 Место 59 Стоимость 8500 Р.
+Ряд 8 Место 60 Стоимость 8500 Р.
+Ряд 8 Место 61 Стоимость 8500 Р.
+Ряд 8 Место 62 Стоимость 8500 Р.
+Ряд 8 Место 1 Стоимость 8500 Р.
+Ряд 8 Место 2 Стоимость 8500 Р.
+https://securepay.tinkoff.ru/new/l8NpFXeV
+https://msk.kassir.ru/kassir/orders/checkout/19898793?code=83515291
+Fri Oct  1 14:38:04 2021 Test. Moscow. 0 Jan. Бельэтаж. Оплата номер 23:
+Ряд 8 Место 113 Стоимость 3500 Р.
+Ряд 8 Место 114 Стоимость 3500 Р.
+Ряд 8 Место 115 Стоимость 3500 Р.
+Ряд 8 Место 116 Стоимость 3500 Р.
+Ряд 8 Место 117 Стоимость 3500 Р.
+Ряд 1 Место 110 Стоимость 3500 Р.
+Ряд 1 Место 111 Стоимость 3500 Р.
+Ряд 1 Место 112 Стоимость 3500 Р.
+https://securepay.tinkoff.ru/new/cEas0GQf
+https://msk.kassir.ru/kassir/orders/checkout/19898794?code=97784080
+Fri Oct  1 14:38:04 2021 Test. Moscow. 0 Jan. Бельэтаж. Оплата номер 13:
+Ряд 3 Место 73 Стоимость 4500 Р.
+Ряд 3 Место 74 Стоимость 4500 Р.
+Ряд 3 Место 75 Стоимость 4500 Р.
+Ряд 3 Место 76 Стоимость 4500 Р.
+Ряд 3 Место 77 Стоимость 4500 Р.
+Ряд 3 Место 78 Стоимость 4500 Р.
+Ряд 3 Место 79 Стоимость 4500 Р.
+Ряд 3 Место 80 Стоимость 4500 Р.
+https://securepay.tinkoff.ru/new/rPWhJdt9
+https://msk.kassir.ru/kassir/orders/checkout/19898796?code=21984911
+Fri Oct  1 14:38:04 2021 Test. Moscow. 0 Jan. VIP Партер. Оплата номер 8:
+Ряд 8 Место 3 Стоимость 8500 Р.
+Ряд 8 Место 4 Стоимость 8500 Р.
+Ряд 8 Место 5 Стоимость 8500 Р.
+Ряд 6 Место 1 Стоимость 8500 Р.
+Ряд 6 Место 2 Стоимость 8500 Р.
+Ряд 6 Место 3 Стоимость 8500 Р.
+Ряд 6 Место 4 Стоимость 8500 Р.
+Ряд 10 Место 8 Стоимость 8500 Р.
+https://securepay.tinkoff.ru/new/yKxFmYf9
+https://msk.kassir.ru/kassir/orders/checkout/19898795?code=76640274
+Fri Oct  1 14:38:05 2021 Test. Moscow. 0 Jan. Бельэтаж. Оплата номер 20:
+Ряд 6 Место 29 Стоимость 3500 Р.
+Ряд 6 Место 30 Стоимость 3500 Р.
+Ряд 6 Место 31 Стоимость 3500 Р.
+Ряд 7 Место 46 Стоимость 3500 Р.
+Ряд 8 Место 28 Стоимость 3500 Р.
+Ряд 8 Место 29 Стоимость 3500 Р.
+Ряд 8 Место 30 Стоимость 3500 Р.
+Ряд 8 Место 31 Стоимость 3500 Р.
+https://securepay.tinkoff.ru/new/9duLfWhH
+https://msk.kassir.ru/kassir/orders/checkout/19898797?code=43347558
+Fri Oct  1 14:51:11 2021 Test. Moscow. 0 Jan. Бельэтаж. Оплата номер 5:
+Ряд 6 Место 13 Стоимость 3000 Р.
+Ряд 6 Место 115 Стоимость 3000 Р.
+Ряд 6 Место 116 Стоимость 3000 Р.
+Ряд 7 Место 127 Стоимость 2500 Р.
+Ряд 7 Место 128 Стоимость 2500 Р.
+https://securepay.tinkoff.ru/new/n5RYGzJi
+https://msk.kassir.ru/kassir/orders/checkout/19898993?code=49955068
+Fri Oct  1 14:51:15 2021 Test. Moscow. 0 Jan. Партер. Оплата номер 8:
+Ряд 7 Место 55 Стоимость 6000 Р.
+Ряд 11 Место 57 Стоимость 5000 Р.
+Ряд 11 Место 58 Стоимость 5000 Р.
+Ряд 11 Место 59 Стоимость 5000 Р.
+Ряд 11 Место 60 Стоимость 5000 Р.
+Ряд 13 Место 36 Стоимость 5000 Р.
+Ряд 13 Место 37 Стоимость 5000 Р.
+Ряд 13 Место 42 Стоимость 5000 Р.
+https://securepay.tinkoff.ru/new/Yq0RqgA5
+https://msk.kassir.ru/kassir/orders/checkout/19898999?code=11430430
+Fri Oct  1 14:51:16 2021 Test. Moscow. 0 Jan. Партер. Оплата номер 10:
+Ряд 4 Место 9 Стоимость 5500 Р.
+Ряд 4 Место 10 Стоимость 5500 Р.
+Ряд 4 Место 79 Стоимость 5500 Р.
+Ряд 4 Место 80 Стоимость 5500 Р.
+Ряд 4 Место 81 Стоимость 5500 Р.
+Ряд 4 Место 82 Стоимость 5500 Р.
+Ряд 4 Место 83 Стоимость 5500 Р.
+Ряд 4 Место 84 Стоимость 5500 Р.
+https://securepay.tinkoff.ru/new/kYVKcRIj
+https://msk.kassir.ru/kassir/orders/checkout/19899003?code=52890590
+Fri Oct  1 14:51:16 2021 Test. Moscow. 0 Jan. Партер. Оплата номер 20:
+Ряд 11 Место 19 Стоимость 4500 Р.
+Ряд 11 Место 20 Стоимость 4500 Р.
+Ряд 11 Место 21 Стоимость 4500 Р.
+Ряд 11 Место 71 Стоимость 4500 Р.
+Ряд 11 Место 72 Стоимость 4500 Р.
+Ряд 11 Место 73 Стоимость 4500 Р.
+Ряд 11 Место 74 Стоимость 4500 Р.
+Ряд 11 Место 75 Стоимость 4500 Р.
+https://securepay.tinkoff.ru/new/e6VdKm6U
+https://msk.kassir.ru/kassir/orders/checkout/19899001?code=48690016
+Fri Oct  1 14:51:16 2021 Test. Moscow. 0 Jan. Партер. Оплата номер 9:
+Ряд 4 Место 22 Стоимость 6000 Р.
+Ряд 4 Место 67 Стоимость 6000 Р.
+Ряд 4 Место 68 Стоимость 6000 Р.
+Ряд 4 Место 69 Стоимость 6000 Р.
+Ряд 4 Место 70 Стоимость 6000 Р.
+Ряд 4 Место 71 Стоимость 6000 Р.
+Ряд 4 Место 72 Стоимость 6000 Р.
+Ряд 4 Место 73 Стоимость 6000 Р.
+https://securepay.tinkoff.ru/new/zME0630U
+https://msk.kassir.ru/kassir/orders/checkout/19899004?code=81403280
+Fri Oct  1 14:51:16 2021 Test. Moscow. 0 Jan. Партер. Оплата номер 24:
+Ряд 12 Место 2 Стоимость 4000 Р.
+Ряд 12 Место 3 Стоимость 4000 Р.
+Ряд 12 Место 4 Стоимость 4000 Р.
+Ряд 14 Место 1 Стоимость 3500 Р.
+Ряд 14 Место 2 Стоимость 3500 Р.
+Ряд 14 Место 3 Стоимость 3500 Р.
+Ряд 14 Место 4 Стоимость 3500 Р.
+Ряд 14 Место 5 Стоимость 3500 Р.
+https://securepay.tinkoff.ru/new/lDW5wRbO
+https://msk.kassir.ru/kassir/orders/checkout/19899002?code=66147630
+Fri Oct  1 14:51:16 2021 Test. Moscow. 0 Jan. Партер. Оплата номер 23:
+Ряд 10 Место 7 Стоимость 4000 Р.
+Ряд 10 Место 8 Стоимость 4000 Р.
+Ряд 10 Место 9 Стоимость 4000 Р.
+Ряд 10 Место 10 Стоимость 4000 Р.
+Ряд 10 Место 11 Стоимость 4000 Р.
+Ряд 10 Место 12 Стоимость 4000 Р.
+Ряд 10 Место 15 Стоимость 4000 Р.
+Ряд 12 Место 1 Стоимость 4000 Р.
+https://securepay.tinkoff.ru/new/xZSZQoBG
+https://msk.kassir.ru/kassir/orders/checkout/19899009?code=23791907
+Fri Oct  1 14:51:16 2021 Test. Moscow. 0 Jan. Партер. Оплата номер 21:
+Ряд 11 Место 76 Стоимость 4500 Р.
+Ряд 11 Место 77 Стоимость 4500 Р.
+Ряд 13 Место 18 Стоимость 4000 Р.
+Ряд 13 Место 19 Стоимость 4000 Р.
+Ряд 13 Место 20 Стоимость 4000 Р.
+Ряд 13 Место 21 Стоимость 4000 Р.
+Ряд 13 Место 24 Стоимость 4000 Р.
+Ряд 13 Место 25 Стоимость 4000 Р.
+https://securepay.tinkoff.ru/new/B8JY60Nm
+https://msk.kassir.ru/kassir/orders/checkout/19899010?code=28386138
+Fri Oct  1 14:51:16 2021 Test. Moscow. 0 Jan. Партер. Оплата номер 18:
+Ряд 8 Место 7 Стоимость 5000 Р.
+Ряд 8 Место 8 Стоимость 5000 Р.
+Ряд 8 Место 9 Стоимость 5000 Р.
+Ряд 8 Место 10 Стоимость 5000 Р.
+Ряд 8 Место 81 Стоимость 5000 Р.
+Ряд 8 Место 82 Стоимость 5000 Р.
+Ряд 8 Место 83 Стоимость 5000 Р.
+Ряд 8 Место 84 Стоимость 5000 Р.
+https://securepay.tinkoff.ru/new/f1UN3TDl
+https://msk.kassir.ru/kassir/orders/checkout/19899007?code=50242261
+Fri Oct  1 14:51:16 2021 Test. Moscow. 0 Jan. Партер. Оплата номер 11:
+Ряд 4 Место 85 Стоимость 5500 Р.
+Ряд 4 Место 86 Стоимость 5500 Р.
+Ряд 4 Место 87 Стоимость 5500 Р.
+Ряд 4 Место 88 Стоимость 5500 Р.
+Ряд 6 Место 11 Стоимость 5500 Р.
+Ряд 6 Место 12 Стоимость 5500 Р.
+Ряд 6 Место 13 Стоимость 5500 Р.
+Ряд 6 Место 14 Стоимость 5500 Р.
+https://securepay.tinkoff.ru/new/x3NVPwi2
+https://msk.kassir.ru/kassir/orders/checkout/19899011?code=87154659
+Fri Oct  1 14:51:17 2021 Test. Moscow. 0 Jan. Партер. Оплата номер 19:
+Ряд 9 Место 53 Стоимость 4500 Р.
+Ряд 9 Место 54 Стоимость 4500 Р.
+Ряд 9 Место 55 Стоимость 4500 Р.
+Ряд 9 Место 56 Стоимость 4500 Р.
+Ряд 9 Место 57 Стоимость 4500 Р.
+Ряд 9 Место 58 Стоимость 4500 Р.
+Ряд 11 Место 17 Стоимость 4500 Р.
+Ряд 11 Место 18 Стоимость 4500 Р.
+https://securepay.tinkoff.ru/new/yl9B3hrg
+https://msk.kassir.ru/kassir/orders/checkout/19899013?code=87644886
+Fri Oct  1 14:51:17 2021 Test. Moscow. 0 Jan. Партер. Оплата номер 12:
+Ряд 6 Место 15 Стоимость 5500 Р.
+Ряд 6 Место 16 Стоимость 5500 Р.
+Ряд 6 Место 17 Стоимость 5500 Р.
+Ряд 6 Место 18 Стоимость 5500 Р.
+Ряд 6 Место 19 Стоимость 5500 Р.
+Ряд 6 Место 20 Стоимость 5500 Р.
+Ряд 6 Место 21 Стоимость 5500 Р.
+Ряд 6 Место 22 Стоимость 5500 Р.
+https://securepay.tinkoff.ru/new/qxKwiVaZ
+https://msk.kassir.ru/kassir/orders/checkout/19899016?code=12697191
+Fri Oct  1 14:51:17 2021 Test. Moscow. 0 Jan. Партер. Оплата номер 13:
+Ряд 6 Место 23 Стоимость 5500 Р.
+Ряд 6 Место 70 Стоимость 5500 Р.
+Ряд 6 Место 1 Стоимость 5000 Р.
+Ряд 6 Место 2 Стоимость 5000 Р.
+Ряд 6 Место 3 Стоимость 5000 Р.
+Ряд 6 Место 4 Стоимость 5000 Р.
+Ряд 6 Место 5 Стоимость 5000 Р.
+Ряд 6 Место 6 Стоимость 5000 Р.
+https://securepay.tinkoff.ru/new/U5xdWxvq
+https://msk.kassir.ru/kassir/orders/checkout/19899014?code=55758994
+Fri Oct  1 14:51:17 2021 Test. Moscow. 0 Jan. Партер. Оплата номер 17:
+Ряд 8 Место 23 Стоимость 5500 Р.
+Ряд 8 Место 24 Стоимость 5500 Р.
+Ряд 8 Место 25 Стоимость 5500 Р.
+Ряд 8 Место 70 Стоимость 5500 Р.
+Ряд 8 Место 71 Стоимость 5500 Р.
+Ряд 8 Место 72 Стоимость 5500 Р.
+Ряд 8 Место 73 Стоимость 5500 Р.
+Ряд 8 Место 74 Стоимость 5500 Р.
+https://securepay.tinkoff.ru/new/ALmqz94C
+https://msk.kassir.ru/kassir/orders/checkout/19899012?code=47402013
+Fri Sep  9 17:23:26 2022 Появились мероприятия. АФИША. БТ. :
+Лебединое озеро|2022-09-20|19:00|id-3600|2
+https://ticket.bolshoi.ru/shows
+Fri Sep  9 17:28:47 2022 Появились мероприятия. АФИША. БТ. :
+Лебединое озеро|2022-09-20|19:00|id-3600|2
+https://ticket.bolshoi.ru/show/3647
+https://ticket.bolshoi.ru/show/3816
+https://ticket.bolshoi.ru/show/3817
+https://ticket.bolshoi.ru/show/3724
+https://ticket.bolshoi.ru/show/3630
+https://ticket.bolshoi.ru/show/3631
+https://ticket.bolshoi.ru/show/3632
+https://ticket.bolshoi.ru/show/3633
+https://ticket.bolshoi.ru/show/3726
+https://ticket.bolshoi.ru/show/3606
+https://ticket.bolshoi.ru/show/3634
+https://ticket.bolshoi.ru/show/3607
+https://ticket.bolshoi.ru/show/3635
+https://ticket.bolshoi.ru/show/3700
+https://ticket.bolshoi.ru/show/3701
+https://ticket.bolshoi.ru/show/3675
+https://ticket.bolshoi.ru/show/3653
+https://ticket.bolshoi.ru/show/3833
+https://ticket.bolshoi.ru/show/3834
+https://ticket.bolshoi.ru/show/3654
+https://ticket.bolshoi.ru/show/3655
+https://ticket.bolshoi.ru/show/3702
+https://ticket.bolshoi.ru/show/3703
+https://ticket.bolshoi.ru/show/3657
+https://ticket.bolshoi.ru/show/3676
+https://ticket.bolshoi.ru/show/3656
+https://ticket.bolshoi.ru/show/3704
+https://ticket.bolshoi.ru/show/3677
+https://ticket.bolshoi.ru/show/3658
+https://ticket.bolshoi.ru/show/3705
+https://ticket.bolshoi.ru/show/3678
+https://ticket.bolshoi.ru/show/3659
+https://ticket.bolshoi.ru/show/3679
+https://ticket.bolshoi.ru/show/3660
+https://ticket.bolshoi.ru/show/3706
+https://ticket.bolshoi.ru/show/3661
+https://ticket.bolshoi.ru/show/3707
+https://ticket.bolshoi.ru/show/3680
+https://ticket.bolshoi.ru/show/3662
+https://ticket.bolshoi.ru/show/3708
+https://ticket.bolshoi.ru/show/3681
+https://ticket.bolshoi.ru/show/3736
+https://ticket.bolshoi.ru/show/3663
+https://ticket.bolshoi.ru/show/3709
+https://ticket.bolshoi.ru/show/3682
+https://ticket.bolshoi.ru/show/3683
+https://ticket.bolshoi.ru/show/3664
+https://ticket.bolshoi.ru/show/3710
+https://ticket.bolshoi.ru/show/3688
+https://ticket.bolshoi.ru/show/3719
+https://ticket.bolshoi.ru/show/3667
+https://ticket.bolshoi.ru/show/3711
+https://ticket.bolshoi.ru/show/3690
+https://ticket.bolshoi.ru/show/3665
+https://ticket.bolshoi.ru/show/3668
+https://ticket.bolshoi.ru/show/3712
+https://ticket.bolshoi.ru/show/3691
+https://ticket.bolshoi.ru/show/3720
+https://ticket.bolshoi.ru/show/3666
+https://ticket.bolshoi.ru/show/3713
+https://ticket.bolshoi.ru/show/3692
+https://ticket.bolshoi.ru/show/3721
+https://ticket.bolshoi.ru/show/3693
+https://ticket.bolshoi.ru/show/3737
+https://ticket.bolshoi.ru/show/3694
+https://ticket.bolshoi.ru/show/3738
+https://ticket.bolshoi.ru/show/3695
+https://ticket.bolshoi.ru/show/3344
+https://ticket.bolshoi.ru/show/3714
+https://ticket.bolshoi.ru/show/3715
+https://ticket.bolshoi.ru/show/3739
+https://ticket.bolshoi.ru/show/3729
+https://ticket.bolshoi.ru/show/3696
+https://ticket.bolshoi.ru/show/3716
+https://ticket.bolshoi.ru/show/3697
+https://ticket.bolshoi.ru/show/3740
+https://ticket.bolshoi.ru/show/3722
+https://ticket.bolshoi.ru/show/3717
+https://ticket.bolshoi.ru/show/3698
+https://ticket.bolshoi.ru/show/3741
+https://ticket.bolshoi.ru/show/3742
+https://ticket.bolshoi.ru/show/3762
+https://ticket.bolshoi.ru/show/3763
+https://ticket.bolshoi.ru/show/3792
+https://ticket.bolshoi.ru/show/3764
+https://ticket.bolshoi.ru/show/3793
+https://ticket.bolshoi.ru/show/3743
+https://ticket.bolshoi.ru/show/3765
+https://ticket.bolshoi.ru/show/3744
+https://ticket.bolshoi.ru/show/3794
+https://ticket.bolshoi.ru/show/3766
+https://ticket.bolshoi.ru/show/3745
+https://ticket.bolshoi.ru/show/3767
+https://ticket.bolshoi.ru/show/3795
+https://ticket.bolshoi.ru/show/3746
+Fri Sep  9 17:36:05 2022 Появились мероприятия. АФИША. БТ. :
+Лебединое озеро|2022-09-20|19:00|id-3600|2
+https://ticket.bolshoi.ru/show/3600

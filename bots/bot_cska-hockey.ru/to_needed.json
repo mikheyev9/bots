@@ -1,0 +1,21 @@
+[
+    [
+        [""],
+        "andrey;valera",
+        "*",
+        {
+            "version": 1,
+            "buy_mode": true,
+            "quantity": "alone;double",
+            "white_list": {
+                "202": "*",
+                "209": "*"
+            },
+            "delay": 15,
+            "notify_all": true,
+            "notify": true,
+            "del_alones": false,
+            "black_list": []
+        }
+    ]
+]

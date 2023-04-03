@@ -1,0 +1,2192 @@
+Borovaya 3 str.1
+Borovaya 3 str.2
+Borovaya 3 str.3
+Borovaya 3 str.4
+Borovaya 3 str.5
+Borovaya 3 str.10
+Borovaya 3 str.12
+Borovaya 3 str.13
+Borovaya 3 str.19
+Borovaya 3 str.20
+Belyakova 1
+Belyakova 1 str.1
+Belyakova 1 str.1A
+Belyakova 2 str.1
+Belyakova 2 str.2
+Belyakova 2 str.3
+Belyakova 2 str.4
+Belyakova 3 str.1
+Belyakova 4
+Belyakova 6
+Bogdanova 2
+Bogdanova 4
+Bogdanova 6
+Bogdanova 8
+Bogdanova 10
+Bogdanova 12
+Bogdanova 14
+Bogdanova 16
+Bogdanova 19
+Bogdanova 21
+Volhonka 5/6 str.4
+Volhonka 5/6 str.7
+Volhonka 5/6 str.8
+Volhonka 5/6 str.9
+Volhonka 6
+Volhonka 6 str.2
+Volhonka 6 str.5
+Volhonka 6 str.6
+Volhonka 6 str.7
+Volhonka 12
+Bazhova 1
+Bazhova 2
+Bazhova 3
+Bazhova 4
+Bazhova 5
+Bazhova 6
+Bazhova 7
+Bazhova 8
+Bazhova 9
+Bazhova 13
+Bardina 4 str.1
+Bardina 4 str.2
+Bardina 4 str.3
+Bardina 4 str.4
+Bardina 4 str.6
+Bardina 4 str.7
+Bardina 4 str.11
+Bardina 4 str.21
+Bardina 4 str.22
+Bardina 4 str.23
+Vzletnaya 1
+Vzletnaya 2
+Vzletnaya 3
+Vzletnaya 4 str.1
+Vzletnaya 5
+Vzletnaya 6 str.1
+Vzletnaya 8
+Vzletnaya 10 str.1
+Vzletnaya 12
+Vzletnaya 14
+Gagarina 1
+Gagarina 2
+Gagarina 3
+Gagarina 4
+Gagarina 5
+Gagarina 6
+Gagarina 7
+Gagarina 8
+Gagarina 9
+Gagarina 10
+Govorova 1
+Govorova 3
+Govorova 3 str.2
+Govorova 3A
+Govorova 5
+Govorova 6
+Govorova 6 str.2
+Govorova 6 str.3
+Govorova 6 str.4
+Govorova 6 str.6
+Aviazionaya 13
+Aviazionaya 17
+Aviazionaya 19
+Aviazionaya 23
+Aviazionaya 24
+Aviazionaya 35
+Aviazionaya 40
+Aviazionaya 63
+Aviazionaya 77
+Aviazionaya 79
+Borovaya 3 str.1
+Borovaya 3 str.2
+Borovaya 3 str.3
+Borovaya 3 str.4
+Borovaya 3 str.5
+Borovaya 3 str.10
+Borovaya 3 str.12
+Borovaya 3 str.13
+Borovaya 3 str.19
+Borovaya 3 str.20
+Belyakova 1
+Belyakova 1 str.1
+Belyakova 1 str.1A
+Belyakova 2 str.1
+Belyakova 2 str.2
+Belyakova 2 str.3
+Belyakova 2 str.4
+Belyakova 3 str.1
+Belyakova 4
+Belyakova 6
+Bogdanova 2
+Bogdanova 4
+Bogdanova 6
+Bogdanova 8
+Bogdanova 10
+Bogdanova 12
+Bogdanova 14
+Bogdanova 16
+Bogdanova 19
+Bogdanova 21
+Volhonka 5/6 str.4
+Volhonka 5/6 str.7
+Volhonka 5/6 str.8
+Volhonka 5/6 str.9
+Volhonka 6
+Volhonka 6 str.2
+Volhonka 6 str.5
+Volhonka 6 str.6
+Volhonka 6 str.7
+Volhonka 12
+Bazhova 1
+Bazhova 2
+Bazhova 3
+Bazhova 4
+Bazhova 5
+Bazhova 6
+Bazhova 7
+Bazhova 8
+Bazhova 9
+Bazhova 13
+Bardina 4 str.1
+Bardina 4 str.2
+Bardina 4 str.3
+Bardina 4 str.4
+Bardina 4 str.6
+Bardina 4 str.7
+Bardina 4 str.11
+Bardina 4 str.21
+Bardina 4 str.22
+Bardina 4 str.23
+Vzletnaya 1
+Vzletnaya 2
+Vzletnaya 3
+Vzletnaya 4 str.1
+Vzletnaya 5
+Vzletnaya 6 str.1
+Vzletnaya 8
+Vzletnaya 10 str.1
+Vzletnaya 12
+Vzletnaya 14
+Gagarina 1
+Gagarina 2
+Gagarina 3
+Gagarina 4
+Gagarina 5
+Gagarina 6
+Gagarina 7
+Gagarina 8
+Gagarina 9
+Gagarina 10
+Govorova 1
+Govorova 3
+Govorova 3 str.2
+Govorova 3A
+Govorova 5
+Govorova 6
+Govorova 6 str.2
+Govorova 6 str.3
+Govorova 6 str.4
+Govorova 6 str.6
+Aviazionaya 13
+Aviazionaya 17
+Aviazionaya 19
+Aviazionaya 23
+Aviazionaya 24
+Aviazionaya 35
+Aviazionaya 40
+Aviazionaya 63
+Aviazionaya 77
+Aviazionaya 79
+Borovaya 3 str.1
+Borovaya 3 str.2
+Borovaya 3 str.3
+Borovaya 3 str.4
+Borovaya 3 str.5
+Borovaya 3 str.10
+Borovaya 3 str.12
+Borovaya 3 str.13
+Borovaya 3 str.19
+Borovaya 3 str.20
+Belyakova 1
+Belyakova 1 str.1
+Belyakova 1 str.1A
+Belyakova 2 str.1
+Belyakova 2 str.2
+Belyakova 2 str.3
+Belyakova 2 str.4
+Belyakova 3 str.1
+Belyakova 4
+Belyakova 6
+Bogdanova 2
+Bogdanova 4
+Bogdanova 6
+Bogdanova 8
+Bogdanova 10
+Bogdanova 12
+Bogdanova 14
+Bogdanova 16
+Bogdanova 19
+Bogdanova 21
+Volhonka 5/6 str.4
+Volhonka 5/6 str.7
+Volhonka 5/6 str.8
+Volhonka 5/6 str.9
+Volhonka 6
+Volhonka 6 str.2
+Volhonka 6 str.5
+Volhonka 6 str.6
+Volhonka 6 str.7
+Volhonka 12
+Bazhova 1
+Bazhova 2
+Bazhova 3
+Bazhova 4
+Bazhova 5
+Bazhova 6
+Bazhova 7
+Bazhova 8
+Bazhova 9
+Bazhova 13
+Bardina 4 str.1
+Bardina 4 str.2
+Bardina 4 str.3
+Bardina 4 str.4
+Bardina 4 str.6
+Bardina 4 str.7
+Bardina 4 str.11
+Bardina 4 str.21
+Bardina 4 str.22
+Bardina 4 str.23
+Vzletnaya 1
+Vzletnaya 2
+Vzletnaya 3
+Vzletnaya 4 str.1
+Vzletnaya 5
+Vzletnaya 6 str.1
+Vzletnaya 8
+Vzletnaya 10 str.1
+Vzletnaya 12
+Vzletnaya 14
+Gagarina 1
+Gagarina 2
+Gagarina 3
+Gagarina 4
+Gagarina 5
+Gagarina 6
+Gagarina 7
+Gagarina 8
+Gagarina 9
+Gagarina 10
+Govorova 1
+Govorova 3
+Govorova 3 str.2
+Govorova 3A
+Govorova 5
+Govorova 6
+Govorova 6 str.2
+Govorova 6 str.3
+Govorova 6 str.4
+Govorova 6 str.6
+Aviazionaya 13
+Aviazionaya 17
+Aviazionaya 19
+Aviazionaya 23
+Aviazionaya 24
+Aviazionaya 35
+Aviazionaya 40
+Aviazionaya 63
+Aviazionaya 77
+Aviazionaya 79
+Borovaya 3 str.1
+Borovaya 3 str.2
+Borovaya 3 str.3
+Borovaya 3 str.4
+Borovaya 3 str.5
+Borovaya 3 str.10
+Borovaya 3 str.12
+Borovaya 3 str.13
+Borovaya 3 str.19
+Borovaya 3 str.20
+Belyakova 1
+Belyakova 1 str.1
+Belyakova 1 str.1A
+Belyakova 2 str.1
+Belyakova 2 str.2
+Belyakova 2 str.3
+Belyakova 2 str.4
+Belyakova 3 str.1
+Belyakova 4
+Belyakova 6
+Bogdanova 2
+Bogdanova 4
+Bogdanova 6
+Bogdanova 8
+Bogdanova 10
+Bogdanova 12
+Bogdanova 14
+Bogdanova 16
+Bogdanova 19
+Bogdanova 21
+Volhonka 5/6 str.4
+Volhonka 5/6 str.7
+Volhonka 5/6 str.8
+Volhonka 5/6 str.9
+Volhonka 6
+Volhonka 6 str.2
+Volhonka 6 str.5
+Volhonka 6 str.6
+Volhonka 6 str.7
+Volhonka 12
+Bazhova 1
+Bazhova 2
+Bazhova 3
+Bazhova 4
+Bazhova 5
+Bazhova 6
+Bazhova 7
+Bazhova 8
+Bazhova 9
+Bazhova 13
+Bardina 4 str.1
+Bardina 4 str.2
+Bardina 4 str.3
+Bardina 4 str.4
+Bardina 4 str.6
+Bardina 4 str.7
+Bardina 4 str.11
+Bardina 4 str.21
+Bardina 4 str.22
+Bardina 4 str.23
+Vzletnaya 1
+Vzletnaya 2
+Vzletnaya 3
+Vzletnaya 4 str.1
+Vzletnaya 5
+Vzletnaya 6 str.1
+Vzletnaya 8
+Vzletnaya 10 str.1
+Vzletnaya 12
+Vzletnaya 14
+Gagarina 1
+Gagarina 2
+Gagarina 3
+Gagarina 4
+Gagarina 5
+Gagarina 6
+Gagarina 7
+Gagarina 8
+Gagarina 9
+Gagarina 10
+Govorova 1
+Govorova 3
+Govorova 3 str.2
+Govorova 3A
+Govorova 5
+Govorova 6
+Govorova 6 str.2
+Govorova 6 str.3
+Govorova 6 str.4
+Govorova 6 str.6
+Aviazionaya 13
+Aviazionaya 17
+Aviazionaya 19
+Aviazionaya 23
+Aviazionaya 24
+Aviazionaya 35
+Aviazionaya 40
+Aviazionaya 63
+Aviazionaya 77
+Aviazionaya 79
+Borovaya 3 str.1
+Borovaya 3 str.2
+Borovaya 3 str.3
+Borovaya 3 str.4
+Borovaya 3 str.5
+Borovaya 3 str.10
+Borovaya 3 str.12
+Borovaya 3 str.13
+Borovaya 3 str.19
+Borovaya 3 str.20
+Belyakova 1
+Belyakova 1 str.1
+Belyakova 1 str.1A
+Belyakova 2 str.1
+Belyakova 2 str.2
+Belyakova 2 str.3
+Belyakova 2 str.4
+Belyakova 3 str.1
+Belyakova 4
+Belyakova 6
+Bogdanova 2
+Bogdanova 4
+Bogdanova 6
+Bogdanova 8
+Bogdanova 10
+Bogdanova 12
+Bogdanova 14
+Bogdanova 16
+Bogdanova 19
+Bogdanova 21
+Volhonka 5/6 str.4
+Volhonka 5/6 str.7
+Volhonka 5/6 str.8
+Volhonka 5/6 str.9
+Volhonka 6
+Volhonka 6 str.2
+Volhonka 6 str.5
+Volhonka 6 str.6
+Volhonka 6 str.7
+Volhonka 12
+Bazhova 1
+Bazhova 2
+Bazhova 3
+Bazhova 4
+Bazhova 5
+Bazhova 6
+Bazhova 7
+Bazhova 8
+Bazhova 9
+Bazhova 13
+Bardina 4 str.1
+Bardina 4 str.2
+Bardina 4 str.3
+Bardina 4 str.4
+Bardina 4 str.6
+Bardina 4 str.7
+Bardina 4 str.11
+Bardina 4 str.21
+Bardina 4 str.22
+Bardina 4 str.23
+Vzletnaya 1
+Vzletnaya 2
+Vzletnaya 3
+Vzletnaya 4 str.1
+Vzletnaya 5
+Vzletnaya 6 str.1
+Vzletnaya 8
+Vzletnaya 10 str.1
+Vzletnaya 12
+Vzletnaya 14
+Gagarina 1
+Gagarina 2
+Gagarina 3
+Gagarina 4
+Gagarina 5
+Gagarina 6
+Gagarina 7
+Gagarina 8
+Gagarina 9
+Gagarina 10
+Govorova 1
+Govorova 3
+Govorova 3 str.2
+Govorova 3A
+Govorova 5
+Govorova 6
+Govorova 6 str.2
+Govorova 6 str.3
+Govorova 6 str.4
+Govorova 6 str.6
+Bardina 4/7
+Bardina 4/7
+Bardina 4/7
+ul. Alymova 5
+ul. Alymova 5
+ul. Alymova 5
+ul. Alymova 5
+ul. Alymova 5
+ul. Brusilova 30
+ul. Brusilova 30
+ul. Brusilova 30
+ul. Brusilova 30
+ul. Brusilova 30
+ul. Molchanovka M.4
+ul. Molchanovka M.4
+ul. Molchanovka M.4
+ul. Molchanovka M.4
+ul. Molchanovka M.4
+ul. Molchanovka M. 6
+ul. Molchanovka M. 6
+ul. Molchanovka M. 6
+ul. Derbenevskaya 12
+ul. Derbenevskaya 12
+ul. Derbenevskaya 12
+ul. Derbenevskaya 12
+ul. Derbenevskaya 12
+ul. Derbenevskaya 8
+ul. Derbenevskaya 8
+ul. Derbenevskaya 8
+ul. Derbenevskaya 8
+ul. Derbenevskaya 8
+ul. Rogova 5
+ul. Rogova 5
+ul. Rogova 5
+ul. Rogova 5
+ul. Rogova 5
+Armejskaya 9 k.55
+Armejskaya 9 k.55
+Armejskaya 9 k.55
+Armejskaya 9 k.55
+Armejskaya 9 k.55
+Smolenskaya 3
+Smolenskaya 3
+Smolenskaya 3
+Smolenskaya 3
+Smolenskaya 3
+pr-kt Andropova 8
+pr-kt Andropova 8
+pr-kt Andropova 8
+pr-kt Andropova 8
+pr-kt Andropova 8
+ul. Myasnickaya 48
+ul. Myasnickaya 48
+ul. Myasnickaya 48
+ul. Myasnickaya 48
+ul. Myasnickaya 48
+Sosinskaya 6
+Sosinskaya 6
+Sosinskaya 6
+Sosinskaya 6
+Sosinskaya 6
+shosse Besedinskoe 17
+shosse Besedinskoe 17
+shosse Besedinskoe 17
+shosse Besedinskoe 17
+shosse Besedinskoe 17
+nab. Bolotnaya 13
+nab. Bolotnaya 13
+nab. Bolotnaya 13
+nab. Bolotnaya 13
+nab. Bolotnaya 13
+Kominterna 4
+Kominterna 4
+Kominterna 4
+Kominterna 4
+Kominterna 4
+Vodnikov 20
+Vodnikov 20
+Vodnikov 20
+Vodnikov 20
+Vodnikov 20
+ Kominterna 8
+ Kominterna 8
+ Kominterna 8
+ Kominterna 8
+ Kominterna 8
+nab. Bolotnaya 15/1
+nab. Bolotnaya 15/1
+nab. Bolotnaya 15/1
+nab. Bolotnaya 15/1
+nab. Bolotnaya 15/1
+pr-kt Andropova 29
+pr-kt Andropova 29
+pr-kt Andropova 29
+pr-kt Andropova 29
+pr-kt Andropova 29
+ul. Derbenevskaya 1
+ul. Derbenevskaya 1
+ul. Derbenevskaya 1
+ul. Derbenevskaya 1
+ul. Derbenevskaya 1
+ul. Rogova 24
+ul. Rogova 24
+ul. Rogova 24
+ul. Rogova 24
+ul. Rogova 24
+Armejskaya 2 k.13
+Armejskaya 2 k.13
+Armejskaya 2 k.13
+Armejskaya 2 k.13
+Armejskaya 2 k.13
+Smolenskaya 6
+Smolenskaya 6
+Smolenskaya 6
+Smolenskaya 6
+Smolenskaya 6
+Myasnickaya 11
+Myasnickaya 11
+Myasnickaya 11
+Myasnickaya 11
+Myasnickaya 11
+Sosinskaya 43/8
+Sosinskaya 43/8
+Sosinskaya 43/8
+Sosinskaya 43/8
+Sosinskaya 43/8
+shosse Besedinskoe 15
+shosse Besedinskoe 15
+shosse Besedinskoe 15
+shosse Besedinskoe 15
+shosse Besedinskoe 15
+ul. Zelenodolskaya 7k1
+ul. Zelenodolskaya 7k1
+ul. Zelenodolskaya 7k1
+ul. Zelenodolskaya 7k1
+ul. Zelenodolskaya 7k1
+per. Zeljev 3
+per. Zeljev 3
+per. Zeljev 3
+per. Zeljev 3
+per. Zeljev 3
+ul. Zarechnaya 1k1
+ul. Zarechnaya 1k1
+ul. Zarechnaya 1k1
+ul. Zarechnaya 1k1
+ul. Zarechnaya 1k1
+ul. Meshcheryakova 2k2
+ul. Meshcheryakova 2k2
+ul. Meshcheryakova 2k2
+ul. Meshcheryakova 2k2
+ul. Meshcheryakova 2k2
+per. Mikulsky 4
+per. Mikulsky 4
+per. Mikulsky 4
+per. Mikulsky 4
+per. Mikulsky 4
+per. Mamonovsky 3k1
+per. Mamonovsky 3k1
+per. Mamonovsky 3k1
+per. Mamonovsky 3k1
+per. Mamonovsky 3k1
+ul. Tallinskaya 2
+ul. Tallinskaya 2
+ul. Tallinskaya 2
+ul. Tallinskaya 2
+ul. Tallinskaya 2
+ul. Tatarskaya 1
+ul. Tatarskaya 1
+ul. Tatarskaya 1
+ul. Tatarskaya 1
+ul. Tatarskaya 1
+ul. Trubetskaya 1k4
+ul. Trubetskaya 1k4
+ul. Trubetskaya 1k4
+ul. Trubetskaya 1k4
+ul. Trubetskaya 1k4
+ul. Turistskaya 3
+ul. Turistskaya 3
+ul. Turistskaya 3
+ul. Turistskaya 3
+ul. Turistskaya 3
+ul. Timurovskaya 5
+ul. Timurovskaya 5
+ul. Timurovskaya 5
+ul. Timurovskaya 5
+ul. Timurovskaya 5
+ul. Havskaya 8
+ul. Havskaya 8
+ul. Havskaya 8
+ul. Havskaya 8
+ul. Havskaya 8
+shosse Horoshevskoe 3
+shosse Horoshevskoe 3
+shosse Horoshevskoe 3
+shosse Horoshevskoe 3
+shosse Horoshevskoe 3
+ul. Usievicha 1A
+ul. Usievicha 1A
+ul. Usievicha 1A
+ul. Usievicha 1A
+ul. Usievicha 1A
+per. Uhtomskyi 4
+per. Uhtomskyi 4
+per. Uhtomskyi 4
+per. Uhtomskyi 4
+per. Uhtomskyi 4
+per.Uglovoy 2
+per.Uglovoy 2
+per.Uglovoy 2
+per.Uglovoy 2
+per.Uglovoy 2
+ul. Egerskaya 4
+ul. Egerskaya 4
+ul. Egerskaya 4
+ul. Egerskaya 4
+ul. Egerskaya 4
+per. Eliseevskiy 14
+per. Eliseevskiy 14
+per. Eliseevskiy 14
+per. Eliseevskiy 14
+per. Eliseevskiy 14
+b-r Eseninskiy 1/26 k.1 
+b-r Eseninskiy 1/26 k.1 
+b-r Eseninskiy 1/26 k.1 
+b-r Eseninskiy 1/26 k.1 
+b-r Eseninskiy 1/26 k.1 
+ul. Efremova 8
+ul. Efremova 8
+ul. Efremova 8
+ul. Efremova 8
+ul. Efremova 8
+shosse Obvodnoe 5
+shosse Obvodnoe 5
+shosse Obvodnoe 5
+shosse Obvodnoe 5
+shosse Obvodnoe 5
+b-r Osenniy 1A
+b-r Osenniy 1A
+b-r Osenniy 1A
+b-r Osenniy 1A
+b-r Osenniy 1A
+proezd Ostapovskiy 1k5
+proezd Ostapovskiy 1k5
+proezd Ostapovskiy 1k5
+proezd Ostapovskiy 1k5
+proezd Ostapovskiy 1k5
+per. Orlovskiy 3
+per. Orlovskiy 3
+per. Orlovskiy 3
+per. Orlovskiy 3
+per. Orlovskiy 3
+ul. Babaevksaya 3
+ul. Babaevksaya 3
+ul. Babaevksaya 3
+ul. Babaevksaya 3
+ul. Babaevksaya 3
+proezd Banniy 3/1 
+proezd Banniy 3/1 
+proezd Banniy 3/1 
+proezd Banniy 3/1 
+proezd Banniy 3/1 
+ul. Barishyha 4
+ul. Barishyha 4
+ul. Barishyha 4
+ul. Barishyha 4
+ul. Barishyha 4
+ul. Barklaya 1B
+ul. Barklaya 1B
+ul. Barklaya 1B
+ul. Barklaya 1B
+ul. Barklaya 1B
+ul. Bardina 4/4
+ul. Bardina 4/4
+ul. Bardina 4/4
+ul. Bardina 4/4
+ul. Bardina 4/4
+ul. Nabereznaya 4
+ul. Nabereznaya 4
+ul. Nabereznaya 4
+ul. Nabereznaya 4
+ul. Nabereznaya 4
+ul. Novodmitrovskaya 1/3
+ul. Novodmitrovskaya 1/3
+ul. Novodmitrovskaya 1/3
+ul. Novodmitrovskaya 1/3
+ul. Novodmitrovskaya 1/3
+ul. Nagornaya 1
+ul. Nagornaya 1
+ul. Nagornaya 1
+ul. Nagornaya 1
+ul. Nagornaya 1
+ul. Narvskaya 13
+ul. Narvskaya 13
+ul. Narvskaya 13
+ul. Narvskaya 13
+ul. Narvskaya 13
+ul. Nasosnaya 37
+ul. Rozanova 6
+ul. Rozanova 6
+ul. Rozanova 6
+ul. Rozanova 6
+ul. Rozanova 6
+ul. Rossolimo 4
+ul. Rossolimo 4
+ul. Rossolimo 4
+ul. Rossolimo 4
+ul. Rossolimo 4
+ul. Roterta 1
+ul. Roterta 1
+ul. Roterta 1
+ul. Roterta 1
+ul. Roterta 1
+ul. Nasosnaya 37
+ul. Nasosnaya 37
+ul. Nasosnaya 37
+ul. Nasosnaya 37
+per. Rubcov 4
+per. Rubcov 4
+per. Rubcov 4
+per. Rubcov 4
+per. Rubcov 4
+ul. Bajova 3 
+ul. Bajova 3 
+ul. Bajova 3 
+ul. Bajova 3 
+ul. Bajova 3 
+ul. Sadovaya 1/4
+ul. Sadovaya 1/4
+ul. Sadovaya 1/4
+ul. Sadovaya 1/4
+ul. Sadovaya 1/4
+Savolevskaya liniya 1
+Savolevskaya liniya 1
+Savolevskaya liniya 1
+Savolevskaya liniya 1
+Savolevskaya liniya 1
+ul. Solyanka 1 str. 3
+ul. Solyanka 1 str. 3
+ul. Solyanka 1 str. 3
+ul. Solyanka 1 str. 3
+ul. Solyanka 1 str. 3
+pr-kt Soyuzniy 2
+pr-kt Soyuzniy 2
+pr-kt Soyuzniy 2
+pr-kt Soyuzniy 2
+pr-kt Soyuzniy 2
+proezd Sportivniy 3 
+proezd Sportivniy 3 
+proezd Sportivniy 3 
+proezd Sportivniy 3 
+proezd Sportivniy 3 
+ul. Fadeeva 4
+ul. Fadeeva 4
+ul. Fadeeva 4
+ul. Fadeeva 4
+ul. Fadeeva 4
+ul. Fonvizina 2/14
+ul. Fonvizina 2/14
+ul. Fonvizina 2/14
+ul. Fonvizina 2/14
+ul. Fonvizina 2/14
+ul. Flotskaya 1A
+ul. Flotskaya 1A
+ul. Flotskaya 1A
+ul. Flotskaya 1A
+ul. Flotskaya 1A
+ul. Fabrichnaya 6
+ul. Fabrichnaya 6
+ul. Fabrichnaya 6
+ul. Fabrichnaya 6
+ul. Fabrichnaya 6
+ul. Iljinka 3/8 str. 1
+ul. Iljinka 3/8 str. 1
+ul. Iljinka 3/8 str. 1
+ul. Iljinka 3/8 str. 1
+ul. Iljinka 3/8 str. 1
+ul. Iniciativnaya 3
+ul. Iniciativnaya 3
+ul. Iniciativnaya 3
+ul. Iniciativnaya 3
+ul. Iniciativnaya 3
+ul. Varvarka 12 
+ul. Varvarka 2
+ul. Varvarka 4
+ul. Varvarka 10/2
+ul. Varvarka10/3
+ul. Varvarka 6/4
+ul. Varvarka 6/1 
+Borisa Galushkina 7
+Borisa Galushkina 3/1
+Borisa Galushkina  3/2
+Borisa Galushkina 9 
+Borisa Galushkina 10
+Borisa Galushkina 16
+Borisa Galushkina 26
+Borisa Galushkina 27/1
+Borisa Galushkina 2716
+Vol'naya 1
+Vol'naya 3
+Vol'naya 4
+Vol'naya 5
+Vol'naya 18
+Vol'naya 35
+Vol'naya 37
+Vol'naya 39
+Vol'naya 30 
+Vol'naya 28
+ul. Veshnih Vod 2
+ul. Veshnih Vod 2/3
+ul. Veshnih Vod 4 st77
+ul. Veshnih Vod 4st 73
+ul. Veshnih Vod 4st12
+"Sretenka 16/2	"
+Sretenka 26/1
+Sretenka 7
+Sretenka 8
+Sretenka 9
+per. Pyzhevskij 1 
+per. Pyzhevskij 5st1
+per. Pyzhevskij 3st1
+per. Pyzhevskij 7st3
+per. Pyzhevskij 7st1
+ul. Alabyana 3/1
+ul. Alabyana 3/2
+ul. Alabyana 3/3
+ul. Alabyana 5
+ul. Alabyana 7
+ul. Alabyana 12k1
+ul. Alabyana 12k2
+ul. Alabyana 12k3
+ul. Alabyana 12k4
+prospekt Andropova 5
+prospekt Andropova 6
+prospekt Andropova 6/1
+prospekt Andropova 6/2
+prospekt Andropova 18st2
+prospekt Andropova 15
+prospekt Andropova 17k2
+prospekt Andropova 17k3
+prospekt Andropova 19
+Bochkova 10/1
+Bochkova 10/2
+Bochkova 10/3
+Bochkova 10/4
+Bochkova 10/5
+Muravskaya 14k5
+Muravskaya 14k6
+Muravskaya 14k7
+Muravskaya 14k8
+Muravskaya 14k9
+Bahrushina 8st8
+Bahrushina 8st9
+Bahrushina 8st10
+Bahrushina 8st12
+Bahrushina 8st14
+Bahrushina 17st1
+Bahrushina 17st2
+Bahrushina 17st5
+Bahrushina 17st6
+Bahrushina 17st7
+ul. Bronnickaya 4
+ul. Bronnickaya 10
+ul. Bronnickaya 6
+ul. Bronnickaya 12
+ul. Bronnickaya 8/9
+ul. Mishina 27
+ul. Mishina 28
+ul. Mishina 29
+ul. Mishina 4
+ul. Mishina 14
+Paromnaya 5k1
+Paromnaya 5k2
+Paromnaya 5k3
+Paromnaya 9k1
+Paromnaya 9k2
+Prokatnaya 1
+Prokatnaya 2
+Prokatnaya 7
+Prokatnaya 7st1
+Prokatnaya 7st2
+ul. Listopadnaya 3
+ul. Listopadnaya 4
+ul. Listopadnaya 5
+ul. Listopadnaya 6
+ul. Listopadnaya 1/3
+b Myachkovskij 5k1
+b Myachkovskij 5k2
+b Myachkovskij 5k3
+b Myachkovskij 6
+b Myachkovskij 6k1
+ul. Vilisa Lacisa 2st3
+ul. Vilisa Lacisa 2st4
+ul. Vilisa Lacisa 2st5
+ul. Vilisa Lacisa 2st6
+ul. Vilisa Lacisa 2k1
+Starokachalovskaya 5 st4
+Starokachalovskaya 5 st5
+Starokachalovskaya 5 st6
+Starokachalovskaya 5 st7
+Starokachalovskaya 5 st8
+ul. Stahanovskaya 8st8
+ul. Stahanovskaya 8st9
+ul. Stahanovskaya 8st10
+ul. Stahanovskaya 8st11
+ul. Stahanovskaya 8st12
+per. Butikovskij 3
+per. Butikovskij 5
+per. Butikovskij 7
+per. Butikovskij 9
+per. Butikovskij 18
+Ostryakova 5
+Ostryakova 6
+Ostryakova 7
+Ostryakova 8
+Ostryakova 9
+Anosova 1
+Anosova 1st1
+Anosova 1st2
+Anosova 1st4
+Anosova 1st5
+ul. Botanicheskaya 2st1
+ul. Botanicheskaya 2st2
+ul. Botanicheskaya 2st3
+ul. Botanicheskaya 2st4
+ul. Botanicheskaya 2st5
+Bazovaya 13
+Bazovaya 15
+Bazovaya 17
+Bazovaya 19
+Bazovaya 18
+Novolesnaya 4
+Novolesnaya 5
+Novolesnaya 11
+Novolesnaya 18k1
+Novolesnaya 18k2
+Novolesnaya 18k3
+Golovachyova 31st1
+Golovachyova 31st2
+Golovachyova 31st3
+Golovachyova 31st4
+Golovachyova 31st5
+ul. Amurskaya 1st1
+ul. Amurskaya 1st2
+ul. Amurskaya 1st3
+ul. Amurskaya 1st4
+ul. Amurskaya 1st5
+ul. Aviatorov 5st1
+ul. Aviatorov 5st2
+ul. Aviatorov 5st3
+ul. Aviatorov 5st4
+ul. Aviatorov 5st5
+ul. Aviatorov 12
+ul. Aviatorov 12st1
+ul. Aviatorov 12st2
+ul. Aviatorov 18
+ul. Aviatorov 18k1
+ul. Akademika Komarova 10
+ul. Akademika Komarova 11
+ul. Akademika Komarova 12
+ul. Akademika Komarova 13
+ul. Akademika Komarova 14
+Sovhoznaya 1st1
+Sovhoznaya 1st11
+Sovhoznaya 1st3
+Sovhoznaya 1st14
+Sovhoznaya 1st5
+Sovhoznaya 12
+Sovhoznaya 14
+Sovhoznaya 16
+Sovhoznaya 18k1
+Sovhoznaya 18k4
+ul. Annenskaya 1
+ul. Annenskaya 2
+ul. Annenskaya 3
+ul. Annenskaya 4
+ul. Annenskaya 5
+per. Lyshchikov 10st1
+per. Lyshchikov 10st2
+per. Lyshchikov 12st1
+per. Lyshchikov 3st1
+per. Lyshchikov 5st1
+ul. Menzhinskogo 5
+ul. Menzhinskogo 6
+ul. Menzhinskogo 7
+ul. Menzhinskogo 3
+ul. Menzhinskogo 10
+ul. Menzhinskogo 36st1
+ul. Menzhinskogo 36st2
+ul. Menzhinskogo 36st3
+ul. Menzhinskogo 36st4
+ul. Menzhinskogo 36st5
+Kul'neva 3st1
+Kul'neva 3st2
+Kul'neva 3st3
+Kul'neva 3st4
+Kul'neva 5
+Polbina 3st1
+Polbina 3st2
+Polbina 3st3
+Polbina 34st2
+Polbina 34st3
+Polbina 18
+Polbina 20
+Polbina 24
+Polbina 26
+Polbina 28
+Borovaya 3 str.1
+Borovaya 3 str.2
+Borovaya 3 str.3
+Borovaya 3 str.4
+Borovaya 3 str.5
+Borovaya 3 str.10
+Borovaya 3 str.12
+Borovaya 3 str.13
+Borovaya 3 str.19
+Borovaya 3 str.20
+Belyakova 1
+Belyakova 1 str.1
+Belyakova 1 str.1A
+Belyakova 2 str.1
+Belyakova 2 str.2
+Belyakova 2 str.3
+Belyakova 2 str.4
+Belyakova 3 str.1
+Belyakova 4
+Belyakova 6
+Bogdanova 2
+Bogdanova 4
+Bogdanova 6
+Bogdanova 8
+Bogdanova 10
+Bogdanova 12
+Bogdanova 14
+Bogdanova 16
+Bogdanova 19
+Bogdanova 21
+Volhonka 5/6 str.4
+Volhonka 5/6 str.7
+Volhonka 5/6 str.8
+Volhonka 5/6 str.9
+Volhonka 6
+Volhonka 6 str.2
+Volhonka 6 str.5
+Volhonka 6 str.6
+Volhonka 6 str.7
+Volhonka 12
+Bazhova 1
+Bazhova 2
+Bazhova 3
+Bazhova 4
+Bazhova 5
+Bazhova 6
+Bazhova 7
+Bazhova 8
+Bazhova 9
+Bazhova 13
+Bardina 4 str.1
+Bardina 4 str.2
+Bardina 4 str.3
+Bardina 4 str.4
+Bardina 4 str.6
+Bardina 4 str.7
+Bardina 4 str.11
+Bardina 4 str.21
+Bardina 4 str.22
+Bardina 4 str.23
+Vzletnaya 1
+Vzletnaya 2
+Vzletnaya 3
+Vzletnaya 4 str.1
+Vzletnaya 5
+Vzletnaya 6 str.1
+Vzletnaya 8
+Vzletnaya 10 str.1
+Vzletnaya 12
+Vzletnaya 14
+Gagarina 1
+Gagarina 2
+Gagarina 3
+Gagarina 4
+Gagarina 5
+Gagarina 6
+Gagarina 7
+Gagarina 8
+Gagarina 9
+Gagarina 10
+Govorova 1
+Govorova 3
+Govorova 3 str.2
+Govorova 3A
+Govorova 5
+Govorova 6
+Govorova 6 str.2
+Govorova 6 str.3
+Govorova 6 str.4
+Govorova 6 str.6
+Aviazionaya 13
+Aviazionaya 17
+Aviazionaya 19
+Aviazionaya 23
+Aviazionaya 24
+Aviazionaya 35
+Aviazionaya 40
+Aviazionaya 63
+Aviazionaya 77
+Aviazionaya 79
+Borovaya 3 str.1
+Borovaya 3 str.2
+Borovaya 3 str.3
+Borovaya 3 str.4
+Borovaya 3 str.5
+Borovaya 3 str.10
+Borovaya 3 str.12
+Borovaya 3 str.13
+Borovaya 3 str.19
+Borovaya 3 str.20
+Belyakova 1
+Belyakova 1 str.1
+Belyakova 1 str.1A
+Belyakova 2 str.1
+Belyakova 2 str.2
+Belyakova 2 str.3
+Belyakova 2 str.4
+Belyakova 3 str.1
+Belyakova 4
+Belyakova 6
+Bogdanova 2
+Bogdanova 4
+Bogdanova 6
+Bogdanova 8
+Bogdanova 10
+Bogdanova 12
+Bogdanova 14
+Bogdanova 16
+Bogdanova 19
+Bogdanova 21
+Volhonka 5/6 str.4
+Volhonka 5/6 str.7
+Volhonka 5/6 str.8
+Volhonka 5/6 str.9
+Volhonka 6
+Volhonka 6 str.2
+Volhonka 6 str.5
+Volhonka 6 str.6
+Volhonka 6 str.7
+Volhonka 12
+Bazhova 1
+Bazhova 2
+Bazhova 3
+Bazhova 4
+Bazhova 5
+Bazhova 6
+Bazhova 7
+Bazhova 8
+Bazhova 9
+Bazhova 13
+Bardina 4 str.1
+Bardina 4 str.2
+Bardina 4 str.3
+Bardina 4 str.4
+Bardina 4 str.6
+Bardina 4 str.7
+Bardina 4 str.11
+Bardina 4 str.21
+Bardina 4 str.22
+Bardina 4 str.23
+Vzletnaya 1
+Vzletnaya 2
+Vzletnaya 3
+Vzletnaya 4 str.1
+Vzletnaya 5
+Vzletnaya 6 str.1
+Vzletnaya 8
+Vzletnaya 10 str.1
+Vzletnaya 12
+Vzletnaya 14
+Gagarina 1
+Gagarina 2
+Gagarina 3
+Gagarina 4
+Gagarina 5
+Gagarina 6
+Gagarina 7
+Gagarina 8
+Gagarina 9
+Gagarina 10
+Govorova 1
+Govorova 3
+Govorova 3 str.2
+Govorova 3A
+Govorova 5
+Govorova 6
+Govorova 6 str.2
+Govorova 6 str.3
+Govorova 6 str.4
+Govorova 6 str.6
+Aviazionaya 13
+Aviazionaya 17
+Aviazionaya 19
+Aviazionaya 23
+Aviazionaya 24
+Aviazionaya 35
+Aviazionaya 40
+Aviazionaya 63
+Aviazionaya 77
+Aviazionaya 79
+Borovaya 3 str.1
+Borovaya 3 str.2
+Borovaya 3 str.3
+Borovaya 3 str.4
+Borovaya 3 str.5
+Borovaya 3 str.10
+Borovaya 3 str.12
+Borovaya 3 str.13
+Borovaya 3 str.19
+Borovaya 3 str.20
+Belyakova 1
+Belyakova 1 str.1
+Belyakova 1 str.1A
+Belyakova 2 str.1
+Belyakova 2 str.2
+Belyakova 2 str.3
+Belyakova 2 str.4
+Belyakova 3 str.1
+Belyakova 4
+Belyakova 6
+Bogdanova 2
+Bogdanova 4
+Bogdanova 6
+Bogdanova 8
+Bogdanova 10
+Bogdanova 12
+Bogdanova 14
+Bogdanova 16
+Bogdanova 19
+Bogdanova 21
+Volhonka 5/6 str.4
+Volhonka 5/6 str.7
+Volhonka 5/6 str.8
+Volhonka 5/6 str.9
+Volhonka 6
+Volhonka 6 str.2
+Volhonka 6 str.5
+Volhonka 6 str.6
+Volhonka 6 str.7
+Volhonka 12
+Bazhova 1
+Bazhova 2
+Bazhova 3
+Bazhova 4
+Bazhova 5
+Bazhova 6
+Bazhova 7
+Bazhova 8
+Bazhova 9
+Bazhova 13
+Bardina 4 str.1
+Bardina 4 str.2
+Bardina 4 str.3
+Bardina 4 str.4
+Bardina 4 str.6
+Bardina 4 str.7
+Bardina 4 str.11
+Bardina 4 str.21
+Bardina 4 str.22
+Bardina 4 str.23
+Vzletnaya 1
+Vzletnaya 2
+Vzletnaya 3
+Vzletnaya 4 str.1
+Vzletnaya 5
+Vzletnaya 6 str.1
+Vzletnaya 8
+Vzletnaya 10 str.1
+Vzletnaya 12
+Vzletnaya 14
+Gagarina 1
+Gagarina 2
+Gagarina 3
+Gagarina 4
+Gagarina 5
+Gagarina 6
+Gagarina 7
+Gagarina 8
+Gagarina 9
+Gagarina 10
+Govorova 1
+Govorova 3
+Govorova 3 str.2
+Govorova 3A
+Govorova 5
+Govorova 6
+Govorova 6 str.2
+Govorova 6 str.3
+Govorova 6 str.4
+Govorova 6 str.6
+Aviazionaya 13
+Aviazionaya 17
+Aviazionaya 19
+Aviazionaya 23
+Aviazionaya 24
+Aviazionaya 35
+Aviazionaya 40
+Aviazionaya 63
+Aviazionaya 77
+Aviazionaya 79
+Borovaya 3 str.1
+Borovaya 3 str.2
+Borovaya 3 str.3
+Borovaya 3 str.4
+Borovaya 3 str.5
+Borovaya 3 str.10
+Borovaya 3 str.12
+Borovaya 3 str.13
+Borovaya 3 str.19
+Borovaya 3 str.20
+Belyakova 1
+Belyakova 1 str.1
+Belyakova 1 str.1A
+Belyakova 2 str.1
+Belyakova 2 str.2
+Belyakova 2 str.3
+Belyakova 2 str.4
+Belyakova 3 str.1
+Belyakova 4
+Belyakova 6
+Bogdanova 2
+Bogdanova 4
+Bogdanova 6
+Bogdanova 8
+Bogdanova 10
+Bogdanova 12
+Bogdanova 14
+Bogdanova 16
+Bogdanova 19
+Bogdanova 21
+Volhonka 5/6 str.4
+Volhonka 5/6 str.7
+Volhonka 5/6 str.8
+Volhonka 5/6 str.9
+Volhonka 6
+Volhonka 6 str.2
+Volhonka 6 str.5
+Volhonka 6 str.6
+Volhonka 6 str.7
+Volhonka 12
+Bazhova 1
+Bazhova 2
+Bazhova 3
+Bazhova 4
+Bazhova 5
+Bazhova 6
+Bazhova 7
+Bazhova 8
+Bazhova 9
+Bazhova 13
+Bardina 4 str.1
+Bardina 4 str.2
+Bardina 4 str.3
+Bardina 4 str.4
+Bardina 4 str.6
+Bardina 4 str.7
+Bardina 4 str.11
+Bardina 4 str.21
+Bardina 4 str.22
+Bardina 4 str.23
+Vzletnaya 1
+Vzletnaya 2
+Vzletnaya 3
+Vzletnaya 4 str.1
+Vzletnaya 5
+Vzletnaya 6 str.1
+Vzletnaya 8
+Vzletnaya 10 str.1
+Vzletnaya 12
+Vzletnaya 14
+Gagarina 1
+Gagarina 2
+Gagarina 3
+Gagarina 4
+Gagarina 5
+Gagarina 6
+Gagarina 7
+Gagarina 8
+Gagarina 9
+Gagarina 10
+Govorova 1
+Govorova 3
+Govorova 3 str.2
+Govorova 3A
+Govorova 5
+Govorova 6
+Govorova 6 str.2
+Govorova 6 str.3
+Govorova 6 str.4
+Govorova 6 str.6
+Aviazionaya 13
+Aviazionaya 17
+Aviazionaya 19
+Aviazionaya 23
+Aviazionaya 24
+Aviazionaya 35
+Aviazionaya 40
+Aviazionaya 63
+Aviazionaya 77
+Aviazionaya 79
+Borovaya 3 str.1
+Borovaya 3 str.2
+Borovaya 3 str.3
+Borovaya 3 str.4
+Borovaya 3 str.5
+Borovaya 3 str.10
+Borovaya 3 str.12
+Borovaya 3 str.13
+Borovaya 3 str.19
+Borovaya 3 str.20
+Belyakova 1
+Belyakova 1 str.1
+Belyakova 1 str.1A
+Belyakova 2 str.1
+Belyakova 2 str.2
+Belyakova 2 str.3
+Belyakova 2 str.4
+Belyakova 3 str.1
+Belyakova 4
+Belyakova 6
+Bogdanova 2
+Bogdanova 4
+Bogdanova 6
+Bogdanova 8
+Bogdanova 10
+Bogdanova 12
+Bogdanova 14
+Bogdanova 16
+Bogdanova 19
+Bogdanova 21
+Volhonka 5/6 str.4
+Volhonka 5/6 str.7
+Volhonka 5/6 str.8
+Volhonka 5/6 str.9
+Volhonka 6
+Volhonka 6 str.2
+Volhonka 6 str.5
+Volhonka 6 str.6
+Volhonka 6 str.7
+Volhonka 12
+Bazhova 1
+Bazhova 2
+Bazhova 3
+Bazhova 4
+Bazhova 5
+Bazhova 6
+Bazhova 7
+Bazhova 8
+Bazhova 9
+Bazhova 13
+Bardina 4 str.1
+Bardina 4 str.2
+Bardina 4 str.3
+Bardina 4 str.4
+Bardina 4 str.6
+Bardina 4 str.7
+Bardina 4 str.11
+Bardina 4 str.21
+Bardina 4 str.22
+Bardina 4 str.23
+Vzletnaya 1
+Vzletnaya 2
+Vzletnaya 3
+Vzletnaya 4 str.1
+Vzletnaya 5
+Vzletnaya 6 str.1
+Vzletnaya 8
+Vzletnaya 10 str.1
+Vzletnaya 12
+Vzletnaya 14
+Gagarina 1
+Gagarina 2
+Gagarina 3
+Gagarina 4
+Gagarina 5
+Gagarina 6
+Gagarina 7
+Gagarina 8
+Gagarina 9
+Gagarina 10
+Govorova 1
+Govorova 3
+Govorova 3 str.2
+Govorova 3A
+Govorova 5
+Govorova 6
+Govorova 6 str.2
+Govorova 6 str.3
+Govorova 6 str.4
+Govorova 6 str.6
+Bardina 4/7
+Bardina 4/7
+Bardina 4/7
+ul. Alymova 5
+ul. Alymova 5
+ul. Alymova 5
+ul. Alymova 5
+ul. Alymova 5
+ul. Brusilova 30
+ul. Brusilova 30
+ul. Brusilova 30
+ul. Brusilova 30
+ul. Brusilova 30
+ul. Molchanovka M.4
+ul. Molchanovka M.4
+ul. Molchanovka M.4
+ul. Molchanovka M.4
+ul. Molchanovka M.4
+ul. Molchanovka M. 6
+ul. Molchanovka M. 6
+ul. Molchanovka M. 6
+ul. Derbenevskaya 12
+ul. Derbenevskaya 12
+ul. Derbenevskaya 12
+ul. Derbenevskaya 12
+ul. Derbenevskaya 12
+ul. Derbenevskaya 8
+ul. Derbenevskaya 8
+ul. Derbenevskaya 8
+ul. Derbenevskaya 8
+ul. Derbenevskaya 8
+ul. Rogova 5
+ul. Rogova 5
+ul. Rogova 5
+ul. Rogova 5
+ul. Rogova 5
+Armejskaya 9 k.55
+Armejskaya 9 k.55
+Armejskaya 9 k.55
+Armejskaya 9 k.55
+Armejskaya 9 k.55
+Smolenskaya 3
+Smolenskaya 3
+Smolenskaya 3
+Smolenskaya 3
+Smolenskaya 3
+pr-kt Andropova 8
+pr-kt Andropova 8
+pr-kt Andropova 8
+pr-kt Andropova 8
+pr-kt Andropova 8
+ul. Myasnickaya 48
+ul. Myasnickaya 48
+ul. Myasnickaya 48
+ul. Myasnickaya 48
+ul. Myasnickaya 48
+Sosinskaya 6
+Sosinskaya 6
+Sosinskaya 6
+Sosinskaya 6
+Sosinskaya 6
+shosse Besedinskoe 17
+shosse Besedinskoe 17
+shosse Besedinskoe 17
+shosse Besedinskoe 17
+shosse Besedinskoe 17
+nab. Bolotnaya 13
+nab. Bolotnaya 13
+nab. Bolotnaya 13
+nab. Bolotnaya 13
+nab. Bolotnaya 13
+Kominterna 4
+Kominterna 4
+Kominterna 4
+Kominterna 4
+Kominterna 4
+Vodnikov 20
+Vodnikov 20
+Vodnikov 20
+Vodnikov 20
+Vodnikov 20
+ Kominterna 8
+ Kominterna 8
+ Kominterna 8
+ Kominterna 8
+ Kominterna 8
+nab. Bolotnaya 15/1
+nab. Bolotnaya 15/1
+nab. Bolotnaya 15/1
+nab. Bolotnaya 15/1
+nab. Bolotnaya 15/1
+pr-kt Andropova 29
+pr-kt Andropova 29
+pr-kt Andropova 29
+pr-kt Andropova 29
+pr-kt Andropova 29
+ul. Derbenevskaya 1
+ul. Derbenevskaya 1
+ul. Derbenevskaya 1
+ul. Derbenevskaya 1
+ul. Derbenevskaya 1
+ul. Rogova 24
+ul. Rogova 24
+ul. Rogova 24
+ul. Rogova 24
+ul. Rogova 24
+Armejskaya 2 k.13
+Armejskaya 2 k.13
+Armejskaya 2 k.13
+Armejskaya 2 k.13
+Armejskaya 2 k.13
+Smolenskaya 6
+Smolenskaya 6
+Smolenskaya 6
+Smolenskaya 6
+Smolenskaya 6
+Myasnickaya 11
+Myasnickaya 11
+Myasnickaya 11
+Myasnickaya 11
+Myasnickaya 11
+Sosinskaya 43/8
+Sosinskaya 43/8
+Sosinskaya 43/8
+Sosinskaya 43/8
+Sosinskaya 43/8
+shosse Besedinskoe 15
+shosse Besedinskoe 15
+shosse Besedinskoe 15
+shosse Besedinskoe 15
+shosse Besedinskoe 15
+ul. Zelenodolskaya 7k1
+ul. Zelenodolskaya 7k1
+ul. Zelenodolskaya 7k1
+ul. Zelenodolskaya 7k1
+ul. Zelenodolskaya 7k1
+per. Zeljev 3
+per. Zeljev 3
+per. Zeljev 3
+per. Zeljev 3
+per. Zeljev 3
+ul. Zarechnaya 1k1
+ul. Zarechnaya 1k1
+ul. Zarechnaya 1k1
+ul. Zarechnaya 1k1
+ul. Zarechnaya 1k1
+ul. Meshcheryakova 2k2
+ul. Meshcheryakova 2k2
+ul. Meshcheryakova 2k2
+ul. Meshcheryakova 2k2
+ul. Meshcheryakova 2k2
+per. Mikulsky 4
+per. Mikulsky 4
+per. Mikulsky 4
+per. Mikulsky 4
+per. Mikulsky 4
+per. Mamonovsky 3k1
+per. Mamonovsky 3k1
+per. Mamonovsky 3k1
+per. Mamonovsky 3k1
+per. Mamonovsky 3k1
+ul. Tallinskaya 2
+ul. Tallinskaya 2
+ul. Tallinskaya 2
+ul. Tallinskaya 2
+ul. Tallinskaya 2
+ul. Tatarskaya 1
+ul. Tatarskaya 1
+ul. Tatarskaya 1
+ul. Tatarskaya 1
+ul. Tatarskaya 1
+ul. Trubetskaya 1k4
+ul. Trubetskaya 1k4
+ul. Trubetskaya 1k4
+ul. Trubetskaya 1k4
+ul. Trubetskaya 1k4
+ul. Turistskaya 3
+ul. Turistskaya 3
+ul. Turistskaya 3
+ul. Turistskaya 3
+ul. Turistskaya 3
+ul. Timurovskaya 5
+ul. Timurovskaya 5
+ul. Timurovskaya 5
+ul. Timurovskaya 5
+ul. Timurovskaya 5
+ul. Havskaya 8
+ul. Havskaya 8
+ul. Havskaya 8
+ul. Havskaya 8
+ul. Havskaya 8
+shosse Horoshevskoe 3
+shosse Horoshevskoe 3
+shosse Horoshevskoe 3
+shosse Horoshevskoe 3
+shosse Horoshevskoe 3
+ul. Usievicha 1A
+ul. Usievicha 1A
+ul. Usievicha 1A
+ul. Usievicha 1A
+ul. Usievicha 1A
+per. Uhtomskyi 4
+per. Uhtomskyi 4
+per. Uhtomskyi 4
+per. Uhtomskyi 4
+per. Uhtomskyi 4
+per.Uglovoy 2
+per.Uglovoy 2
+per.Uglovoy 2
+per.Uglovoy 2
+per.Uglovoy 2
+ul. Egerskaya 4
+ul. Egerskaya 4
+ul. Egerskaya 4
+ul. Egerskaya 4
+ul. Egerskaya 4
+per. Eliseevskiy 14
+per. Eliseevskiy 14
+per. Eliseevskiy 14
+per. Eliseevskiy 14
+per. Eliseevskiy 14
+b-r Eseninskiy 1/26 k.1 
+b-r Eseninskiy 1/26 k.1 
+b-r Eseninskiy 1/26 k.1 
+b-r Eseninskiy 1/26 k.1 
+b-r Eseninskiy 1/26 k.1 
+ul. Efremova 8
+ul. Efremova 8
+ul. Efremova 8
+ul. Efremova 8
+ul. Efremova 8
+shosse Obvodnoe 5
+shosse Obvodnoe 5
+shosse Obvodnoe 5
+shosse Obvodnoe 5
+shosse Obvodnoe 5
+b-r Osenniy 1A
+b-r Osenniy 1A
+b-r Osenniy 1A
+b-r Osenniy 1A
+b-r Osenniy 1A
+proezd Ostapovskiy 1k5
+proezd Ostapovskiy 1k5
+proezd Ostapovskiy 1k5
+proezd Ostapovskiy 1k5
+proezd Ostapovskiy 1k5
+per. Orlovskiy 3
+per. Orlovskiy 3
+per. Orlovskiy 3
+per. Orlovskiy 3
+per. Orlovskiy 3
+ul. Babaevksaya 3
+ul. Babaevksaya 3
+ul. Babaevksaya 3
+ul. Babaevksaya 3
+ul. Babaevksaya 3
+proezd Banniy 3/1 
+proezd Banniy 3/1 
+proezd Banniy 3/1 
+proezd Banniy 3/1 
+proezd Banniy 3/1 
+ul. Barishyha 4
+ul. Barishyha 4
+ul. Barishyha 4
+ul. Barishyha 4
+ul. Barishyha 4
+ul. Barklaya 1B
+ul. Barklaya 1B
+ul. Barklaya 1B
+ul. Barklaya 1B
+ul. Barklaya 1B
+ul. Bardina 4/4
+ul. Bardina 4/4
+ul. Bardina 4/4
+ul. Bardina 4/4
+ul. Bardina 4/4
+ul. Nabereznaya 4
+ul. Nabereznaya 4
+ul. Nabereznaya 4
+ul. Nabereznaya 4
+ul. Nabereznaya 4
+ul. Novodmitrovskaya 1/3
+ul. Novodmitrovskaya 1/3
+ul. Novodmitrovskaya 1/3
+ul. Novodmitrovskaya 1/3
+ul. Novodmitrovskaya 1/3
+ul. Nagornaya 1
+ul. Nagornaya 1
+ul. Nagornaya 1
+ul. Nagornaya 1
+ul. Nagornaya 1
+ul. Narvskaya 13
+ul. Narvskaya 13
+ul. Narvskaya 13
+ul. Narvskaya 13
+ul. Narvskaya 13
+ul. Nasosnaya 37
+ul. Rozanova 6
+ul. Rozanova 6
+ul. Rozanova 6
+ul. Rozanova 6
+ul. Rozanova 6
+ul. Rossolimo 4
+ul. Rossolimo 4
+ul. Rossolimo 4
+ul. Rossolimo 4
+ul. Rossolimo 4
+ul. Roterta 1
+ul. Roterta 1
+ul. Roterta 1
+ul. Roterta 1
+ul. Roterta 1
+ul. Nasosnaya 37
+ul. Nasosnaya 37
+ul. Nasosnaya 37
+ul. Nasosnaya 37
+per. Rubcov 4
+per. Rubcov 4
+per. Rubcov 4
+per. Rubcov 4
+per. Rubcov 4
+ul. Bajova 3 
+ul. Bajova 3 
+ul. Bajova 3 
+ul. Bajova 3 
+ul. Bajova 3 
+ul. Sadovaya 1/4
+ul. Sadovaya 1/4
+ul. Sadovaya 1/4
+ul. Sadovaya 1/4
+ul. Sadovaya 1/4
+Savolevskaya liniya 1
+Savolevskaya liniya 1
+Savolevskaya liniya 1
+Savolevskaya liniya 1
+Savolevskaya liniya 1
+ul. Solyanka 1 str. 3
+ul. Solyanka 1 str. 3
+ul. Solyanka 1 str. 3
+ul. Solyanka 1 str. 3
+ul. Solyanka 1 str. 3
+pr-kt Soyuzniy 2
+pr-kt Soyuzniy 2
+pr-kt Soyuzniy 2
+pr-kt Soyuzniy 2
+pr-kt Soyuzniy 2
+proezd Sportivniy 3 
+proezd Sportivniy 3 
+proezd Sportivniy 3 
+proezd Sportivniy 3 
+proezd Sportivniy 3 
+ul. Fadeeva 4
+ul. Fadeeva 4
+ul. Fadeeva 4
+ul. Fadeeva 4
+ul. Fadeeva 4
+ul. Fonvizina 2/14
+ul. Fonvizina 2/14
+ul. Fonvizina 2/14
+ul. Fonvizina 2/14
+ul. Fonvizina 2/14
+ul. Flotskaya 1A
+ul. Flotskaya 1A
+ul. Flotskaya 1A
+ul. Flotskaya 1A
+ul. Flotskaya 1A
+ul. Fabrichnaya 6
+ul. Fabrichnaya 6
+ul. Fabrichnaya 6
+ul. Fabrichnaya 6
+ul. Fabrichnaya 6
+ul. Iljinka 3/8 str. 1
+ul. Iljinka 3/8 str. 1
+ul. Iljinka 3/8 str. 1
+ul. Iljinka 3/8 str. 1
+ul. Iljinka 3/8 str. 1
+ul. Iniciativnaya 3
+ul. Iniciativnaya 3
+ul. Iniciativnaya 3
+ul. Iniciativnaya 3
+ul. Iniciativnaya 3
+ul. Varvarka 12 
+ul. Varvarka 2
+ul. Varvarka 4
+ul. Varvarka 10/2
+ul. Varvarka10/3
+ul. Varvarka 6/4
+ul. Varvarka 6/1 
+Borisa Galushkina 7
+Borisa Galushkina 3/1
+Borisa Galushkina  3/2
+Borisa Galushkina 9 
+Borisa Galushkina 10
+Borisa Galushkina 16
+Borisa Galushkina 26
+Borisa Galushkina 27/1
+Borisa Galushkina 2716
+Vol'naya 1
+Vol'naya 3
+Vol'naya 4
+Vol'naya 5
+Vol'naya 18
+Vol'naya 35
+Vol'naya 37
+Vol'naya 39
+Vol'naya 30 
+Vol'naya 28
+ul. Veshnih Vod 2
+ul. Veshnih Vod 2/3
+ul. Veshnih Vod 4 st77
+ul. Veshnih Vod 4st 73
+ul. Veshnih Vod 4st12
+"Sretenka 16/2	"
+Sretenka 26/1
+Sretenka 7
+Sretenka 8
+Sretenka 9
+per. Pyzhevskij 1 
+per. Pyzhevskij 5st1
+per. Pyzhevskij 3st1
+per. Pyzhevskij 7st3
+per. Pyzhevskij 7st1
+ul. Alabyana 3/1
+ul. Alabyana 3/2
+ul. Alabyana 3/3
+ul. Alabyana 5
+ul. Alabyana 7
+ul. Alabyana 12k1
+ul. Alabyana 12k2
+ul. Alabyana 12k3
+ul. Alabyana 12k4
+prospekt Andropova 5
+prospekt Andropova 6
+prospekt Andropova 6/1
+prospekt Andropova 6/2
+prospekt Andropova 18st2
+prospekt Andropova 15
+prospekt Andropova 17k2
+prospekt Andropova 17k3
+prospekt Andropova 19
+Bochkova 10/1
+Bochkova 10/2
+Bochkova 10/3
+Bochkova 10/4
+Bochkova 10/5
+Muravskaya 14k5
+Muravskaya 14k6
+Muravskaya 14k7
+Muravskaya 14k8
+Muravskaya 14k9
+Bahrushina 8st8
+Bahrushina 8st9
+Bahrushina 8st10
+Bahrushina 8st12
+Bahrushina 8st14
+Bahrushina 17st1
+Bahrushina 17st2
+Bahrushina 17st5
+Bahrushina 17st6
+Bahrushina 17st7
+ul. Bronnickaya 4
+ul. Bronnickaya 10
+ul. Bronnickaya 6
+ul. Bronnickaya 12
+ul. Bronnickaya 8/9
+ul. Mishina 27
+ul. Mishina 28
+ul. Mishina 29
+ul. Mishina 4
+ul. Mishina 14
+Paromnaya 5k1
+Paromnaya 5k2
+Paromnaya 5k3
+Paromnaya 9k1
+Paromnaya 9k2
+Prokatnaya 1
+Prokatnaya 2
+Prokatnaya 7
+Prokatnaya 7st1
+Prokatnaya 7st2
+ul. Listopadnaya 3
+ul. Listopadnaya 4
+ul. Listopadnaya 5
+ul. Listopadnaya 6
+ul. Listopadnaya 1/3
+b Myachkovskij 5k1
+b Myachkovskij 5k2
+b Myachkovskij 5k3
+b Myachkovskij 6
+b Myachkovskij 6k1
+ul. Vilisa Lacisa 2st3
+ul. Vilisa Lacisa 2st4
+ul. Vilisa Lacisa 2st5
+ul. Vilisa Lacisa 2st6
+ul. Vilisa Lacisa 2k1
+Starokachalovskaya 5 st4
+Starokachalovskaya 5 st5
+Starokachalovskaya 5 st6
+Starokachalovskaya 5 st7
+Starokachalovskaya 5 st8
+ul. Stahanovskaya 8st8
+ul. Stahanovskaya 8st9
+ul. Stahanovskaya 8st10
+ul. Stahanovskaya 8st11
+ul. Stahanovskaya 8st12
+per. Butikovskij 3
+per. Butikovskij 5
+per. Butikovskij 7
+per. Butikovskij 9
+per. Butikovskij 18
+Ostryakova 5
+Ostryakova 6
+Ostryakova 7
+Ostryakova 8
+Ostryakova 9
+Anosova 1
+Anosova 1st1
+Anosova 1st2
+Anosova 1st4
+Anosova 1st5
+ul. Botanicheskaya 2st1
+ul. Botanicheskaya 2st2
+ul. Botanicheskaya 2st3
+ul. Botanicheskaya 2st4
+ul. Botanicheskaya 2st5
+Bazovaya 13
+Bazovaya 15
+Bazovaya 17
+Bazovaya 19
+Bazovaya 18
+Novolesnaya 4
+Novolesnaya 5
+Novolesnaya 11
+Novolesnaya 18k1
+Novolesnaya 18k2
+Novolesnaya 18k3
+Golovachyova 31st1
+Golovachyova 31st2
+Golovachyova 31st3
+Golovachyova 31st4
+Golovachyova 31st5
+ul. Amurskaya 1st1
+ul. Amurskaya 1st2
+ul. Amurskaya 1st3
+ul. Amurskaya 1st4
+ul. Amurskaya 1st5
+ul. Aviatorov 5st1
+ul. Aviatorov 5st2
+ul. Aviatorov 5st3
+ul. Aviatorov 5st4
+ul. Aviatorov 5st5
+ul. Aviatorov 12
+ul. Aviatorov 12st1
+ul. Aviatorov 12st2
+ul. Aviatorov 18
+ul. Aviatorov 18k1
+ul. Akademika Komarova 10
+ul. Akademika Komarova 11
+ul. Akademika Komarova 12
+ul. Akademika Komarova 13
+ul. Akademika Komarova 14
+Sovhoznaya 1st1
+Sovhoznaya 1st11
+Sovhoznaya 1st3
+Sovhoznaya 1st14
+Sovhoznaya 1st5
+Sovhoznaya 12
+Sovhoznaya 14
+Sovhoznaya 16
+Sovhoznaya 18k1
+Sovhoznaya 18k4
+ul. Annenskaya 1
+ul. Annenskaya 2
+ul. Annenskaya 3
+ul. Annenskaya 4
+ul. Annenskaya 5
+per. Lyshchikov 10st1
+per. Lyshchikov 10st2
+per. Lyshchikov 12st1
+per. Lyshchikov 3st1
+per. Lyshchikov 5st1
+ul. Menzhinskogo 5
+ul. Menzhinskogo 6
+ul. Menzhinskogo 7
+ul. Menzhinskogo 3
+ul. Menzhinskogo 10
+ul. Menzhinskogo 36st1
+ul. Menzhinskogo 36st2
+ul. Menzhinskogo 36st3
+ul. Menzhinskogo 36st4
+ul. Menzhinskogo 36st5
+Kul'neva 3st1
+Kul'neva 3st2
+Kul'neva 3st3
+Kul'neva 3st4
+Kul'neva 5
+Polbina 3st1
+Polbina 3st2
+Polbina 3st3
+Polbina 34st2
+Polbina 34st3
+Polbina 18
+Polbina 20
+Polbina 24
+Polbina 26
+Polbina 28
