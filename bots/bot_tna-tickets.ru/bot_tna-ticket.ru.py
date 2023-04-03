@@ -11,16 +11,13 @@ class ObserverBot(ObserverBotSample):
 
     def __init__(self, *init_args, **from_needed_events):
         super().__init__(*init_args, **from_needed_events)
+        self.from_observer = None
+        self.session = None
 
     def before_body(self):
-        self.session = requests.Session()
-        self.x_csrf_token, self.csrf_frontend = self.get_tokens()
-        self.event_id = self.URL.split('=')[1].split('/')[0]
+        self.session = main_utils.ProxySession(self)
 
         self.from_observer = {
-            'event_id': self.event_id,
-            'x_csrf_token': self.x_csrf_token,
-            'csrf_frontend': self.csrf_frontend,
             'session': self.session,
             'proxies': self.requests_proxies()
         }
@@ -397,7 +394,7 @@ if __name__ == '__main__':
     scripted = args_by_os()
 
     # Starting account pool
-    accounts = start_accounts_queue(authorization.CSKAHQueue, mix=True)
+    accounts = start_accounts_queue(authorization.TNAQueue)
 
     # Defining global variables
     tickets_q = Queue()
