@@ -16,7 +16,7 @@ class ObserverBot(ObserverBotSample):
 
     def before_body(self):
         self.session = main_utils.ProxySession(self)
-
+        self.
         self.from_observer = {
             'session': self.session,
             'proxies': self.requests_proxies()

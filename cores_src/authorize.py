@@ -5,9 +5,8 @@ import requests
 import urllib3
 from urllib3.exceptions import InsecureRequestWarning
 
-from telecore import TeleCore
-
-import main_utils
+from .telecore import TeleCore
+from . import main_utils
 from .vis import *
 from .cores import BotCore
 

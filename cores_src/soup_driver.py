@@ -1,10 +1,11 @@
 import json
 import requests
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
+from urllib3 import disable_warnings
+from urllib3.exceptions import InsecureRequestWarning
 
 from bs4 import BeautifulSoup
 
-from vis import *
+from .vis import *
 
 class HrenDriver:
     """
@@ -228,7 +229,8 @@ class HrenDriver:
         self.cookies_on_tabs[self.tab] = self.get_cookies()
         with open(r'json\cookies.json', 'w') as f:
             json.dump(self.cookies_on_tabs, f, indent=2)
-        
+
+
 def to_cjd(name, value, domain, path):
     cookie = {
         "version": 0, "name": name, "value": value,
@@ -238,7 +240,8 @@ def to_cjd(name, value, domain, path):
         "rest": {'HttpOnly': None}, "rfc2109": False
     }
     return cookie
-        
+
+
 def cookies_str_to_list(cookies_str, domain):
     cookies_list = []
     for str_cookie in cookies_str.split('; '):
@@ -247,10 +250,13 @@ def cookies_str_to_list(cookies_str, domain):
         cookies_list.append(cookie)
     return cookies_list
 
+
 def request_init(func, url, **kwargs):
     try:
         r = func(url, **kwargs)
     except requests.exceptions.SSLError:
         r = func(url, **kwargs, verify=False)
     return r
-requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+
+
+disable_warnings(InsecureRequestWarning)
