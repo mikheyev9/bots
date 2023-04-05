@@ -238,7 +238,7 @@ class AccountsQueue(threading.Thread):
     def is_filled(self):
         print(self.filled, self.to_inspect.qsize())
         return self.filled and not self.to_inspect.qsize()
-            
+
     def put_very_old(self, account):
         account.pickling = False
         try:
