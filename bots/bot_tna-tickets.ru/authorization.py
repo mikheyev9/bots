@@ -34,13 +34,18 @@ class TNAQueue(authorize.AccountsQueue):
             'sec-ch-ua-mobile': '?0',
             'sec-ch-ua-platform': '"Windows"',
         }
-        r = self.session.get(url, headers=headers)
+        r = account.session.get(url, headers=headers)
+
+        print(f'is logined r.text: {r.text}')
+        print(f'account login: {account.login}')
 
         status = False
         if 'user' in r.json():
             if 'login' in r.json()['user']:
                 if r.json()['user']['login'] == account.login:
                     status = True
+                else:
+                    print('Путаница в аккаунтах!')
 
         return status
 
@@ -70,7 +75,7 @@ class TNAQueue(authorize.AccountsQueue):
             'password': account.password,
         }
 
-        r = self.session.post(url, headers=headers, json=data)
+        r = account.session.post(url, headers=headers, json=data)
 
         error = r.json().get('error')
         if error:
@@ -92,3 +97,34 @@ if __name__ == '__main__':
     while True:
         input()
         print(accounts.qsize())
+        account = accounts.get()
+        print(account)
+        print(account.get_proxy())
+        print(accounts.is_logined(account))
+
+        user_agent = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+                      ' AppleWebKit/537.36 (KHTML, like Gecko)'
+                      ' Chrome/96.0.4664.45 Safari/537.36')
+        url = 'https://www.ak-bars.ru/tickets/13737'
+        headers = {
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Language': 'en-MY,en;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,vi;q=0.5',
+            'Cache-Control': 'no-cache',
+            'Connection': 'keep-alive',
+            'Host': 'www.ak-bars.ru',
+            'Pragma': 'no-cache',
+            'Referer': 'https://auth.ak-bars.ru/',
+            'Sec-Fetch-Dest': 'document',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'same-origin',
+            'Sec-Fetch-User': '?1',
+            'Upgrade-Insecure-Requests': '1',
+            'User-Agent': user_agent,
+            'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+        }
+        r = account.session.get(url, headers=headers)
+
+        print(r.text)
