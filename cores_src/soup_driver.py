@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 
 from .vis import *
 
+
 class HrenDriver:
     """
     Available options: proxies, ChrTab
