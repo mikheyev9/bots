@@ -343,6 +343,7 @@ class AccountsQueue(threading.Thread):
         
     def run_inspector(self):
         last_time_mes = 0
+
         def inspect(account):
             self.inspector_working += 1
             account.pickling = False
@@ -369,8 +370,10 @@ class AccountsQueue(threading.Thread):
                 return False
             self.ready.put(account)
             self.inspector_working -= 1
+
         def on_cancel():
             self.inspector_working -= 1
+
         while True:
             account = self.to_inspect.get()
             if self.ready.qsize() == 0 and time.time() - last_time_mes > 300 and self.accounts_check:

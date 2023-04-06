@@ -7,9 +7,30 @@ from cores_src.cores import *
 
 
 class TNAQueue(authorize.AccountsQueue):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    def __init__(self, accounts_path, api_token, **kwargs):
+        super().__init__(accounts_path, **kwargs)
+        self.api_token = api_token
         self.ak_token = ''
+
+    def _for_future_first_check(self, account):
+        url = f'https://api.tna-tickets.ru/api/v1/user/login-dls-token?' \
+              f'access-token={self.api_token}'
+        headers = {
+            'Accept': 'application/json, text/plain, */*',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Language': 'ru-RU,ru;q=0.9',
+            'Authorization': f'Bearer {self.ak_token}',
+            'Origin': 'https://www.ak-bars.ru',
+            'Referer': 'https://www.ak-bars.ru/tickets/',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-site',
+            'User-Agent': self.user_agent,
+            'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+        }
+        r = account.post(url, headers=headers)
 
     def first_check(self, account):
         # пока неизвестно как удалять билеты из корзины поэтому закоменчено
@@ -25,7 +46,7 @@ class TNAQueue(authorize.AccountsQueue):
             'Connection': 'keep-alive',
             'Host': 'api.ak-bars.ru',
             'Origin': 'https://www.ak-bars.ru',
-            'Referer': 'https://www.ak-bars.ru/tickets/',
+            'Referer': 'https://www.ak-bars.ru/tickets',
             'Sec-Fetch-Dest': 'empty',
             'Sec-Fetch-Mode': 'cors',
             'Sec-Fetch-Site': 'same-site',
@@ -34,7 +55,7 @@ class TNAQueue(authorize.AccountsQueue):
             'sec-ch-ua-mobile': '?0',
             'sec-ch-ua-platform': '"Windows"',
         }
-        r = account.session.get(url, headers=headers)
+        r = account.get(url, headers=headers)
 
         print(f'is logined r.text: {r.text}')
         print(f'account login: {account.login}')
@@ -60,7 +81,7 @@ class TNAQueue(authorize.AccountsQueue):
             'Content-Type': 'application/json;charset=UTF-8',
             'Host': 'api.ak-bars.ru',
             'Origin': 'https://auth.ak-bars.ru',
-            'Referer': 'https://auth.ak-bars.ru/',
+            'Referer': 'https://auth.ak-bars.ru',
             'Sec-Fetch-Dest': 'empty',
             'Sec-Fetch-Mode': 'cors',
             'Sec-Fetch-Site': 'same-site',
@@ -75,7 +96,7 @@ class TNAQueue(authorize.AccountsQueue):
             'password': account.password,
         }
 
-        r = account.session.post(url, headers=headers, json=data)
+        r = account.post(url, headers=headers, json=data)
 
         error = r.json().get('error')
         if error:
@@ -92,7 +113,8 @@ class TNAQueue(authorize.AccountsQueue):
 
 
 if __name__ == '__main__':
-    accounts = TNAQueue('authorize_accounts.txt')
+    api_token = '5f4dbf2e5629d8cc19e7d51874266678'
+    accounts = TNAQueue('authorize_accounts.txt', api_token)
     accounts.start()
     while True:
         input()
@@ -125,6 +147,6 @@ if __name__ == '__main__':
             'sec-ch-ua-mobile': '?0',
             'sec-ch-ua-platform': '"Windows"',
         }
-        r = account.session.get(url, headers=headers)
+        r = account.get(url, headers=headers)
 
         print(r.text)

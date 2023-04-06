@@ -11,70 +11,17 @@ class ObserverBot(ObserverBotSample):
 
     def __init__(self, *init_args, **from_needed_events):
         super().__init__(*init_args, **from_needed_events)
+        self.account = None
         self.from_observer = None
         self.session = None
 
     def before_body(self):
-        self.session = main_utils.ProxySession(self)
-        self.
+        self.account = self.accounts.get()
+        self.prepare_session()
         self.from_observer = {
             'session': self.session,
             'proxies': self.requests_proxies()
         }
-
-    def get_tokens(self):
-        headers = {
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-encoding': 'gzip, deflate, br',
-            'accept-language': 'ru-RU,ru;q=0.9',
-            'cache-control': 'no-cache',
-            'pragma': 'no-cache',
-            'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-platform': '"Windows"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': self.user_agent
-        }
-        r = self.session.get(self.from_needed_events['url'], headers=headers, proxies=self.requests_proxies())
-        if 'queue' in r.url:
-            queue_id = double_split(r.text, 'serverRendered:', '</script')
-            queue_id = double_split(queue_id, '"', '"')
-            r = self.solve_queue(r, queue_id, headers)
-            if not r:
-                raise RuntimeError('Бот не смог пройти очередь')
-
-        x_csrf_token = double_split(r.text, 'name="csrf-token" content="', '"')
-        _csrf_frontend = double_split(r.text, 'name="_csrf-frontend" value="', '"')
-
-        return x_csrf_token, _csrf_frontend
-
-    def renew_session(self, r):
-        self.slide_tab()
-        self.session = requests.Session()
-        self.x_csrf_token = self.get_xcsrf_token()
-        self.bprint(self.get_proxy()[1])
-        self.bprint(self.x_csrf_token)
-        raise RuntimeError(r.text[:70])
-
-    def solve_queue(self, r, queue_id, headers):
-        queue_site = double_split(r.text, '<span class="d-block">', '</span>')
-        self.tprint(f'Бот попал в очередь, номер в очереди - {queue_site}')
-        print(f'Бот попал в очередь, номер в очереди - {queue_site}')
-        tries = 0
-        while 'queue' in r.url:
-            if tries == 25:
-                print('Бот не смог пройти очередь')
-                return False
-            time.sleep(5)
-            url = f'https://tickets.cska-hockey.ru/?queue={queue_id}'
-            r = self.session.get(url, headers=headers, proxies=self.requests_proxies())
-            tries += 1
-        r = self.session.get(self.URL, headers=headers, proxies=self.requests_proxies())
-        return r
 
     def get_request(self):
         headers = {
@@ -390,11 +337,59 @@ class OrderBot(OrderBotSample):
         return r.headers['Location']
 
 
+def get_api_token(session):
+    url = 'https://www.ak-bars.ru/'
+    headers = {
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9',
+        'cache-control': 'no-cache',
+        'pragma': 'no-cache',
+        'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-platform': '"Windows"',
+        'sec-fetch-dest': 'document',
+        'sec-fetch-mode': 'navigate',
+        'sec-fetch-site': 'none',
+        'sec-fetch-user': '?1',
+        'upgrade-insecure-requests': '1',
+        'user-agent': BotCore.user_agent
+    }
+    r = session.get(url, headers=headers)
+    if 'data-hid="gtm-noscript" data-pbody="true"' not in r.text:
+        raise RuntimeError('The page was not loaded')
+    script_dirs = lrsplit(r.text, 'link rel="preload" href="', '"')
+
+    script_url = script_dirs[-2]
+    headers = {
+        'accept': '*/*',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9',
+        'cache-control': 'no-cache',
+        'connection': 'keep-alive',
+        'host': 'www.ak-bars.ru',
+        'pragma': 'no-cache',
+        'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-platform': '"Windows"',
+        'sec-fetch-dest': 'script',
+        'sec-fetch-mode': 'no-cors',
+        'sec-fetch-site': 'same-origin',
+        'upgrade-insecure-requests': '1',
+        'user-agent': BotCore.user_agent
+    }
+    r = session.get(script_url, headers=headers)
+    if 'TNA_API_KEY: "' not in r.text:
+        raise RuntimeError('No API key found in JS. Auth method might be changed')
+    return double_split(r.text, 'TNA_API_KEY: "', '"')
+
+
 if __name__ == '__main__':
     scripted = args_by_os()
 
     # Starting account pool
-    accounts = start_accounts_queue(authorization.TNAQueue)
+    api_token = get_api_token(requests.Session())
+    accounts = start_accounts_queue(authorization.TNAQueue, api_token)
 
     # Defining global variables
     tickets_q = Queue()
@@ -402,7 +397,8 @@ if __name__ == '__main__':
 
     # Starting buying threads
     manager_socket = start_buying_bots(ObserverBot, SectorGrabber,
-                                       OrderBot, sectors_q, tickets_q)
+                                       OrderBot, sectors_q, tickets_q,
+                                       accounts_q=accounts)
     start_event_parser('ЦСКА Хоккей. Мск. ', 'https://tickets.cska-hockey.ru/')
     while True:
         input()

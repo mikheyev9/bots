@@ -2445,5 +2445,5 @@ def screen_r(text, addition=''):
 
 
 source_path = main_utils.get_source_path()
-default_fore = Fore.BLACK
-default_back = Back.WHITE
+default_fore = Fore.RESET
+default_back = Back.RESET

@@ -97,24 +97,24 @@ def differences(left, right):
 
 
 def green(mes):
-    return Fore.GREEN + Back.WHITE + str(mes) + default_fore + default_back
+    return Fore.GREEN + Back.RESET + str(mes) + default_fore + default_back
 
 
 def red(mes):
-    return Fore.RED + Back.WHITE + str(mes) + default_fore + default_back
+    return Fore.RED + Back.RESET + str(mes) + default_fore + default_back
 
 
 def blue(mes):
-    return Fore.BLUE + Back.WHITE + str(mes) + default_fore + default_back
+    return Fore.BLUE + Back.RESET + str(mes) + default_fore + default_back
 
 
 def blueprint(mes):
-    mes = Fore.BLUE + Back.WHITE + str(mes) + default_fore + default_back
+    mes = Fore.BLUE + Back.RESET + str(mes) + default_fore + default_back
     print(mes)
 
 
 def yellow(mes):
-    return Fore.YELLOW + Back.WHITE + str(mes) + default_fore + default_back
+    return Fore.YELLOW + Back.RESET + str(mes) + default_fore + default_back
 
 
 def colorize(mes, color):

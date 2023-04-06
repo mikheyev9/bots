@@ -1,4 +1,4 @@
-url = 'https://www.ak-bars.ru/tickets/13722'
+url = f'https://www.ak-bars.ru/tickets/13722'
 headers = {
    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
    'Accept-Encoding': 'gzip, deflate, br',
@@ -21,7 +21,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.ak-bars.ru/portal/sponsors?club_id=1'
+url = f'https://api.ak-bars.ru/portal/sponsors?club_id=1'
 headers = {
    'Accept': 'application/json, text/plain, */*',
    'Accept-Encoding': 'gzip, deflate, br',
@@ -43,7 +43,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/team?access-token=5f4dbf2e5629d8cc19e7d51874266678'
+url = f'https://api.tna-tickets.ru/api/v1/team?access-token=5f4dbf2e5629d8cc19e7d51874266678'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -63,7 +63,8 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/booking/cart?access-token=5f4dbf2e5629d8cc19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d&promocode='
+url = f'https://api.tna-tickets.ru/api/v1/booking/cart?access-token=5f4dbf2e5629d8cc' \
+      f'19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d&promocode='
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -83,7 +84,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/game?access-token=5f4dbf2e5629d8cc19e7d51874266678&booking_id=13722'
+url = f'https://api.tna-tickets.ru/api/v1/game?access-token=5f4dbf2e5629d8cc19e7d51874266678&booking_id=13722'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -103,7 +104,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/booking/13722/sectors?access-token=5f4dbf2e5629d8cc19e7d51874266678'
+url = f'https://api.tna-tickets.ru/api/v1/booking/13722/sectors?access-token=5f4dbf2e5629d8cc19e7d51874266678'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -123,7 +124,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/game?access-token=5f4dbf2e5629d8cc19e7d51874266678&sport=1'
+url = f'https://api.tna-tickets.ru/api/v1/game?access-token=5f4dbf2e5629d8cc19e7d51874266678&sport=1'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -143,7 +144,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/booking/13722/sectors-price?access-token=5f4dbf2e5629d8cc19e7d51874266678'
+url = f'https://api.tna-tickets.ru/api/v1/booking/13722/sectors-price?access-token=5f4dbf2e5629d8cc19e7d51874266678'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -163,7 +164,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/booking/13722/sector-html?access-token=5f4dbf2e5629d8cc19e7d51874266678&sector_id=394'
+url = f'https://api.tna-tickets.ru/api/v1/booking/13722/sector-html?access-token=5f4dbf2e5629d8cc19e7d51874266678&sector_id=394'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -183,7 +184,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/booking/13722/seats?access-token=5f4dbf2e5629d8cc19e7d51874266678&sector_id=394'
+url = f'https://api.tna-tickets.ru/api/v1/booking/13722/seats?access-token=5f4dbf2e5629d8cc19e7d51874266678&sector_id=394'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -203,7 +204,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://www.ak-bars.ru/site.webmanifest?v=2'
+url = f'https://www.ak-bars.ru/site.webmanifest?v=2'
 headers = {
    'Accept': '*/*',
    'Accept-Encoding': 'gzip, deflate, br',
@@ -224,7 +225,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/booking/13722/seats-price?access-token=5f4dbf2e5629d8cc19e7d51874266678&sector_id=394'
+url = f'https://api.tna-tickets.ru/api/v1/booking/13722/seats-price?access-token=5f4dbf2e5629d8cc19e7d51874266678&sector_id=394'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -244,7 +245,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/booking/13722/seats?access-token=5f4dbf2e5629d8cc19e7d51874266678&sector_id=394&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
+url = f'https://api.tna-tickets.ru/api/v1/booking/13722/seats?access-token=5f4dbf2e5629d8cc19e7d51874266678&sector_id=394&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -264,7 +265,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/booking/seat-reserve?access-token=5f4dbf2e5629d8cc19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
+url = f'https://api.tna-tickets.ru/api/v1/booking/seat-reserve?access-token=5f4dbf2e5629d8cc19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -726,7 +727,7 @@ data = {
 r = self.session.post(url, headers=headers, data=data)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/booking/cart?access-token=5f4dbf2e5629d8cc19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d&promocode='
+url = f'https://api.tna-tickets.ru/api/v1/booking/cart?access-token=5f4dbf2e5629d8cc19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d&promocode='
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -746,7 +747,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/booking/13722/seats?access-token=5f4dbf2e5629d8cc19e7d51874266678&sector_id=394&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
+url = f'https://api.tna-tickets.ru/api/v1/booking/13722/seats?access-token=5f4dbf2e5629d8cc19e7d51874266678&sector_id=394&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -766,7 +767,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/order/create?access-token=5f4dbf2e5629d8cc19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
+url = f'https://api.tna-tickets.ru/api/v1/order/create?access-token=5f4dbf2e5629d8cc19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -1024,7 +1025,7 @@ data = {
 r = self.session.post(url, headers=headers, data=data)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/booking/13722/seats?access-token=5f4dbf2e5629d8cc19e7d51874266678&sector_id=394&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
+url = f'https://api.tna-tickets.ru/api/v1/booking/13722/seats?access-token=5f4dbf2e5629d8cc19e7d51874266678&sector_id=394&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -1044,7 +1045,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://sentry.kazansoft.ru/api/7/envelope/?sentry_key=49588cd0871f4179854d47981811d239&sentry_version=7'
+url = f'https://sentry.kazansoft.ru/api/7/envelope/?sentry_key=49588cd0871f4179854d47981811d239&sentry_version=7'
 headers = {
    'Accept': '*/*',
    'Accept-Encoding': 'gzip, deflate, br',
@@ -1068,7 +1069,7 @@ headers = {
 r = self.session.post(url, headers=headers)
 
 
-url = 'https://sentry.kazansoft.ru/api/7/envelope/?sentry_key=49588cd0871f4179854d47981811d239&sentry_version=7'
+url = f'https://sentry.kazansoft.ru/api/7/envelope/?sentry_key=49588cd0871f4179854d47981811d239&sentry_version=7'
 headers = {
    'Accept': '*/*',
    'Accept-Encoding': 'gzip, deflate, br',
@@ -1092,7 +1093,7 @@ headers = {
 r = self.session.post(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/order?access-token=5f4dbf2e5629d8cc19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
+url = f'https://api.tna-tickets.ru/api/v1/order?access-token=5f4dbf2e5629d8cc19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -1112,7 +1113,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/order/636509?access-token=5f4dbf2e5629d8cc19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
+url = f'https://api.tna-tickets.ru/api/v1/order/636509?access-token=5f4dbf2e5629d8cc19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -1132,7 +1133,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/dls/balance?access-token=5f4dbf2e5629d8cc19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
+url = f'https://api.tna-tickets.ru/api/v1/dls/balance?access-token=5f4dbf2e5629d8cc19e7d51874266678&user_token=368089bd40c2bb6c1f5113d9f1763f3d'
 headers = {
    'accept': 'application/json, text/plain, */*',
    'accept-encoding': 'gzip, deflate, br',
@@ -1152,7 +1153,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://api.tna-tickets.ru/api/v1/zenit/payment?orderHash=%D0%B03%0C%B3%BBF%10%C3%05%C4w%AE%3B%E8%A3aa5f9ef6e8ac4b251310b56a55c46740d462e8fcd4dde339e5471e19cf4eb2e4%B9%DE%E6M%8Cr%0CUW%9C%7CK%1C%3A%DF4%B23%AE%A2%90%A59%C0f%84%25%E0cm%96%B6&bonuses=0&backUrl=https://www.ak-bars.ru/tickets/orders/636509'
+url = f'https://api.tna-tickets.ru/api/v1/zenit/payment?orderHash=%D0%B03%0C%B3%BBF%10%C3%05%C4w%AE%3B%E8%A3aa5f9ef6e8ac4b251310b56a55c46740d462e8fcd4dde339e5471e19cf4eb2e4%B9%DE%E6M%8Cr%0CUW%9C%7CK%1C%3A%DF4%B23%AE%A2%90%A59%C0f%84%25%E0cm%96%B6&bonuses=0&backUrl=https://www.ak-bars.ru/tickets/orders/636509'
 headers = {
    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
    'accept-encoding': 'gzip, deflate, br',
@@ -1173,7 +1174,7 @@ headers = {
 r = self.session.get(url, headers=headers)
 
 
-url = 'https://3ds.zenit.ru/cgi-bin/cgi_link'
+url = f'https://3ds.zenit.ru/cgi-bin/cgi_link'
 headers = {
    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
    'Accept-Encoding': 'gzip, deflate, br',
