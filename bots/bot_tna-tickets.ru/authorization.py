@@ -11,29 +11,32 @@ class TNAQueue(authorize.AccountsQueue):
         super().__init__(accounts_path, **kwargs)
         self.api_token = api_token
 
-    def _for_future_first_check(self, account):
+    def first_check(self, account):
         url = f'https://api.tna-tickets.ru/api/v1/user/login-dls-token?' \
               f'access-token={self.api_token}'
         headers = {
+            'authority': 'api.tna-tickets.ru',
+            'method': 'POST',
+            'path': f'/api/v1/user/login-dls-token?access-token={self.api_token}',
+            'scheme': 'https',
             'Accept': 'application/json, text/plain, */*',
-            'Accept-Encoding': 'gzip, deflate, br',
             'Accept-Language': 'ru-RU,ru;q=0.9',
-            'Authorization': f'Bearer {account.ak_token}',
+            'Content-Length': '575',
+            'Content-Type': 'application/x-www-form-urlencoded',
             'Origin': 'https://www.ak-bars.ru',
             'Referer': 'https://www.ak-bars.ru/tickets/',
-            'Sec-Fetch-Dest': 'empty',
-            'Sec-Fetch-Mode': 'cors',
-            'Sec-Fetch-Site': 'same-site',
-            'User-Agent': self.user_agent,
             'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
             'sec-ch-ua-mobile': '?0',
             'sec-ch-ua-platform': '"Windows"',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-site',
+            'User-Agent': self.user_agent
         }
-        r = account.post(url, headers=headers)
-
-    def first_check(self, account):
-        account.ak_token = ''
-
+        data = {'token': account.ak_token}
+        r = account.post(url, headers=headers, data=data)
+        acc_data = r.json()['result']
+        account.data = acc_data
         return True
 
     def is_logined(self, account):
@@ -100,7 +103,7 @@ class TNAQueue(authorize.AccountsQueue):
             if 'Неверный логин или пароль' in r.text:
                 print(yellow(f'{r.text}'))
                 self.ban(account)
-                return False
+                raise RuntimeError(f'Неверный логин или пароль: {error}')
             else:
                 raise RuntimeError(f'Неизвестная ошибка авторизации: {error}')
 
@@ -111,12 +114,11 @@ class TNAQueue(authorize.AccountsQueue):
 
 if __name__ == '__main__':
     api_token = '5f4dbf2e5629d8cc19e7d51874266678'
-    accounts = TNAQueue('authorize_accounts.txt', api_token)
+    accounts = TNAQueue('authorize_accounts.txt', api_token, reauthorize=True)
     accounts.start()
     while True:
         input()
         print(accounts.qsize())
         account = accounts.get()
-        print(account)
-        accounts.login(account)
+        print(account.data)
         print(accounts.is_logined(account))

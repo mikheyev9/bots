@@ -48,7 +48,7 @@ class TeleCore(threading.Thread):
     def send_telegram_manually(self, mes, tele_ids):
         print('Notification server is offline! Sending manually...')
         
-        mes_tele_ids = [tele_id for tele_id in tele_ids if tele_id not in [454746771, 1128666119, 647298152]]
+        mes_tele_ids = [tele_id for tele_id in tele_ids if tele_id not in [454746771, 647298152]]
         if mes_tele_ids == []:
             profiles = ''
         else:
@@ -68,7 +68,7 @@ class TeleCore(threading.Thread):
         our_mes = mes + profiles
         
         for tele_id in tele_ids:
-            if tele_id in [454746771, 1128666119, 647298152]:
+            if tele_id in [454746771, 647298152]:
                 mes = our_mes #
             else:
                 mes = others_mes #
@@ -96,12 +96,12 @@ class TeleCore(threading.Thread):
         tcp_socket.close()
         
     def run(self):
-        self.bot = start_telebot('924962518:AAGXdJHgfFOjx77PGlW99QtDUCrVG9etOlA', -3)
+        self.bot = start_telebot('6002068146:AAHx8JmyW3QhhFK5hhdFIvTXs3XFlsWNraw', -3)
         while True:
             to_send = []
             while not self.q.empty():
                 mes_and_tele_ids = self.q.get()
-                if mes_and_tele_ids[1] == [454746771, 1128666119, 647298152]:
+                if mes_and_tele_ids[1] == [454746771, 647298152]:
                     mes_and_tele_ids[0] = '[Debug mode]\n' + mes_and_tele_ids[0]
                 to_send.append(mes_and_tele_ids)
             data = json.dumps(to_send) + chr(2)
@@ -126,7 +126,7 @@ class BillingCore(threading.Thread):
     def send_telegram_manually(self, mes, tele_ids):
         print('Notification server is offline! Sending manually...')
         
-        mes_tele_ids = [tele_id for tele_id in tele_ids if tele_id not in [454746771, 1128666119, 647298152]]
+        mes_tele_ids = [tele_id for tele_id in tele_ids if tele_id not in [454746771, 647298152]]
         if mes_tele_ids == []:
             profiles = ''
         else:
@@ -146,7 +146,7 @@ class BillingCore(threading.Thread):
         our_mes = mes + profiles
         
         for tele_id in tele_ids:
-            if tele_id in [454746771, 1128666119, 647298152]:
+            if tele_id in [454746771, 647298152]:
                 mes = our_mes
             else:
                 mes = others_mes
@@ -162,12 +162,12 @@ class BillingCore(threading.Thread):
                     break
         
     def run(self):
-        self.bot = start_telebot('1259033600:AAGMdcMjgX64-zEw4HK7E4fLDTjb3pGrKEo', -4)
+        self.bot = start_telebot('5741231744:AAGHiVougv4uoRia5I_behO9r1oMj1NEMI8', -4)
         while True:
             to_send = []
             while not self.q.empty():
                 mes_and_tele_ids = self.q.get()
-                if mes_and_tele_ids[1] == [454746771, 1128666119, 647298152]:
+                if mes_and_tele_ids[1] == [454746771, 647298152]:
                     mes_and_tele_ids[0] = '[Debug mode]\n' + mes_and_tele_ids[0]
                 to_send.append(mes_and_tele_ids)
             

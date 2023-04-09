@@ -971,31 +971,7 @@ class BotCore(threading.Thread):
         # Если to_state передается списком, при release=False
         # не будет первого сообщения об отсутствии билетов
         # comments может быть передан как словарь или список
-        def parse_state(to_state, instance):
-            def del_state(state):
-                if instance == 'list':
-                    try:
-                        new_to_state.remove(state)
-                    except:
-                        pass
-                elif instance == 'dict':
-                    new_to_state.pop(state, None)
-            new_to_state = to_state.copy()
-            if isinstance(self.parse_mode, list):
-                if self.parse_mode[0] == 'THIS':
-                    expecteds = self.parse_mode[1]
-                    for state in to_state:
-                        if all([expected not in state for expected in expecteds]):
-                            del_state(state)
-                    to_state = new_to_state.copy()
-            for logic in self.parse_logic:
-                for state in to_state:
-                    act_foo, act_boo = logic.split('###')
-                    if act_foo == 'NOT':
-                        if act_boo in state:
-                            del_state(state)
-                            continue
-            return new_to_state
+
         def check_for_repeat(to_state):
             if repeater == 1:
                 return True
@@ -1049,19 +1025,18 @@ class BotCore(threading.Thread):
         self.last_update = time.asctime()
         if self.first:
             self.defeault_delay = self.delay
-        if not self.parse_logic:
+        """if not self.parse_logic:
             try:
                 with open(r'json\parse_logic.json', 'r+', encoding='utf-8') as f:
                     loaded = json.load(f)
             except:
                 print('No parse logic, exiting')
                 raise SystemExit()
-            self.parse_mode, self.parse_logic = loaded
+            self.parse_mode, self.parse_logic = loaded"""
         to_plus = []
         first_plus = []
         Appeared = appeared.capitalize()
         if isinstance(to_state, list):
-            to_state = parse_state(to_state, 'list')
             tire_states = ['---' + state for state in to_state]
             lined_state = '\n'.join(tire_states)
             if key not in self.tickets_state:
@@ -1127,7 +1102,6 @@ class BotCore(threading.Thread):
                 threading.Thread(target=self.events_state_write, args=(key,)).start()
             return to_plus
         elif isinstance(to_state, dict):
-            to_state = parse_state(to_state, 'dict')
             listed_dict = [f'---{foo}: {boo}' for foo, boo in to_state.items()]
             lined_state = '\n'.join(listed_dict)
             refreshed_state = {}

@@ -168,9 +168,9 @@ def all_cond(conds):
         return True
 
 
-def double_split(source, lstr, rstr, n=0):
+def double_split(source, lstr, rstr):
     # Возвращает n-ый эелемент
-    SplPage = source.split(lstr, 1)[n + 1]
+    SplPage = source.split(lstr, 1)[1]
     SplSplPage = SplPage.split(rstr)[0]
     return SplSplPage
 

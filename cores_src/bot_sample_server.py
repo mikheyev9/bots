@@ -36,7 +36,7 @@ class ObserverBotSample(BotCore):
         self.bot_name = bot_name
         self.sectors_q = sectors_q
         self._unpack(from_needed_events)
-        self.from_needed_events = from_needed_events
+        self._from_needed_events = from_needed_events
         self.observe_counter = 0
         self.new_settings = None
         self.settings_lock = threading.Lock()
@@ -57,8 +57,8 @@ class ObserverBotSample(BotCore):
         self.settings_lock.acquire()
         try:
             if self.new_settings:
-                self.from_needed_events = self.new_settings
-                self._unpack(self.from_needed_events)
+                self._from_needed_events = self.new_settings
+                self._unpack(self._from_needed_events)
                 self.bprint('--New settings accepted--')
                 self.new_settings = None
         except:
@@ -142,12 +142,12 @@ class ObserverBotSample(BotCore):
                                      self.URL,
                                      separator='\n',
                                      print_minus=False)
-        self.from_needed_events['tele_ids'] = self.tele_ids
+        self._from_needed_events['tele_ids'] = self.tele_ids
         sector_datas = self.filter_(sectors_data)
         if self.buy_mode:
             for sector_data in sector_datas:
                 to_sector_grabber = [
-                    self.from_needed_events,
+                    self._from_needed_events,
                     self.from_observer,
                     sector_data
                 ]
@@ -156,7 +156,8 @@ class ObserverBotSample(BotCore):
         #    print('--hold--')
         #    time.sleep(1)
         self.manage_settings()
-        
+
+
 class SectorGrabberSample(BotCore):
     driver_source = None
     ChrTab = get_chrtab()
@@ -172,9 +173,9 @@ class SectorGrabberSample(BotCore):
         quest = self.sectors_q.get()
         SectorGrabberSample.working += 1
         
-        self.from_needed_events, \
+        self._from_needed_events, \
         self.from_observer, self.sector_data = quest
-        self.from_needed_limited = self.from_needed_events.copy()
+        self.from_needed_limited = self._from_needed_events.copy()
         del self.from_needed_limited['black_list']
         del self.from_needed_limited['white_list']
         
@@ -202,7 +203,7 @@ class SectorGrabberSample(BotCore):
         self.check_for_ban(tickets)
         if tickets:
             print(')', end='')
-            #print("Откупаю " + self.sector_data['name'])
+            print("Откупаю " + self.sector_data['name'])
             #print(f'Отфильтрованных билетов в {self.sector_data["name"]} {len(tickets)}')
         else:
             return True
@@ -245,9 +246,9 @@ class SectorGrabberSample(BotCore):
         if tickets:
             if 'row' in tickets[0]:
                 tickets.sort(key=sort_by_rowseat)
-        if self.from_needed_events['del_alones']:
+        if self._from_needed_events['del_alones']:
             tickets = del_alones(tickets)
-        white_list = self.from_needed_events['white_list'] 
+        white_list = self._from_needed_events['white_list'] 
         if white_list:
             limits = None
             # Ситуация когда сектор найден
@@ -260,7 +261,7 @@ class SectorGrabberSample(BotCore):
         
     def check_for_ban(self, tickets):
         sector_name = self.sector_data['name']
-        event_name = self.from_needed_events['event_name']
+        event_name = self._from_needed_events['event_name']
         a_tickets = []
         for ticket in tickets:
             if ban_rules.main_check(ticket, sector_name, event_name):
@@ -326,20 +327,20 @@ class OrderBotSample(BotCore):
         self.cart_threads = settings['cart_threads']
     
     def get_from_queue(self):
-        self.from_needed_events, self.from_observer, \
+        self._from_needed_events, self.from_observer, \
         self.sector_data, self.tickets_pack = self.tickets_q.get()
         
         self.ChrTab = self.sector_data['tab']
-        self.tele_ids = self.from_needed_events['tele_ids']
+        self.tele_ids = self._from_needed_events['tele_ids']
                
     def send_descrs(self, url=None):
         ticket_descrs = '\n'.join(self.ticket_descrs)
-        event_name = self.from_needed_events['event_name']
+        event_name = self._from_needed_events['event_name']
         all_descr = (f"{event_name}\n{self.sector_data['name']}"
                      f"\n{ticket_descrs}")
                      
-        if 'url' in self.from_needed_events:
-            event_url = str(self.from_needed_events['url'])
+        if 'url' in self._from_needed_events:
+            event_url = str(self._from_needed_events['url'])
             all_descr += ("\nСхема: " + event_url)
         if hasattr(self, 'account'):
             all_descr += ("\nАккаунт "
@@ -385,7 +386,7 @@ class OrderBotSample(BotCore):
             print(green("Чекаут: Успешно вывело на оплату!"), end='')
             ban_rules.add_to_ban_list(self.added_to_cart,
                                       self.sector_data['name'],
-                                      self.from_needed_events['event_name'])
+                                      self._from_needed_events['event_name'])
             self.send_descrs(order_result)
         else:
             print(red("Чекаут: Не выведено на оплату!\n"), end='')
@@ -634,12 +635,6 @@ def load_names():
         mid_names = regtxt.split('\n')
     return names, sec_names, mid_names
     
-    
-def get_identity():
-    return random.choice(first_ns), \
-           random.choice(second_ns), \
-           random.choice(middle_ns)
-    
 
 def parse_gmail(mail):
     bits = len(mail) - 1
@@ -666,7 +661,8 @@ def preparse(tickets):
             pass
         if 'price' in ticket:
             ticket['price'] = int(ticket['price'])
-            
+
+
 def del_alones(tickets):
     rownumbers = [int(ticket['row']) for ticket in tickets]
     seatnumbers = [int(ticket['seat']) for ticket in tickets]
@@ -684,7 +680,8 @@ def del_alones(tickets):
             if (col - 1 in cols) or (col + 1 in cols):
                 parsed.append(ticket)
     return parsed
-            
+
+
 def capitalize(str_):
     return str_.replace(' ', '').lower()
     
@@ -707,7 +704,6 @@ def fix_sectors_names(sectors_data):
 
 
 url_on_bots = {}
-first_ns, second_ns, middle_ns = load_names()
 
 """
 if __name__ == '__main__':
