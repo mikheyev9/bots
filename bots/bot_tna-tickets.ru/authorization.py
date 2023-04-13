@@ -1,4 +1,5 @@
 import requests
+from loguru import logger
 from requests.utils import dict_from_cookiejar
 
 from cores_src import authorize
@@ -14,6 +15,7 @@ class TNAQueue(authorize.AccountsQueue):
     def first_check(self, account):
         url = f'https://api.tna-tickets.ru/api/v1/user/login-dls-token?' \
               f'access-token={self.api_token}'
+        logger.info(f'{url}, {account}')
         headers = {
             'authority': 'api.tna-tickets.ru',
             'method': 'POST',
@@ -41,6 +43,7 @@ class TNAQueue(authorize.AccountsQueue):
 
     def is_logined(self, account):
         url = 'https://api.ak-bars.ru/portal/auth/user'
+        logger.info(f'{url}, {account}')
         headers = {
             'Accept': 'application/json, text/plain, */*',
             'Accept-Encoding': 'gzip, deflate, br',
@@ -72,6 +75,7 @@ class TNAQueue(authorize.AccountsQueue):
 
     def login(self, account):
         url = 'https://api.ak-bars.ru/portal/auth/login'
+        logger.info(f'{url}, {account}')
         headers = {
             'Accept': 'application/json, text/plain, */*',
             'Accept-Encoding': 'gzip, deflate, br',

@@ -10,7 +10,6 @@ TEST = False
 
 
 class ObserverBot(ObserverBotSample):
-    driver_source = 'hrenium'
 
     def __init__(self, *init_args, **from_needed_events):
         super().__init__(*init_args, **from_needed_events)
@@ -18,7 +17,7 @@ class ObserverBot(ObserverBotSample):
         self.event_id = double_split(self.URL, 'tickets/', '/')
 
     def before_body(self):
-        print('Before body activated')
+        logger.info('before body')
         self.account = accounts.get()
         self.from_observer = {
             'account': self.account,
@@ -28,6 +27,7 @@ class ObserverBot(ObserverBotSample):
     def get_request(self):
         url = f'https://api.tna-tickets.ru/api/v1/booking/{self.event_id}' \
               f'/sectors?access-token={api_token}'
+        logger.info(url)
         headers = {
            'accept': 'application/json, text/plain, */*',
            'accept-language': 'en-MY,en;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,vi;q=0.5',
@@ -219,6 +219,7 @@ class SectorGrabber(SectorGrabberSample):
         sector_id = self.sector_data['sector_id']
         url = f'https://api.tna-tickets.ru/api/v1/booking/{event_id}/seats?access-token' \
               f'={api_token}&sector_id={sector_id}'
+        logger.info(url)
         headers = {
            'accept': 'application/json, text/plain, */*',
            'accept-language': 'en-MY,en;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,vi;q=0.5',
@@ -279,6 +280,7 @@ class OrderBot(OrderBotSample):
         event_id = self.from_observer['event_id']
         url = f'https://api.tna-tickets.ru/api/v1/booking/{event_id}/seats-price?access-token' \
               f'={api_token}&sector_id={self.sector_data["sector_id"]}'
+        logger.info(url)
         headers = {
             'accept': 'application/json, text/plain, */*',
             'accept-language': 'en-MY,en;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,vi;q=0.5',
@@ -587,6 +589,7 @@ class OrderBot(OrderBotSample):
     def add_to_cart(self, ticket):
         url = f'https://api.tna-tickets.ru/api/v1/booking/seat-reserve?access-token=' \
               f'{api_token}&user_token={self.account.data["user_token"]}'
+        logger.info(url)
         event_id = self.from_observer['event_id']
         headers = {
             'accept': 'application/json, text/plain, */*',
@@ -643,6 +646,7 @@ class OrderBot(OrderBotSample):
         event_id = self.from_observer['event_id']
         url = f'https://api.tna-tickets.ru/api/v1/order/create?access-token=' \
               f'{api_token}&user_token={self.account.data["user_token"]}'
+        logger.info(url)
         headers = {
             'accept': 'application/json, text/plain, */*',
             'accept-language': 'en-MY,en;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,vi;q=0.5',
@@ -670,6 +674,7 @@ class OrderBot(OrderBotSample):
 
         url = f'https://api.tna-tickets.ru/api/v1/order?access-token=' \
               f'{api_token}&user_token={self.account.data["user_token"]}'
+        logger.info(url)
         headers = {
             'accept': 'application/json, text/plain, */*',
             'accept-language': 'en-MY,en;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,vi;q=0.5',
@@ -689,6 +694,7 @@ class OrderBot(OrderBotSample):
 
         url = f'https://api.tna-tickets.ru/api/v1/order/{order_id}?access-token=' \
               f'{api_token}&user_token={self.account.data["user_token"]}'
+        logger.info(url)
         headers = {
             'accept': 'application/json, text/plain, */*',
             'accept-language': 'en-MY,en;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,vi;q=0.5',
@@ -706,6 +712,7 @@ class OrderBot(OrderBotSample):
         }
         r = self.account.get(url, headers=headers)
 
+        logger.info(payment_link)
         headers = {
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,im'
                       'age/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -729,6 +736,7 @@ class OrderBot(OrderBotSample):
 
 def get_api_token(session):
     url = 'https://www.ak-bars.ru/'
+    logger.info(url)
     headers = {
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,im'
                   'age/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -752,6 +760,7 @@ def get_api_token(session):
     script_dirs = lrsplit(r.text, 'link rel="preload" href="', '"')
 
     script_url = 'https://www.ak-bars.ru' + script_dirs[-2]
+    logger.info(script_url)
     headers = {
         'accept': '*/*',
         'accept-encoding': 'gzip, deflate, br',
