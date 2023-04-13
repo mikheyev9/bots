@@ -296,6 +296,7 @@ class AccountsQueue(threading.Thread):
         return self.ready.qsize(), self.to_inspect.qsize()
             
     def get(self):
+        print()
         account = self.ready.get()
         return account
         

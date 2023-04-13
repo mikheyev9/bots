@@ -1,14 +1,14 @@
 [
     [
-        "Ak Bars - Avangard. Kazan. 09 Апр 19:00",
+        "Ak Bars - CSKA. Kazan. 19 Апр 19:00",
         "me",
-        "https://www.ak-bars.ru/tickets/13737",
+        "https://www.ak-bars.ru/tickets/13745",
         {
             "version": 2,
             "buy_mode": true,
             "quantity": "double;alone",
             "white_list": {},
-            "delay": 30,
+            "delay": 10,
             "notify_all": true,
             "notify": true,
             "del_alones": false,

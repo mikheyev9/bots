@@ -14,11 +14,11 @@ class ObserverBot(ObserverBotSample):
 
     def __init__(self, *init_args, **from_needed_events):
         super().__init__(*init_args, **from_needed_events)
-        self.account = None
         self.from_observer = None
         self.event_id = double_split(self.URL, 'tickets/', '/')
 
     def before_body(self):
+        print('Before body activated')
         self.account = accounts.get()
         self.from_observer = {
             'account': self.account,
