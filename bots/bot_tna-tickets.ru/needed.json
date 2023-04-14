@@ -14,5 +14,24 @@
             "del_alones": false,
             "black_list": []
         }
+    ],
+    [
+        "Ак Барс (г,Казань) - ЦСКА (г,Москва). Мск. 17 Апр 19:30",
+        "me",
+        "https://www.ak-bars.ru/tickets/13744",
+        {
+            "version": 1,
+            "buy_mode": true,
+            "quantity": "alone;double",
+            "white_list": {
+                "202": "*",
+                "209": "*"
+            },
+            "delay": 15,
+            "notify_all": true,
+            "notify": true,
+            "del_alones": false,
+            "black_list": []
+        }
     ]
 ]
