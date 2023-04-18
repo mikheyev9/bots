@@ -6,7 +6,7 @@
         {
             "version": 2,
             "buy_mode": true,
-            "quantity": "double;alone",
+            "quantity": "double",
             "white_list": {
                 "Сектор 5": "*",
                 "Сектор 11": "*",
