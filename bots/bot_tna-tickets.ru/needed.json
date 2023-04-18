@@ -7,7 +7,15 @@
             "version": 2,
             "buy_mode": true,
             "quantity": "double;alone",
-            "white_list": {},
+            "white_list": {
+                "Сектор 5": "*",
+                "Сектор 11": "*",
+                "Сектор 15": "*",
+                "Сектор 7": "*",
+                "Сектор 9": "*",
+                "Сектор 18": "*",
+                "Сектор 19": "*"
+            },
             "delay": 15,
             "notify_all": true,
             "notify": true,
