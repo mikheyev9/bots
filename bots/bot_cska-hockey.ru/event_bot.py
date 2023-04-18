@@ -94,7 +94,6 @@ if __name__ == '__main__':
     BotCore.mode = 'multi'
     BotCore.counter_step = 20
     BotCore.max_waste_time = 10000
-    TeleCore().start()
     
     start_event_parser('ЦСКА Хоккей. Мск. ',
                        'https://tickets.cska-hockey.ru/',

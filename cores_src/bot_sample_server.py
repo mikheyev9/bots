@@ -1,5 +1,7 @@
 from multiprocessing import Queue
 
+from loguru import logger
+
 from .cores import *
 from .vis import *
 from . import bot_socket
@@ -18,7 +20,6 @@ BotCore.max_waste_time = 900
 BotCore.release = True
 BotCore.mode = 'multi'
 BotCore.counter_step = settings['counter_step']
-TeleCore().start()
 BillingCore().start()
 ban_rules = BanRules()
 
@@ -26,7 +27,7 @@ sectors_done = 0
 
 
 class ObserverBotSample(BotCore):
-    driver_source = 'hrenium'
+    driver_source = None
 
     def __init__(self, ChrTab, event_name, URL, bot_name,
                      sectors_q, **from_needed_events):
@@ -456,7 +457,8 @@ class OrderBotSample(BotCore):
             OrderBotSample.ready += 1
             multi_try(self.before_get_q, fpass, 'Sub', 1, self.release)
             self.get_from_queue()
-            multi_try(self.before_order, fpass, 'Sub', 1, self.release)
+            if not multi_try(self.before_order, fpass, 'Sub', 1, self.release):
+                continue
             OrderBotSample.ready -= 1
             
             OrderBotSample.working += 1

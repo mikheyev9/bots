@@ -297,7 +297,6 @@ class AccountsQueue(threading.Thread):
             
     def get(self):
         account = self.ready.get()
-        print(f'Got account {account}')
         return account
         
     def first_check(self, account):
@@ -324,6 +323,11 @@ class AccountsQueue(threading.Thread):
         black_row = f"{account.login}\t{account.password}\n"
         with open(blacklist_path, 'a') as f:
             f.write(black_row)
+
+    def change(self, account):
+        self.put(account)
+        print(yellow('Account changed'))
+        return self.get()
         
     def test(self):
         def test(time_test, account):
@@ -391,7 +395,6 @@ class AccountsQueue(threading.Thread):
                     break
         
     def run(self):
-        telecore = TeleCore().start()
         threading.Thread(target=self.run_inspector).start()
         self.first_fill_queue()
         while True:

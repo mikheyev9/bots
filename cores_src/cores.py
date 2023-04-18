@@ -679,12 +679,9 @@ class BotCore(threading.Thread):
         #    BotCore.last_log_write = time.time()
         try:
             self.send_telegram(str(mes))
+        finally:
             with open(source_path + 'log.txt', 'a+', encoding='utf-8') as logs:
                 logs.write(time.asctime() + ' ' + str(mes) + '\n')
-        except Exception as err:
-            with open(source_path + 'log.txt', 'a+', encoding='utf-8') as logs:
-                logs.write(time.asctime() + ' ' + str(mes) + '\n')
-            raise err
         
     def tprint_billing(self, mes, only_log=False):
         if not only_log:
@@ -2307,8 +2304,10 @@ def get_delay(delay, l_range=0.723, r_range=1.26):
     return delay
     
 
-def start_bots(needed_events, BotInit, auto_chrtab=False, inc=0, first=True, args=[], is_buying_bot=False):
+def start_bots(needed_events, BotInit, auto_chrtab=False, inc=0,
+               first=True, args=[], is_buying_bot=False):
     tabs = []
+
     def domain_from_link(link):
         if isinstance(link, dict):
             link = list(link.values())[0]
@@ -2332,7 +2331,6 @@ def start_bots(needed_events, BotInit, auto_chrtab=False, inc=0, first=True, arg
     with open(proxies_json_path, 'r') as proxiesjson:
         proxies = json.load(proxiesjson)
     plen = len(proxies)
-
 
     event_count = len(needed_events)
     num_text_len = 0

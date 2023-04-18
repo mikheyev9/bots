@@ -3,35 +3,25 @@ from socket import *
 from queue import Queue
 
 import telebot
+from loguru import logger
 
 from . import main_utils
 from .vis import *
 
 
-try:
-    tele_profiles_path = main_utils.get_source_path() + '\\tele_profiles.json'
-    with open(tele_profiles_path, 'r') as tele_profiles_json:
-        TELE_PROFILES = json.load(tele_profiles_json)
-except:
-    tele_profiles_path = main_utils.get_source_path() + 'tele_profiles.json'
-    with open(tele_profiles_path, 'r') as tele_profiles_json:
-        TELE_PROFILES = json.load(tele_profiles_json)
+tele_profiles_path = os.path.join(main_utils.get_source_path(), 'tele_profiles.json')
+with open(tele_profiles_path, 'r') as tele_profiles_json:
+    TELE_PROFILES = json.load(tele_profiles_json)
+SEND_TO_SERVER = False
 
 
-def start_telebot(telegram_key, pnum):
-    bot = telebot.TeleBot(telegram_key)
-    try:
-        proxies_json_path = main_utils.get_source_path() + '\\proxies.json'
-        with open(proxies_json_path, 'r') as proxiesjson:
-            proxies = json.load(proxiesjson)
-    except:
-        proxies_json_path = main_utils.get_source_path() + 'proxies.json'
-        with open(proxies_json_path, 'r') as proxiesjson:
-            proxies = json.load(proxiesjson)
+def apply_proxy_telegram(pnum):
+    proxies_json_path = os.path.join(main_utils.get_source_path(), 'proxies.json')
+    with open(proxies_json_path, 'r') as proxiesjson:
+        proxies = json.load(proxiesjson)
     p_type, p_host, p_port, p_user, p_pass = main_utils.parse_proxy(proxies[pnum])
     if pnum:
         telebot.apihelper.proxy = {'https':f'{p_type}://{p_user}:{p_pass}@{p_host}:{p_port}'}
-    return bot
 
 
 class TeleCore(threading.Thread):
@@ -96,7 +86,7 @@ class TeleCore(threading.Thread):
         tcp_socket.close()
         
     def run(self):
-        self.bot = start_telebot('6002068146:AAHx8JmyW3QhhFK5hhdFIvTXs3XFlsWNraw', -3)
+        self.bot = telebot.TeleBot('6002068146:AAHx8JmyW3QhhFK5hhdFIvTXs3XFlsWNraw')
         while True:
             to_send = []
             while not self.q.empty():
@@ -104,13 +94,21 @@ class TeleCore(threading.Thread):
                 if mes_and_tele_ids[1] == [454746771, 647298152]:
                     mes_and_tele_ids[0] = '[Debug mode]\n' + mes_and_tele_ids[0]
                 to_send.append(mes_and_tele_ids)
+            if not to_send:
+                continue
             data = json.dumps(to_send) + chr(2)
+
+            if not SEND_TO_SERVER:
+                for mes, tele_ids in to_send:
+                    self.send_telegram_manually(mes, tele_ids)
+                continue
+
             try:
                 self.send_to_server(data)
             except:
-                for mes_and_tele_ids in to_send:
-                    self.send_telegram_manually(*mes_and_tele_ids)
-                    time.sleep(0.1)
+                for mes, tele_ids in to_send:
+                    self.send_telegram_manually(mes, tele_ids)
+            time.sleep(0.2)
 
 
 class BillingCore(threading.Thread):
@@ -119,7 +117,8 @@ class BillingCore(threading.Thread):
 
     def __init__(self):
         super().__init__()
-        
+
+    @staticmethod
     def send_message(mes, tele_ids):
         BillingCore.q.put([mes, tele_ids])
         
@@ -162,7 +161,7 @@ class BillingCore(threading.Thread):
                     break
         
     def run(self):
-        self.bot = start_telebot('5741231744:AAGHiVougv4uoRia5I_behO9r1oMj1NEMI8', -4)
+        self.bot = telebot.TeleBot('5741231744:AAGHiVougv4uoRia5I_behO9r1oMj1NEMI8')
         while True:
             to_send = []
             while not self.q.empty():
@@ -175,6 +174,9 @@ class BillingCore(threading.Thread):
                 self.send_telegram_manually(*mes_and_tele_ids)
                 time.sleep(0.1)
 
+
+apply_proxy_telegram(1)
+TeleCore().start()
 
 if __name__ == '__main__':
     TeleCore().start()

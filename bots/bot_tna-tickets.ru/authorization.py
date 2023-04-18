@@ -15,7 +15,6 @@ class TNAQueue(authorize.AccountsQueue):
     def first_check(self, account):
         url = f'https://api.tna-tickets.ru/api/v1/user/login-dls-token?' \
               f'access-token={self.api_token}'
-        logger.info(f'{url}, {account}')
         headers = {
             'authority': 'api.tna-tickets.ru',
             'method': 'POST',
@@ -39,11 +38,34 @@ class TNAQueue(authorize.AccountsQueue):
         r = account.post(url, headers=headers, data=data)
         acc_data = r.json()['result']
         account.data = acc_data
+
+        url = f'https://api.tna-tickets.ru/api/v1/order?access-token' \
+              f'={self.api_token}&user_token={acc_data["user_token"]}'
+        headers = {
+            'authority': 'api.tna-tickets.ru',
+            'method': 'POST',
+            'path': f'/api/v1/order?access-token={self.api_token}&user_token={acc_data["user_token"]}',
+            'scheme': 'https',
+            'Accept': 'application/json, text/plain, */*',
+            'Accept-Language': 'ru-RU,ru;q=0.9',
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Origin': 'https://www.ak-bars.ru',
+            'Referer': 'https://www.ak-bars.ru/tickets/orders',
+            'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-site',
+            'User-Agent': self.user_agent
+        }
+        r = account.get(url, headers=headers)
+        account.bought = {order['calendar_id']: int(order['seatquant'])
+                          for order in r.json()['result']}
         return True
 
     def is_logined(self, account):
         url = 'https://api.ak-bars.ru/portal/auth/user'
-        logger.info(f'{url}, {account}')
         headers = {
             'Accept': 'application/json, text/plain, */*',
             'Accept-Encoding': 'gzip, deflate, br',
@@ -75,7 +97,6 @@ class TNAQueue(authorize.AccountsQueue):
 
     def login(self, account):
         url = 'https://api.ak-bars.ru/portal/auth/login'
-        logger.info(f'{url}, {account}')
         headers = {
             'Accept': 'application/json, text/plain, */*',
             'Accept-Encoding': 'gzip, deflate, br',

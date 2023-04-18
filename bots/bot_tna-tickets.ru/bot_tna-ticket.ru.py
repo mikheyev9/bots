@@ -17,7 +17,6 @@ class ObserverBot(ObserverBotSample):
         self.event_id = double_split(self.URL, 'tickets/', '/')
 
     def before_body(self):
-        logger.info('before body')
         self.account = accounts.get()
         self.from_observer = {
             'account': self.account,
@@ -27,7 +26,6 @@ class ObserverBot(ObserverBotSample):
     def get_request(self):
         url = f'https://api.tna-tickets.ru/api/v1/booking/{self.event_id}' \
               f'/sectors?access-token={api_token}'
-        logger.info(url)
         headers = {
            'accept': 'application/json, text/plain, */*',
            'accept-language': 'en-MY,en;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,vi;q=0.5',
@@ -219,7 +217,6 @@ class SectorGrabber(SectorGrabberSample):
         sector_id = self.sector_data['sector_id']
         url = f'https://api.tna-tickets.ru/api/v1/booking/{event_id}/seats?access-token' \
               f'={api_token}&sector_id={sector_id}'
-        logger.info(url)
         headers = {
            'accept': 'application/json, text/plain, */*',
            'accept-language': 'en-MY,en;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,vi;q=0.5',
@@ -272,9 +269,14 @@ class OrderBot(OrderBotSample):
         self.price_zones = None
 
     def after_get_q(self):
-        self.price_zones = self.get_price_zones()
         self.account = self.accounts.get()
-        print(self.account)
+        counter = 0
+        while self.from_observer['event_id'] in self.account.bought:
+            counter += 1
+            if counter == 10:
+                raise RuntimeError('Could not get account after 10 tries')
+            self.account = self.accounts.change(self.account)
+        self.price_zones = self.get_price_zones()
 
     def get_price_zones(self):
         event_id = self.from_observer['event_id']
@@ -287,7 +289,7 @@ class OrderBot(OrderBotSample):
             'cache-control': 'no-cache',
             'origin': 'https://www.ak-bars.ru',
             'pragma': 'no-cache',
-            'referer': 'https://www.ak-bars.ru/tickets/13722',
+            'referer': f'https://www.ak-bars.ru/tickets/{event_id}',
             'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
             'sec-ch-ua-mobile': '?0',
             'sec-ch-ua-platform': '"Windows"',
@@ -609,6 +611,9 @@ class OrderBot(OrderBotSample):
             'user-agent': self.user_agent,
         }
         price_zone = ticket['zone_id']
+        if price_zone not in self.price_zones:
+            all_zones = list(self.price_zones.keys())
+            raise RuntimeError(f'No price_zone {price_zone} in {all_zones}')
         current_zone = self.price_zones[price_zone]
         data = {
            'seat_id': ticket['seat_id'],
@@ -617,14 +622,16 @@ class OrderBot(OrderBotSample):
            'booking_ids': '',
            'category_id': current_zone['category_id']
         }
+        logger.info(data)
         r = self.account.post(url, data=data, headers=headers)
         jsoned = r.json()
         status = jsoned['status']
-        seat_ids = [ticket['seat_id'] for ticket in jsoned['result'] if 'seat_id' in ticket]
 
         if status != 200:
             logger.warning(f'add_to_cart status {status}')
-        elif ticket['seat_id'] not in seat_ids:
+            return
+        seat_ids = [ticket['seat_id'] for ticket in jsoned['result'] if 'seat_id' in ticket]
+        if ticket['seat_id'] not in seat_ids:
             logger.warning(f'adding seat was not found in the cart')
         else:
             description = ticket['name']
@@ -647,6 +654,7 @@ class OrderBot(OrderBotSample):
         url = f'https://api.tna-tickets.ru/api/v1/order/create?access-token=' \
               f'{api_token}&user_token={self.account.data["user_token"]}'
         logger.info(url)
+        print(self.account)
         headers = {
             'accept': 'application/json, text/plain, */*',
             'accept-language': 'en-MY,en;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,vi;q=0.5',
@@ -668,6 +676,8 @@ class OrderBot(OrderBotSample):
             'promocode': '',
         }
         r = self.account.post(url, headers=headers, data=data)
+        if 'result' not in r.json():
+            self.bprint(f'Create order error: {r.text}', color=Fore.RED)
         checkout_data = r.json()['result']
         order_id = checkout_data['order_id']
         payment_link = checkout_data['payment_link']
@@ -712,7 +722,7 @@ class OrderBot(OrderBotSample):
         }
         r = self.account.get(url, headers=headers)
 
-        logger.info(payment_link)
+        """logger.info(payment_link)
         headers = {
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,im'
                       'age/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -730,13 +740,14 @@ class OrderBot(OrderBotSample):
             'upgrade-insecure-requests': '1',
             'user-agent': self.user_agent,
         }
-        r = self.account.get(payment_link, headers=headers, allow_redirects=False)
-        return payment_link + '\n' + r.headers['Location']
+        r = self.account.get(payment_link, headers=headers, allow_redirects=True)
+        print(r.text)
+        print(r.url)"""
+        return payment_link
 
 
 def get_api_token(session):
     url = 'https://www.ak-bars.ru/'
-    logger.info(url)
     headers = {
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,im'
                   'age/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -760,7 +771,6 @@ def get_api_token(session):
     script_dirs = lrsplit(r.text, 'link rel="preload" href="', '"')
 
     script_url = 'https://www.ak-bars.ru' + script_dirs[-2]
-    logger.info(script_url)
     headers = {
         'accept': '*/*',
         'accept-encoding': 'gzip, deflate, br',
