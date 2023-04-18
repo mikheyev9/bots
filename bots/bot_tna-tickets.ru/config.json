@@ -1,8 +1,8 @@
 {
     "tele_bool": true,
-    "order_threads": 1,
-    "sector_threads": 1,
-    "session_threads": 2,
+    "order_threads": 10,
+    "sector_threads": 5,
+    "session_threads": 5,
     "max_sessions": 200,
     "session_duration": 1200,
     "counter_step": 1,

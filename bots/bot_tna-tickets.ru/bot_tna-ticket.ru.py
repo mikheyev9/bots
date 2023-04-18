@@ -812,4 +812,4 @@ if __name__ == '__main__':
                                        accounts_q=accounts)
     while True:
         input()
-        monitor(SectorGrabber, OrderBot, manager_socket)
+        monitor(SectorGrabber, OrderBot, manager_socket, monitor_q=accounts)

@@ -8,7 +8,7 @@
             "buy_mode": true,
             "quantity": "double;alone",
             "white_list": {},
-            "delay": 45,
+            "delay": 15,
             "notify_all": true,
             "notify": true,
             "del_alones": false,
