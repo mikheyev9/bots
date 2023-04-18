@@ -590,3 +590,5 @@ Mon Apr 17 22:02:47 2023 Ak Bars - CSKA. Kazan. 19 Апр 19:00
 Аккаунт 79083089136 gpHRYP0SVAiM5e86GHDk
 Оплатить: https://api.tna-tickets.ru/api/v1/zenit/payment?orderHash=%E4%E2%85%B7%8B%A4%EAM%88q%2B%84%013%3B%3A835f02a3e66a3a28d03b2bd918db83e9fe5cf56063663d49efb68b732536d1c9%1C%40%40%BB%A8%18%B9%23%C7U%DFU%CCs%19%7E5%CF%01%29v.%24%DD%D0%FAk%CF%87%0B%E8%B6
 Tue Apr 18 17:09:07 2023 No price_zone 25 in ['2', '193', '3', '16', '17', '18', '19', '20', '21', '22', '23', '43', '44', '71', '70', '72', '73', '74', '75', '77', '78', '79', '80']
+Tue Apr 18 17:18:28 2023 Test
+Tue Apr 18 17:18:29 2023 Test
