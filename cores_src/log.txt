@@ -594,3 +594,81 @@ Tue Apr 18 17:18:28 2023 Test
 Tue Apr 18 17:18:29 2023 Test
 Tue Apr 18 17:41:43 2023 Test
 Tue Apr 18 17:41:43 2023 Test
+Tue Apr 18 13:44:29 2023 Test
+Tue Apr 18 13:58:40 2023 Test
+Tue Apr 18 13:59:01 2023 Test
+Tue Apr 18 14:44:10 2023 Появились билеты. Ak Bars - CSKA. Kazan. 19 Апр 19:00:
+Сектор 15
+https://www.ak-bars.ru/tickets/13745
+Tue Apr 18 18:18:37 2023 Test
+Tue Apr 18 21:16:36 2023 Появились билеты. Ak Bars - CSKA. Kazan. 19 Апр 19:00:
+Сектор 1,
+Сектор 2,
+Сектор 3,
+Сектор 5,
+Сектор 8,
+Сектор 9,
+Сектор 10,
+Сектор 11,
+Сектор 12,
+Сектор 15,
+Сектор 16,
+Сектор 17,
+Сектор 19,
+Сектор 20
+https://www.ak-bars.ru/tickets/13745
+Tue Apr 18 21:16:53 2023 Ak Bars - CSKA. Kazan. 19 Апр 19:00
+Сектор 15
+--Ряд 11, Место 7, Стоимость 2600.00 руб
+--Ряд 10, Место 11, Стоимость 2600.00 руб
+--Ряд 7, Место 3, Стоимость 2500.00 руб
+--Ряд 5, Место 8, Стоимость 2500.00 руб
+Схема: https://www.ak-bars.ru/tickets/13745
+Аккаунт 79520213016 HcTEy3bGb1S3RqeuMsZX
+Оплатить: https://api.tna-tickets.ru/api/v1/zenit/payment?orderHash=%7Cd%8E%CAk%D6%0E%17%EC%8D%27S%E2o%88O37aba7967f746f2d972d269ec70d4d4c0e0f7e7c52e7554413dda648cec2f138%C7%27i%04%E6E-%E8aK%FF%F6%1E%81%11j%AB%F9%13%95%21%0D%8A%BF%FE%2B%E5e%A33s%08
+Tue Apr 18 21:16:54 2023 Ak Bars - CSKA. Kazan. 19 Апр 19:00
+Сектор 5
+--Ряд 25, Место 20, Стоимость 2800.00 руб
+--Ряд 21, Место 14, Стоимость 2800.00 руб
+--Ряд 17, Место 8, Стоимость 2800.00 руб
+--Ряд 15, Место 14, Стоимость 2900.00 руб
+--Ряд 14, Место 11, Стоимость 2900.00 руб
+Схема: https://www.ak-bars.ru/tickets/13745
+Аккаунт 79969499201 QqD3qm3u0NkZxyn5eUzY
+Оплатить: https://api.tna-tickets.ru/api/v1/zenit/payment?orderHash=H%12%FD%E9%BF%C6%C2%91%F3%02%8CDR%C6%FCzbbd4ab738b5a3703ec9bf2df1fc00a01d73ec60d575cd2c9cd5dffe2a776085f%97%AD%8FOze%FA%95y%1F%0D%7E%06%F0%F8N%CC%A2%EF%A6-r%9D%83%E5%C8%E3L%8CH%2C%E0
+Tue Apr 18 21:16:54 2023 Ak Bars - CSKA. Kazan. 19 Апр 19:00
+Сектор 11
+--Ряд 25, Место 5, Стоимость 2800.00 руб
+--Ряд 17, Место 10, Стоимость 2800.00 руб
+--Ряд 17, Место 3, Стоимость 2800.00 руб
+--Ряд 16, Место 5, Стоимость 2900.00 руб
+--Ряд 14, Место 1, Стоимость 2900.00 руб
+Схема: https://www.ak-bars.ru/tickets/13745
+Аккаунт 79083089136 gpHRYP0SVAiM5e86GHDk
+Оплатить: https://api.tna-tickets.ru/api/v1/zenit/payment?orderHash=%C6%BC%7C%BC%7DPN%CB%EA%CCjSK%BE2ecf4195ae7d1599a4898cfa8ac602b9ba8dbcea2a8a2b676d85b105ae46d49c1f%27%16%95%A8DA%96%E0%0F%FD%E1%EC%17%28%9C%8C%FA%0Fl%B2%DC%F5%F3%A0Z%C0%29%EDE%D1Cs
+Tue Apr 18 21:16:59 2023 Ak Bars - CSKA. Kazan. 19 Апр 19:00
+Сектор 11
+--Ряд 13, Место 2, Стоимость 2900.00 руб
+--Ряд 9, Место 1, Стоимость 2900.00 руб
+--Ряд 8, Место 6, Стоимость 2800.00 руб
+--Ряд 8, Место 1, Стоимость 2800.00 руб
+Схема: https://www.ak-bars.ru/tickets/13745
+Аккаунт 79530173610 rcFnPtT3gb35Ezjpr7Pq
+Оплатить: https://api.tna-tickets.ru/api/v1/zenit/payment?orderHash=GjU%BE%82%9AvI%11%3C%EB%B1%294%7C%052400a422a4c16a73b80283349b1e4e00f5963a22cfc13976acb073d8e605fbcf%26%1D%DAT%DF%88s-%C4%ED%98%C2%60%A8Q%A4%10%E1%19%C0%0C%F8%AB%B4%2F%E3Fm%11%60%83%A3
+Tue Apr 18 21:17:07 2023 Ak Bars - CSKA. Kazan. 19 Апр 19:00
+Сектор 19
+--Ряд 28, Место 21, Стоимость 1800.00 руб
+--Ряд 24, Место 5, Стоимость 1800.00 руб
+--Ряд 20, Место 16, Стоимость 1800.00 руб
+--Ряд 18, Место 3, Стоимость 1800.00 руб
+--Ряд 14, Место 17, Стоимость 1850.00 руб
+Схема: https://www.ak-bars.ru/tickets/13745
+Аккаунт 79622099102 mV1sj8i9tv95rqkJVSny
+Оплатить: https://api.tna-tickets.ru/api/v1/zenit/payment?orderHash=%86P%04%93T%B2%E2%272%A4%91tl%24+%A21f74e6ae2d90fed4eebb323b9d5fc45e70d9f9eff83db26a4fc83c7aff0c3cee%E7S%1E%84%06%F3%E9%3Cp%A3l%B5%A7%D2%E0o%D4%EFM%E5%96t%3F%D8%2C%94%F8%E3%A6%7D%8D%5C
+Tue Apr 18 21:17:17 2023 Ak Bars - CSKA. Kazan. 19 Апр 19:00
+Сектор 9
+--Ряд 5, Место 4, Стоимость 1850.00 руб
+--Ряд 1, Место 2, Стоимость 1850.00 руб
+Схема: https://www.ak-bars.ru/tickets/13745
+Аккаунт 79169644156 M05ch61lv
+Оплатить: https://api.tna-tickets.ru/api/v1/zenit/payment?orderHash=%80%E2%B2%AE.%1F7W%C8LJpx%D85%97bd97ce85d8eacefe4406c09aadf5cae45cebea45a7013c83cfcd43b367000210%DE%BE%E7%A8Z%19%8C%A6%10n%9F%0AJZD%C9%DCbD8%8F%EB%FB%25%EB%80L%CC%05%11%FE%91

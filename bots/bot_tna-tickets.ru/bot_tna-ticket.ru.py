@@ -196,6 +196,9 @@ class ObserverBot(ObserverBotSample):
                 },
             ]
         r = self.account.get(url, headers=headers)
+        status = r.json()['status']
+        if status != 200:
+            raise RuntimeError(f'Status is wrong in ObserverBot {status}')
         return r.json()['result']
 
     def get_sectors(self):
