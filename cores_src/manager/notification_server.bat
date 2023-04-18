@@ -1,0 +1,2 @@
+python notification_server.py
+pause

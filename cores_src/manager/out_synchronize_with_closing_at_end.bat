@@ -1,0 +1,2 @@
+python out_synchronize_with_closing_at_end.py
+pause

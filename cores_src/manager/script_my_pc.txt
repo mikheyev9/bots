@@ -1,0 +1,4 @@
+option batch on
+option confirm off
+synchronize -criteria=time -delete -transfer=binary -filemask="|*.pyc; *\__pycache__; *chromedriver.exe.; *debug.log; debug.txt; *ext_*.zip; *log*.txt" both C:\Users\serg\YandexDisk\[Python]\ /
+exit

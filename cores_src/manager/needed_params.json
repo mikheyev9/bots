@@ -1,0 +1,9 @@
+{
+    "buy_mode": ["OFF\\ON", [false, true]],
+    "require_colors": ["Цвета", ["green", "red", "green;red"]],
+    "quantity": ["Парность", ["alone", "double", "alone;double"]],
+    "delay": ["Задержка (сек)", [10, 5, 2, 1, 0.5]],
+    "notify": ["Посекторное оповещение", [false, true]],
+    "notify_all": ["Оповещения о всех секторах", [false, true]],
+    "standalone": ["Самостоятельный поток", [false, true]]
+}
