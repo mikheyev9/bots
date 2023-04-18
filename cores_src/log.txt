@@ -672,3 +672,4 @@ Tue Apr 18 21:17:17 2023 Ak Bars - CSKA. Kazan. 19 Апр 19:00
 Схема: https://www.ak-bars.ru/tickets/13745
 Аккаунт 79169644156 M05ch61lv
 Оплатить: https://api.tna-tickets.ru/api/v1/zenit/payment?orderHash=%80%E2%B2%AE.%1F7W%C8LJpx%D85%97bd97ce85d8eacefe4406c09aadf5cae45cebea45a7013c83cfcd43b367000210%DE%BE%E7%A8Z%19%8C%A6%10n%9F%0AJZD%C9%DCbD8%8F%EB%FB%25%EB%80L%CC%05%11%FE%91
+Wed Apr 19 01:33:22 2023 Test

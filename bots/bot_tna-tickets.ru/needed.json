@@ -6,7 +6,6 @@
         {
             "version": 2,
             "buy_mode": true,
-            "quantity": "double",
             "white_list": {
                 "Сектор 5": "*",
                 "Сектор 11": "*",
@@ -19,7 +18,7 @@
             "delay": 25,
             "notify_all": true,
             "notify": true,
-            "del_alones": false,
+            "del_alones": true,
             "black_list": []
         }
     ]

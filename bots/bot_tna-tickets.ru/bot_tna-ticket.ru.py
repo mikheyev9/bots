@@ -17,7 +17,6 @@ class ObserverBot(ObserverBotSample):
         self.event_id = double_split(self.URL, 'tickets/', '/')
 
     def before_body(self):
-        self.tprint('Test')
         self.account = accounts.get()
         self.from_observer = {
             'account': self.account,
