@@ -4,7 +4,7 @@
         "otdel",
         "https://www.ak-bars.ru/tickets/13745",
         {
-            "version": 2,
+            "version": 4,
             "buy_mode": true,
             "white_list": {
                 "Сектор 5": "*",
@@ -15,7 +15,7 @@
                 "Сектор 18": "*",
                 "Сектор 19": "*"
             },
-            "delay": 25,
+            "delay": 15,
             "notify_all": true,
             "notify": true,
             "del_alones": true,
