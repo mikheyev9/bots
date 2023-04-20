@@ -37,7 +37,7 @@ class ObserverBotSample(BotCore):
         self.bot_name = bot_name
         self.sectors_q = sectors_q
         self._unpack(from_needed_events)
-        self._from_needed_events = from_needed_events
+        self.from_needed_events = from_needed_events
         self.observe_counter = 0
         self.new_settings = None
         self.settings_lock = threading.Lock()
@@ -58,8 +58,8 @@ class ObserverBotSample(BotCore):
         self.settings_lock.acquire()
         try:
             if self.new_settings:
-                self._from_needed_events = self.new_settings
-                self._unpack(self._from_needed_events)
+                self.from_needed_events = self.new_settings
+                self._unpack(self.from_needed_events)
                 self.bprint('--New settings accepted--')
                 self.new_settings = None
         except:
@@ -143,12 +143,12 @@ class ObserverBotSample(BotCore):
                                      self.URL,
                                      separator='\n',
                                      print_minus=False)
-        self._from_needed_events['tele_ids'] = self.tele_ids
+        self.from_needed_events['tele_ids'] = self.tele_ids
         sector_datas = self.filter_(sectors_data)
         if self.buy_mode:
             for sector_data in sector_datas:
                 to_sector_grabber = [
-                    self._from_needed_events,
+                    self.from_needed_events,
                     self.from_observer,
                     sector_data
                 ]

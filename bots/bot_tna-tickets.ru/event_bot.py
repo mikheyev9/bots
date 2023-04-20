@@ -5,7 +5,7 @@ from authorization import TNAQueue
 class EventParser(EventParserSample):
     driver_source = None
     counter_step = 5
-    delay = 60
+    delay = 15
 
     def __init__(self, *init_args, **init_kwargs):
         super().__init__(*init_args, **init_kwargs)

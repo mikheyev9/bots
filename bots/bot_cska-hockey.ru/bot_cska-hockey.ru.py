@@ -1,26 +1,26 @@
-import sys
-import os
-s_path = os.path.dirname(os.path.abspath(__file__)).split('\\')[:-1]
-sys.path.insert(0, '\\'.join(s_path) + '\\cores_src')
-from bot_sample_server import *
+from cores_src.bot_sample_server import *
 import authorization
 
 BotCore.tele_bool = settings['tele_bool']
 BotCore.release = True
 BotCore.proxy_centralized = False
-#{'http': 'http://JSy7VP:RDx0KmVaTi@46.8.23.248:3000', 'https': 'http://JSy7VP:RDx0KmVaTi@46.8.23.248:3000'}
+
 
 class ObserverBot(ObserverBotSample):
-    driver_source = 'hrenium'
     
     def __init__(self, *init_args, **from_needed_events):
         super().__init__(*init_args, **from_needed_events)
-    
+        self.from_observer = None
+        self.event_id = None
+        self.csrf_frontend = None
+        self.x_csrf_token = None
+        self.session = None
+
     def before_body(self):
         self.session = requests.Session()
         self.x_csrf_token, self.csrf_frontend = self.get_tokens()
         self.event_id = self.URL.split('=')[1].split('/')[0]
-        
+
         self.from_observer = {
             'event_id': self.event_id,
             'x_csrf_token': self.x_csrf_token,
@@ -31,7 +31,8 @@ class ObserverBot(ObserverBotSample):
     
     def get_tokens(self):
         headers = {
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avi'
+                      'f,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'ru-RU,ru;q=0.9',
             'cache-control': 'no-cache',
@@ -46,7 +47,8 @@ class ObserverBot(ObserverBotSample):
             'upgrade-insecure-requests': '1',
             'user-agent': self.user_agent
         }
-        r = self.session.get(self.from_needed_events['url'], headers=headers, proxies=self.requests_proxies())
+        r = self.session.get(self.from_needed_events['url'], headers=headers,
+                             proxies=self.requests_proxies())
         if 'queue' in r.url:
             queue_id = double_split(r.text, 'serverRendered:', '</script')
             queue_id = double_split(queue_id, '"', '"')
@@ -62,7 +64,7 @@ class ObserverBot(ObserverBotSample):
     def renew_session(self, r):
         self.slide_tab()
         self.session = requests.Session()
-        self.x_csrf_token = self.get_xcsrf_token()
+        self.x_csrf_token, self._csrf_frontend = self.get_tokens()
         self.bprint(self.get_proxy()[1])
         self.bprint(self.x_csrf_token)
         raise RuntimeError(r.text[:70])
@@ -89,7 +91,8 @@ class ObserverBot(ObserverBotSample):
             'method': 'GET',
             'path': f'/event/?id={self.event_id}',
             'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,ima'
+                      'ge/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'no-cache',
@@ -168,7 +171,7 @@ class SectorGrabber(SectorGrabberSample):
             'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
             'origin': 'https://tickets.cska-hockey.ru',
             'pragma': 'no-cache',
-            'referer': self.from_needed_events['url'],
+            'referer': self.from_needed_limited['url'],
             'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"',
             'sec-ch-ua-mobile': '?0',
             'sec-ch-ua-platform': '"Windows"',
@@ -208,7 +211,8 @@ class OrderBot(OrderBotSample):
 
     def get_tokens(self):
         headers = {
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif'
+                      ',image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
             'cache-control': 'no-cache',
