@@ -1,2 +1,25 @@
 [
+    [
+        "Ak Bars - CSKA. Kazan. 19 Апр 19:00",
+        "otdel",
+        "https://www.ak-bars.ru/tickets/13745",
+        {
+            "version": 4,
+            "buy_mode": true,
+            "white_list": {
+                "Сектор 5": "*",
+                "Сектор 11": "*",
+                "Сектор 15": "*",
+                "Сектор 7": "*",
+                "Сектор 9": "*",
+                "Сектор 18": "*",
+                "Сектор 19": "*"
+            },
+            "delay": 15,
+            "notify_all": true,
+            "notify": true,
+            "del_alones": true,
+            "black_list": []
+        }
+    ]
 ]
