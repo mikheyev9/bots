@@ -154,6 +154,7 @@ screen/
 
 *log.txt
 *ChrTab.txt
+ChrTab.txt
 *event_state.json
 *ext_*.zip
 tab
