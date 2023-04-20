@@ -261,10 +261,15 @@ class SectorGrabber(SectorGrabberSample):
 
     def get_tickets(self):
         tickets = self.tickets_request()
+        a_tickets = []
         for ticket in tickets:
             ticket['row'] = double_split(ticket['name'], 'Ряд ', ' ')
             ticket['seat'] = double_split(ticket['name'], 'Место ', ' ')
-        return tickets
+            if ticket['zone_id'] in ['25', '59']:
+                print(yellow(f'Skipping tickets with price zone {ticket["zone_id"]}'))
+                continue
+            a_tickets.append(ticket)
+        return a_tickets
 
 
 class OrderBot(OrderBotSample):

@@ -43,8 +43,9 @@ class TNAQueue(authorize.AccountsQueue):
               f'={self.api_token}&user_token={acc_data["user_token"]}'
         headers = {
             'authority': 'api.tna-tickets.ru',
-            'method': 'POST',
-            'path': f'/api/v1/order?access-token={self.api_token}&user_token={acc_data["user_token"]}',
+            'method': 'GET',
+            'path': f'/api/v1/order?access-token={self.api_token}'
+                    f'&user_token={acc_data["user_token"]}',
             'scheme': 'https',
             'Accept': 'application/json, text/plain, */*',
             'Accept-Language': 'ru-RU,ru;q=0.9',
@@ -60,8 +61,38 @@ class TNAQueue(authorize.AccountsQueue):
             'User-Agent': self.user_agent
         }
         r = account.get(url, headers=headers)
+
+        to_del = {order['id']: int(order['seatquant'])
+                  for order in r.json()['result']
+                  if order['paystatusname'] == 'Неоплачено'}
         account.bought = {order['calendar_id']: int(order['seatquant'])
-                          for order in r.json()['result']}
+                          for order in r.json()['result']
+                          if order['paystatusname'] != 'Неоплачено'}
+
+        for order in to_del:
+            url = f'https://api.tna-tickets.ru/api/v1/order/{order}/delete' \
+                  f'?access-token={self.api_token}&user_token={acc_data["user_token"]}'
+            headers = {
+                'authority': 'api.tna-tickets.ru',
+                'method': 'POST',
+                'path': f'/api/v1/order/{order}/delete?access-token'
+                        f'={self.api_token}&user_token={acc_data["user_token"]}',
+                'scheme': 'https',
+                'Accept': 'application/json, text/plain, */*',
+                'Accept-Language': 'ru-RU,ru;q=0.9',
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Origin': 'https://www.ak-bars.ru',
+                'Referer': 'https://www.ak-bars.ru/tickets/orders',
+                'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
+                'sec-ch-ua-mobile': '?0',
+                'sec-ch-ua-platform': '"Windows"',
+                'Sec-Fetch-Dest': 'empty',
+                'Sec-Fetch-Mode': 'cors',
+                'Sec-Fetch-Site': 'same-site',
+                'User-Agent': self.user_agent
+            }
+            r = account.post(url, data={'id': order}, headers=headers)
+            print(green(f'Order {order} deleted on {account}'))
         return True
 
     def is_logined(self, account):

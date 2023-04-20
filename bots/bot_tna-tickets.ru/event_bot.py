@@ -5,7 +5,7 @@ from authorization import TNAQueue
 class EventParser(EventParserSample):
     driver_source = None
     counter_step = 5
-    delay = 15
+    delay = 120
 
     def __init__(self, ChrTab, event_name, URL, bot_name,
                  api_token, **init_kwargs):
@@ -66,7 +66,6 @@ class EventParser(EventParserSample):
             a_events.append(event)
             self.url_on_events[event] = url
 
-        self.bprint(a_events)
         return a_events
 
     def get_event_page(self, event_name):
