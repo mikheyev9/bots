@@ -4,7 +4,7 @@
         "otdel",
         "https://www.ak-bars.ru/tickets/13746",
         {
-            "version": 1,
+            "version": 2,
             "buy_mode": true,
             "quantity": "alone;double",
             "white_list": {
