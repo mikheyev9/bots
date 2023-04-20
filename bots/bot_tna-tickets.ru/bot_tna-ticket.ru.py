@@ -1,6 +1,7 @@
 from loguru import logger
 
 from cores_src.bot_sample_server import *
+from event_bot import EventParser
 import authorization
 
 BotCore.tele_bool = settings['tele_bool']
@@ -813,6 +814,9 @@ if __name__ == '__main__':
     manager_socket = start_buying_bots(ObserverBot, SectorGrabber,
                                        OrderBot, sectors_q, tickets_q,
                                        accounts_q=accounts)
+    start_event_parser('Ак-Барс. Мск. ',
+                       'https://www.ak-bars.ru/tickets/',
+                       EventParser, api_token=api_token)
     while True:
         input()
         monitor(SectorGrabber, OrderBot, manager_socket, monitor_q=accounts)

@@ -589,7 +589,8 @@ def start_buying_bots(observer_class, sector_class, order_class,
     return socket_info
         
 
-def start_event_parser(ev_name, url, parser_class=None, auto_chrtab=False):
+def start_event_parser(ev_name, url, parser_class=None,
+                       auto_chrtab=False, **kwargs):
     def event_parse():
         with open('needed.json', encoding='utf-8') as needed:
             needed_events = json.load(needed)
@@ -597,15 +598,14 @@ def start_event_parser(ev_name, url, parser_class=None, auto_chrtab=False):
             ev_tele_profiles = needed_events[0][1]
         else:
             ev_tele_profiles = "we"
-        
+
+        kwargs['url_on_bots'] = url_on_bots
         needed_events_evbot = [
             (
                 ev_name,
                 ev_tele_profiles,
                 url,
-                {
-                    'url_on_bots': url_on_bots
-                }
+                kwargs
             )
         ]
         start_bots(needed_events_evbot, parser_class, auto_chrtab, is_buying_bot=False)

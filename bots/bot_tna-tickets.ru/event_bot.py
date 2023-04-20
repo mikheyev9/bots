@@ -7,8 +7,10 @@ class EventParser(EventParserSample):
     counter_step = 5
     delay = 15
 
-    def __init__(self, *init_args, **init_kwargs):
-        super().__init__(*init_args, **init_kwargs)
+    def __init__(self, ChrTab, event_name, URL, bot_name,
+                 api_token, **init_kwargs):
+        super().__init__(ChrTab, event_name, URL, bot_name, **init_kwargs)
+        self.api_token = api_token
         self.url_on_events = {}
         self.session = None
         # self.account = None
@@ -32,7 +34,8 @@ class EventParser(EventParserSample):
         return date
 
     def get_a_events(self):
-        url = f'https://api.tna-tickets.ru/api/v1/game?access-token={api_token}&sport=1'
+        assert self.api_token is not None, 'token needs to be set'
+        url = f'https://api.tna-tickets.ru/api/v1/game?access-token={self.api_token}&sport=1'
         headers = {
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-encoding': 'gzip, deflate, br',
@@ -63,7 +66,7 @@ class EventParser(EventParserSample):
             a_events.append(event)
             self.url_on_events[event] = url
 
-        print(a_events)
+        self.bprint(a_events)
         return a_events
 
     def get_event_page(self, event_name):
