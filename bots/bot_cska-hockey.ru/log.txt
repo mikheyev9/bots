@@ -1,0 +1,2236 @@
+Fri Apr 21 17:33:05 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:05 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:05 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:05 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:05 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:05 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:05 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:05 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:05 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:05 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:05 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:05 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:05 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:06 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:06 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:06 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:06 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:06 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:06 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:07 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+Fri Apr 21 17:33:07 2023 Главный: [31m[49mEventParser: 'NoneType' object has no attribute 'release'[39m[33m[49m | . Жду 0.5с[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:07 2023 Главный: [31m[49mEventParser: 'NoneType' object has no attribute 'release'[39m
+[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\bot_sample_server.py", line 617, in event_parse
+    start_bots(needed_events_evbot, parser_class, auto_chrtab, is_buying_bot=False)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\cores.py", line 2362, in start_bots
+    tab_num = get_chrtab(BotInit.release)
+AttributeError: 'NoneType' object has no attribute 'release'
+[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:10 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:10 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:09 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:10 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:10 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:10 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+Fri Apr 21 17:33:10 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[33m[49m | . Жду 0.5с[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:12 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:12 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:12 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:12 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:12 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:12 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:12 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:13 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:13 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+Fri Apr 21 17:33:13 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:13 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mol.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+Fri Apr 21 17:33:13 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:13 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:13 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:13 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:14 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:14 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+Fri Apr 21 17:33:14 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:14 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m[33m[49m | . Жду 0.5с[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:14 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[33m[49m | . Жду 0.5с[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:15 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:15 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:15 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:15 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:15 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:16 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:16 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:16 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+Fri Apr 21 17:33:16 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+Fri Apr 21 17:33:16 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:16 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m[33m[49m | . Жду 0.5с[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+Fri Apr 21 17:33:16 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:17 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:17 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:17 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+Fri Apr 21 17:33:17 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:17 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:17 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:18 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:852)'),))[39m[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:18 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:852)'),))[39m
+[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:18 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:18 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:18 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:19 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:19 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:19 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 429, in connect
+    tls_in_tls=tls_in_tls,
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\ssl_.py", line 450, in ssl_wrap_socket
+    sock, context, tls_in_tls, server_hostname=server_hostname
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\ssl.py", line 817, in __init__
+    self.do_handshake()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\ssl.py", line 1077, in do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:852)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:852)'),))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:852)'),))
+[39m
+Fri Apr 21 17:33:19 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m[33m[49m | . Жду 0.5с[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:19 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+Fri Apr 21 17:33:19 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+Fri Apr 21 17:33:19 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[33m[49m | . Жду 0.5с[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:33:21 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39mFri Apr 21 17:33:21 2023 Главный: [31m[49mSub: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connection.py", line 374, in connect
+    self._tunnel()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 919, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 407 Proxy Authentication Required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 285, in put
+    self.put_very_old(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 250, in put_very_old
+    raise exception
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 245, in put_very_old
+    self.login(account)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\bots\bot_cska-hockey.ru\authorization.py", line 62, in login
+    r = account.get(url, headers=headers)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\authorize.py", line 133, in get
+    r = self.session.get(*args, **kwargs, proxies=self.requests_proxies())
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\venv\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='tickets.cska-hockey.ru', port=443): Max retries exceeded with url: /user/login (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 Proxy Authentication Required',)))
+[39m
+[33m[49m | . Жду 0.5с[39m
+Fri Apr 21 17:37:44 2023 Главный: [31m[49mEventParser: 'NoneType' object has no attribute 'release'[39mFri Apr 21 17:37:44 2023 Главный: [31m[49mEventParser: 'NoneType' object has no attribute 'release'[39m
+[31m[49mTraceback (most recent call last):
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\vis.py", line 344, in tryfunc
+    func(*args)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\bot_sample_server.py", line 617, in event_parse
+    start_bots(needed_events_evbot, parser_class, auto_chrtab, is_buying_bot=False)
+  File "C:\Users\ASUS\PycharmProjects\bot_frame\cores_src\cores.py", line 2362, in start_bots
+    tab_num = get_chrtab(BotInit.release)
+AttributeError: 'NoneType' object has no attribute 'release'
+[39m
+[33m[49m | . Жду 0.5с[39m

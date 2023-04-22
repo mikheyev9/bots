@@ -190,9 +190,15 @@ class AccountsQueue(threading.Thread):
         return f"({self.ready.qsize()}, {self.to_inspect.qsize()})"
         
     def first_fill_queue(self):
-        with open(self.accounts_path, 'r') as f:
-            rows = [row.split(self.separator) for row in f.read().split('\n')
-                        if row and not row.startswith('--')]
+        with open(self.accounts_path, 'r', encoding='utf-8') as f:
+            rows = []
+            for row in f.read().split('\n'):
+                if not row or row.startswith('--'):
+                    continue
+                if not self.separator in row:
+                    raise RuntimeError(f'No separator in account line {row}')
+                logpass = row.split(self.separator)
+                rows.append(logpass)
         for i in range(len(rows)):
             if rows[i][-1].endswith('\r'):
                 rows[i] = rows[i][:-1]

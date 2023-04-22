@@ -37,8 +37,8 @@ class EventParser(EventParserSample):
         assert self.api_token is not None, 'token needs to be set'
         url = f'https://api.tna-tickets.ru/api/v1/game?access-token={self.api_token}&sport=1'
         headers = {
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-encoding': 'gzip, deflate, br',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,ima'
+                      'ge/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
             'cache-control': 'max-age=0',
             'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',

@@ -328,20 +328,20 @@ class OrderBotSample(BotCore):
         self.cart_threads = settings['cart_threads']
     
     def get_from_queue(self):
-        self._from_needed_events, self.from_observer, \
+        self.from_needed_events, self.from_observer, \
         self.sector_data, self.tickets_pack = self.tickets_q.get()
         
         self.ChrTab = self.sector_data['tab']
-        self.tele_ids = self._from_needed_events['tele_ids']
+        self.tele_ids = self.from_needed_events['tele_ids']
                
     def send_descrs(self, url=None):
         ticket_descrs = '\n'.join(self.ticket_descrs)
-        event_name = self._from_needed_events['event_name']
+        event_name = self.from_needed_events['event_name']
         all_descr = (f"{event_name}\n{self.sector_data['name']}"
                      f"\n{ticket_descrs}")
                      
-        if 'url' in self._from_needed_events:
-            event_url = str(self._from_needed_events['url'])
+        if 'url' in self.from_needed_events:
+            event_url = str(self.from_needed_events['url'])
             all_descr += ("\nСхема: " + event_url)
         if hasattr(self, 'account'):
             all_descr += ("\nАккаунт "
@@ -381,13 +381,19 @@ class OrderBotSample(BotCore):
                 self.accounts.put(self.account)
             return False
         mes = 'Корзина: ' + str(len(self.ticket_descrs))
-        print(green(mes))
+        if len(self.ticket_descrs) == 1 and self.from_needed_events['del_alones']:
+            print(yellow(f'{mes}, aborting'))
+            if hasattr(self, 'account'):
+                self.accounts.put(self.account)
+            return
+        else:
+            print(green(mes))
         order_result = self.create_order()
         if order_result:
             print(green("Чекаут: Успешно вывело на оплату!"), end='')
             ban_rules.add_to_ban_list(self.added_to_cart,
                                       self.sector_data['name'],
-                                      self._from_needed_events['event_name'])
+                                      self.from_needed_events['event_name'])
             self.send_descrs(order_result)
         else:
             print(red("Чекаут: Не выведено на оплату!\n"), end='')

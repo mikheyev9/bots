@@ -9,7 +9,7 @@
     "reimport_delay": 5,
     "tries_to_ban": 5,
     "ban_time": 30,
-    "cart_threads": 0,
+    "cart_threads": 1,
     "long_ban_time": 600,
     "order_multiplier": 1,
     "del_alones": true,

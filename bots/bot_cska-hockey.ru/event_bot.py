@@ -1,8 +1,5 @@
-import sys
-import os
-s_path = os.path.dirname(os.path.abspath(__file__)).split('\\')[:-1]
-sys.path.insert(0, '\\'.join(s_path) + '\\cores_src')
-from event_bot_sample import *
+from cores_src.event_bot_sample import *
+
 
 class EventParser(EventParserSample):
     driver_source = None
@@ -18,7 +15,8 @@ class EventParser(EventParserSample):
         
     def get_a_events(self):
         headers = {
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9'
+                      ',image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'no-cache',
@@ -80,10 +78,11 @@ class EventParser(EventParserSample):
         if '.20' in full_date:
             dm, time_ = full_date.split(' ')
             d, m, _ = dm.split('.')
-            m = month(m)
+            m = month[m]
         else:
             d, m, _, time_ = full_date.split(' ')
         return event_name, city, int(d), m, time_
+
 
 if __name__ == '__main__':
     with open('config.json') as f:
