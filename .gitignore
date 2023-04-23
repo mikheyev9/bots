@@ -157,7 +157,6 @@ ChrTab.txt
 event_state.json
 *ext_*.zip
 tab
-proxies.json
 
 start.py
 test.py
