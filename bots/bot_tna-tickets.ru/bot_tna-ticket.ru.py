@@ -199,6 +199,8 @@ class ObserverBot(ObserverBotSample):
         status = r.json()['status']
         if status != 200:
             raise RuntimeError(f'Status is wrong in ObserverBot {status}')
+        if not r.json()['result']:
+            raise RuntimeError('There is no any sector on a sector request')
         return r.json()['result']
 
     def get_sectors(self):
