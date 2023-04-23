@@ -1,7 +1,7 @@
 [
     [
         [""],
-        "andrey;valera",
+        "otdel",
         "*",
         {
             "version": 1,
@@ -14,7 +14,7 @@
             "delay": 15,
             "notify_all": true,
             "notify": true,
-            "del_alones": false,
+            "del_alones": true,
             "black_list": []
         }
     ]

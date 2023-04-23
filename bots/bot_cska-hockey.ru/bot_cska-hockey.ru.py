@@ -1,4 +1,5 @@
 from cores_src.bot_sample_server import *
+from event_bot import EventParser
 import authorization
 
 BotCore.tele_bool = settings['tele_bool']
@@ -48,7 +49,7 @@ class ObserverBot(ObserverBotSample):
             'user-agent': self.user_agent
         }
         r = self.session.get(self.from_needed_events['url'], headers=headers,
-                             proxies=self.requests_proxies())
+                             proxies=self.requests_proxies(), verify=False)
         if 'queue' in r.url:
             queue_id = double_split(r.text, 'serverRendered:', '</script')
             queue_id = double_split(queue_id, '"', '"')
@@ -107,7 +108,8 @@ class ObserverBot(ObserverBotSample):
             'upgrade-insecure-requests': '1',
             'user-agent': self.user_agent
         }
-        r = self.session.get(self.URL, headers=headers, proxies=self.requests_proxies())
+        r = self.session.get(self.URL, headers=headers,
+                             proxies=self.requests_proxies(), verify=False)
         if 'queue' in r.url:
             queue_id = double_split(r.text, 'serverRendered:', '</script')
             queue_id = double_split(queue_id, '"', '"')
@@ -188,7 +190,8 @@ class SectorGrabber(SectorGrabberSample):
             'clear_cache': False,
             '_csrf-frontend': self.from_observer['csrf_frontend']
         }
-        r = self.session.post(url, data=data, headers=headers, proxies=self.observer_proxy)
+        r = self.session.post(url, data=data, headers=headers,
+                              proxies=self.observer_proxy, verify=False)
         return r.json()['places']['values']
         
     def get_tickets(self):
@@ -229,7 +232,8 @@ class OrderBot(OrderBotSample):
             'user-agent': self.user_agent
         }
 
-        r = self.account.get(self.from_needed_events['url'], headers=headers)
+        r = self.account.get(self.from_needed_events['url'],
+                             headers=headers, verify=False)
 
         x_csrf_token = double_split(r.text, 'name="csrf-token" content="', '"')
         csrf_frontend = double_split(r.text, 'name="_csrf-frontend" value="', '"')
@@ -244,7 +248,8 @@ class OrderBot(OrderBotSample):
             'method': 'GET',
             'path': '/orders/cart',
             'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,ima'
+                      'ge/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'no-cache',
@@ -261,8 +266,8 @@ class OrderBot(OrderBotSample):
             'user-agent': self.user_agent
         }
         cart_url = 'https://tickets.cska-hockey.ru/orders/cart'
-        r = self.account.get(cart_url, headers=headers)
-        
+        r = self.account.get(cart_url, headers=headers, verify=False)
+
         cart_tickets = lrsplit(r.text, 'tickets__item ', 'span')
         if not cart_tickets:
             return True
@@ -298,7 +303,8 @@ class OrderBot(OrderBotSample):
                 ('event_id', double_split(ticket, 'data-event="', '"')),
                 ('_csrf-frontend', self.csrf_frontend)
             ]
-            r = self.account.delete(remove_url, data=remove_data, headers=headers)
+            r = self.account.delete(remove_url, data=remove_data,
+                                    headers=headers, verify=False)
             
     def add_to_cart(self, ticket):
         headers = {
@@ -332,7 +338,8 @@ class OrderBot(OrderBotSample):
             ('_csrf-frontend', self.csrf_frontend)
         ]
         url_add = 'https://tickets.cska-hockey.ru/event/cart/add'
-        r = self.account.post(url_add, data=form_data, headers=headers)
+        r = self.account.post(url_add, data=form_data,
+                              headers=headers, verify=False)
         jsoned = r.json()
         
         if 'carts' in jsoned:
@@ -376,7 +383,8 @@ class OrderBot(OrderBotSample):
             'method': 'GET',
             'path': f'/pay/pay?id={self.payment_id}',
             'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,ima'
+                      'ge/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'no-cache',
@@ -393,7 +401,8 @@ class OrderBot(OrderBotSample):
             'user-agent': self.user_agent
         }
         confirm_url = f'https://tickets.cska-hockey.ru/pay/pay?id={self.payment_id}'
-        r = self.account.get(confirm_url, headers=headers, allow_redirects=False)
+        r = self.account.get(confirm_url, headers=headers, allow_redirects=False,
+                             verify=False)
         if 'Location' not in r.headers:
             return None
         if 'vbrr' not in r.headers['Location']:
@@ -405,16 +414,17 @@ if __name__ == '__main__':
     scripted = args_by_os()
     
     # Starting account pool
-    #accounts = start_accounts_queue(authorization.CSKAHQueue, mix=True)
+    accounts = start_accounts_queue(authorization.CSKAHQueue, reauthorize=True)
     
     # Defining global variables
     tickets_q = Queue()
     sectors_q = Queue()
     
     # Starting buying threads
-    manager_socket = start_buying_bots(ObserverBot, SectorGrabber,
-                                       OrderBot, sectors_q, tickets_q)
-    start_event_parser('ЦСКА Хоккей. Мск. ', 'https://tickets.cska-hockey.ru/')
+    manager_socket = start_buying_bots(ObserverBot, SectorGrabber, OrderBot, sectors_q,
+                                       tickets_q, accounts_q=accounts)
+
+    start_event_parser('ЦСКА Хоккей. Мск. ', 'https://tickets.cska-hockey.ru/', EventParser)
     while True:
         input()
-        monitor(SectorGrabber, OrderBot, manager_socket)
+        monitor(SectorGrabber, OrderBot, manager_socket, monitor_q=accounts)
