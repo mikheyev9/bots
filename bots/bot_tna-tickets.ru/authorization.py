@@ -68,7 +68,6 @@ class TNAQueue(authorize.AccountsQueue):
         account.bought = {order['calendar_id']: int(order['seatquant'])
                           for order in r.json()['result']
                           if order['paystatusname'] != 'Неоплачено'}
-        print(account.bought)
 
         for order in to_del:
             url = f'https://api.tna-tickets.ru/api/v1/order/{order}/delete' \
