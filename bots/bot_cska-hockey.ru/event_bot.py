@@ -4,7 +4,7 @@ from cores_src.event_bot_sample import *
 class EventParser(EventParserSample):
     driver_source = None
     counter_step = 1
-    delay = 10
+    delay = 360
 
     def __init__(self, *init_args, **init_kwargs):
         super().__init__(*init_args, **init_kwargs)
