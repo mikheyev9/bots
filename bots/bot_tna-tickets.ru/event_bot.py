@@ -8,7 +8,7 @@ from authorization import TNAQueue, ERRORS
 class EventParser(EventParserSample):
     driver_source = None
     counter_step = 1
-    delay = 1
+    delay = 60
 
     def __init__(self, ChrTab, event_name, URL, bot_name,
                  api_token, **init_kwargs):
@@ -54,7 +54,20 @@ class EventParser(EventParserSample):
             'upgrade-insecure-requests': '1',
             'user-agent': self.user_agent
         }
-        r = self.session.get(url, headers=headers)
+        while True:
+            try:
+                r = self.session.get(url, headers=headers)
+                for err in ERRORS:
+                    if err in r.text:
+                        print('^', end='')
+                        raise ConnectionError
+                break
+            except ConnectionError:
+                print('$', end='')
+            except HTTPSConnectionPool:
+                print('%', end='')
+            except SSLError:
+                print('#', end='')
 
         if '"status":200' not in r.text:
             screen_r(r.text)

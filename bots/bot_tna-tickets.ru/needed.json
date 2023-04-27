@@ -1,1 +1,18 @@
-[]
+[
+    [
+        "Ак Барс (г,Казань) - ЦСКА (г,Москва). Мск. 29 Апр 17:00",
+        "otdel",
+        "https://www.ak-bars.ru/tickets/13767",
+        {
+            "version": 2,
+            "buy_mode": true,
+            "quantity": "alone;double",
+            "white_list": {},
+            "delay": 3,
+            "notify_all": true,
+            "notify": true,
+            "del_alones": true,
+            "black_list": []
+        }
+    ]
+]

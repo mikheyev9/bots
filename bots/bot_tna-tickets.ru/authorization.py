@@ -8,7 +8,9 @@ from cores_src import authorize
 from cores_src.vis import *
 from cores_src.cores import *
 
-ERRORS = ['500 Internal Server Error', '504 Gateway Time-out']
+ERRORS = ['500 Internal Server Error', '504 Gateway Time-out', '502 Bad Gateway',
+          'Сервис временно недоступен', 'Error code 520', 'Error code 504',
+          'Error code 502', 'Error code 524']
 
 
 class TNAQueue(authorize.AccountsQueue):
