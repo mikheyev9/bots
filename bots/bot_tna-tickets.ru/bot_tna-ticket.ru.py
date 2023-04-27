@@ -1,4 +1,6 @@
 from loguru import logger
+from requests.exceptions import SSLError
+from urllib3 import HTTPSConnectionPool
 
 from cores_src.bot_sample_server import *
 from event_bot import EventParser
@@ -776,7 +778,16 @@ def get_api_token(session):
         'upgrade-insecure-requests': '1',
         'user-agent': BotCore.user_agent
     }
-    r = session.get(url, headers=headers)
+    while True:
+        try:
+            r = session.get(url, headers=headers, verify=False)
+            break
+        except ConnectionError:
+            print('$', end='')
+        except HTTPSConnectionPool:
+            print('%', end='')
+        except SSLError:
+            print('#', end='')
     if 'data-hid="gtm-noscript" data-pbody="true"' not in r.text:
         raise RuntimeError('The page was not loaded')
     script_dirs = lrsplit(r.text, 'link rel="preload" href="', '"')
@@ -799,7 +810,16 @@ def get_api_token(session):
         'upgrade-insecure-requests': '1',
         'user-agent': BotCore.user_agent
     }
-    r = session.get(script_url, headers=headers)
+    while True:
+        try:
+            r = session.get(script_url, headers=headers, verify=False)
+            break
+        except ConnectionError:
+            print('$', end='')
+        except HTTPSConnectionPool:
+            print('%', end='')
+        except SSLError:
+            print('#', end='')
     if 'TNA_API_KEY: "' not in r.text:
         raise RuntimeError('No API key found in JS. Auth method might be changed')
     return double_split(r.text, 'TNA_API_KEY: "', '"')

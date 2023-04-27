@@ -3,6 +3,7 @@ from multiprocessing import Queue
 
 import requests
 import urllib3
+from requests.exceptions import SSLError, ProxyError
 from urllib3.exceptions import InsecureRequestWarning
 
 from .telecore import TeleCore
@@ -13,6 +14,7 @@ from .cores import BotCore
 DEBUG_TELE_IDS = [454746771, 1128666119, 647298152]
 with open('config.json') as f:
     settings = json.load(f)
+ERRORS = ['500 Internal Server Error', '504 Gateway Time-out', '502 Bad Gateway', 'Сервис временно недоступен']
 
 
 def load_proxies():
@@ -159,6 +161,49 @@ class Account:
         return r
 
 
+class RushAccount(Account):
+
+    def __init__(self, login, password):
+        super().__init__(login, password)
+
+    def get(self, *args, **kwargs):
+        kwargs['verify'] = False
+        while True:
+            try:
+                r = super().get(*args, **kwargs)
+                for err in ERRORS:
+                    if err in r.text:
+                        raise ConnectionError
+                else:
+                    return r
+            except ConnectionError:
+                print('$', end='')
+            except urllib3.HTTPSConnectionPool:
+                print('%', end='')
+            except SSLError:
+                print('#', end='')
+            except ProxyError:
+                print('&', end='')
+
+    def post(self, *args, **kwargs):
+        kwargs['verify'] = False
+        while True:
+            try:
+                r = super().post(*args, **kwargs)
+                for err in ERRORS:
+                    if err in r.text:
+                        print('^', end='')
+                        raise ConnectionError
+                else:
+                    return r
+            except ConnectionError:
+                print('$', end='')
+            except urllib3.HTTPSConnectionPool:
+                print('%', end='')
+            except SSLError:
+                print('#', end='')
+
+
 class AccountsQueue(threading.Thread):
     def __init__(self, accounts_path, separator='\t', mix=False,
                  ignore_limit=False, reauthorize=False):
@@ -283,7 +328,7 @@ class AccountsQueue(threading.Thread):
         if len(args) == 1:
             account = args[0]
         else:
-            account = Account(*args)
+            account = RushAccount(*args)
         time_elapsed = time.time() - account.last_session
         if self.reauthorize:
             account.change_identity()
@@ -347,7 +392,7 @@ class AccountsQueue(threading.Thread):
             
         with open(self.accounts_path, 'r') as f:
             logpasses = [row.split(self.separator) for row in f.read().split('\n')]
-        accounts = [Account(*logpass) for logpass in logpasses]
+        accounts = [RushAccount(*logpass) for logpass in logpasses]
         time_tests = [10, 290, 590, 890, 1190, 1790, 3590, 7190, 10790]
         for time_test, account in zip(time_tests, accounts):
             threading.Thread(target=test, args=(time_test, account,)).start()
@@ -360,7 +405,7 @@ class AccountsQueue(threading.Thread):
             account.pickling = False
             if not self.is_logined(account):
                 print('While inspecting, not logined', account.login, account.password)
-                account = Account(account.login, account.password)
+                account = RushAccount(account.login, account.password)
                 try:
                     self.login(account)
                 except:

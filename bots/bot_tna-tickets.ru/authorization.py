@@ -1,10 +1,14 @@
 import requests
 from loguru import logger
+from requests.exceptions import SSLError
 from requests.utils import dict_from_cookiejar
+from urllib3 import HTTPSConnectionPool
 
 from cores_src import authorize
 from cores_src.vis import *
 from cores_src.cores import *
+
+ERRORS = ['500 Internal Server Error', '504 Gateway Time-out']
 
 
 class TNAQueue(authorize.AccountsQueue):
@@ -36,6 +40,8 @@ class TNAQueue(authorize.AccountsQueue):
         }
         data = {'token': account.ak_token}
         r = account.post(url, headers=headers, data=data)
+        if isinstance(r.json(), list):
+            logger.info(r.json())
         acc_data = r.json()['result']
         account.data = acc_data
 
@@ -151,15 +157,17 @@ class TNAQueue(authorize.AccountsQueue):
             'login': account.login,
             'password': account.password,
         }
-
         r = account.post(url, headers=headers, json=data)
 
         error = r.json().get('error')
         if error:
+            if 'зафиксировано слишком много попыток' in r.text:
+                print(yellow(r.text))
+                account.change_identity()
+                return self.login(account)
             if 'Неверный логин или пароль' in r.text:
-                print(yellow(f'{r.text}'))
+                print(yellow(r.text))
                 self.ban(account)
-                raise RuntimeError(f'Неверный логин или пароль: {error}')
             else:
                 raise RuntimeError(f'Неизвестная ошибка авторизации: {error}')
 
