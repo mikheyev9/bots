@@ -847,5 +847,8 @@ if __name__ == '__main__':
                        'https://www.ak-bars.ru/tickets/',
                        EventParser, api_token=api_token)
     while True:
-        input()
-        monitor(SectorGrabber, OrderBot, manager_socket, monitor_q=accounts)
+        cmd = input()
+        if not cmd:
+            monitor(SectorGrabber, OrderBot, manager_socket, monitor_q=accounts)
+        else:
+            accounts.first_fill_queue()
