@@ -200,8 +200,10 @@ class ObserverBot(ObserverBotSample):
         r = self.account.get(url, headers=headers)
         status = r.json()['status']
         if status != 200:
+            screen_r(r.text, 'Status is wrong in ObserverBot')
             raise RuntimeError(f'Status is wrong in ObserverBot {status}')
         if not r.json()['result']:
+            screen_r(r.text, 'There is no any sector on a sector')
             raise RuntimeError('There is no any sector on a sector request')
         return r.json()['result']
 
