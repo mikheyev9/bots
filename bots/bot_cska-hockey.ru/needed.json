@@ -11,7 +11,7 @@
             "delay": 15,
             "notify_all": true,
             "notify": true,
-            "del_alones": true,
+            "del_alones": false,
             "black_list": []
         }
     ]

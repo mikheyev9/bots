@@ -295,7 +295,7 @@ class OrderBot(OrderBotSample):
         event_id = self.from_observer['event_id']
         url = f'https://api.tna-tickets.ru/api/v1/booking/{event_id}/seats-price?access-token' \
               f'={api_token}&sector_id={self.sector_data["sector_id"]}'
-        logger.info(url)
+        #logger.info(url)
         headers = {
             'accept': 'application/json, text/plain, */*',
             'accept-language': 'en-MY,en;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,vi;q=0.5',
@@ -604,7 +604,7 @@ class OrderBot(OrderBotSample):
     def add_to_cart(self, ticket):
         url = f'https://api.tna-tickets.ru/api/v1/booking/seat-reserve?access-token=' \
               f'{api_token}&user_token={self.account.data["user_token"]}'
-        logger.info(url)
+        #logger.info(url)
         event_id = self.from_observer['event_id']
         headers = {
             'accept': 'application/json, text/plain, */*',
@@ -635,7 +635,7 @@ class OrderBot(OrderBotSample):
            'booking_ids': '',
            'category_id': current_zone['category_id']
         }
-        logger.info(data)
+        #logger.info(data)
         r = self.account.post(url, data=data, headers=headers)
         jsoned = r.json()
         status = jsoned['status']

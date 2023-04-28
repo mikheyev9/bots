@@ -180,8 +180,6 @@ class RushAccount(Account):
                     return r
             except ConnectionError:
                 print('$', end='')
-            except urllib3.HTTPSConnectionPool:
-                print('%', end='')
             except SSLError:
                 print('#', end='')
             except ProxyError:
