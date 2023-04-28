@@ -161,12 +161,12 @@ class TNAQueue(authorize.AccountsQueue):
         }
         r = account.post(url, headers=headers, json=data)
 
+        if 'зафиксировано слишком много попыток' in r.text:
+            print(yellow(r.text))
+            account.change_identity()
+            return self.login(account)
         error = r.json().get('error')
         if error:
-            if 'зафиксировано слишком много попыток' in r.text:
-                print(yellow(r.text))
-                account.change_identity()
-                return self.login(account)
             if 'Неверный логин или пароль' in r.text:
                 print(yellow(r.text))
                 self.ban(account)
