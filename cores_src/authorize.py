@@ -15,8 +15,7 @@ DEBUG_TELE_IDS = [454746771, 1128666119, 647298152]
 with open('config.json') as f:
     settings = json.load(f)
 ERRORS = ['500 Internal Server Error', '504 Gateway Time-out', '502 Bad Gateway',
-          'Сервис временно недоступен', 'Error code 520', 'Error code 504',
-          'Error code 502', 'Error code 524']
+          'Сервис временно недоступен', '<span class="code-label">Error code 5']
 
 
 def load_proxies():
@@ -198,10 +197,10 @@ class RushAccount(Account):
                     return r
             except ConnectionError:
                 print('$', end='')
-            except urllib3.HTTPSConnectionPool:
-                print('%', end='')
             except SSLError:
                 print('#', end='')
+            except ProxyError:
+                print('&', end='')
 
 
 class AccountsQueue(threading.Thread):
