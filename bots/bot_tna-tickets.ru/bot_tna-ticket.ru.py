@@ -643,6 +643,8 @@ class OrderBot(OrderBotSample):
         if status != 200:
             logger.warning(f'add_to_cart status {status}')
             return
+        else:
+            logger.debug('SUCCEEDED')
         seat_ids = [ticket['seat_id'] for ticket in jsoned['result'] if 'seat_id' in ticket]
         if ticket['seat_id'] not in seat_ids:
             logger.warning(f'adding seat was not found in the cart')
