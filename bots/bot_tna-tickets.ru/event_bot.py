@@ -64,8 +64,6 @@ class EventParser(EventParserSample):
                 break
             except ConnectionError:
                 print('$', end='')
-            except HTTPSConnectionPool:
-                print('%', end='')
             except SSLError:
                 print('#', end='')
 
