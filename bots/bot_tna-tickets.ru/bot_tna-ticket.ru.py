@@ -201,10 +201,12 @@ class ObserverBot(ObserverBotSample):
         status = r.json()['status']
         if status != 200:
             screen_r(r.text, 'Status is wrong in ObserverBot')
-            raise RuntimeError(f'Status is wrong in ObserverBot {status}')
+            self.bprint(f'Status is wrong in ObserverBot {status}', color=Fore.YELLOW)
+            return []
         if not r.json()['result']:
             screen_r(r.text, 'There is no any sector on a sector')
-            raise RuntimeError('There is no any sector on a sector request')
+            self.bprint('There is no any sector on a sector request', color=Fore.YELLOW)
+            return []
         return r.json()['result']
 
     def get_sectors(self):
@@ -850,7 +852,7 @@ if __name__ == '__main__':
                        EventParser, api_token=api_token)
     while True:
         cmd = input()
-        if not cmd:
-            monitor(SectorGrabber, OrderBot, manager_socket, monitor_q=accounts)
-        else:
+        if cmd == 'fill':
             accounts.first_fill_queue()
+        else:
+            monitor(SectorGrabber, OrderBot, manager_socket, monitor_q=accounts)
