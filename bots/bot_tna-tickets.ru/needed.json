@@ -1,56 +1,13 @@
 [
     [
-        "Ак Барс (г,Казань) - ЦСКА (г,Москва). Мск. 29 Апр 17:00",
+        "Прощальный матч Дениса Зарипова. Мск. 09 Авг 19:00",
         "otdel",
-        "https://www.ak-bars.ru/tickets/13767",
+        "https://www.ak-bars.ru/tickets/13782",
         {
-            "version": 9,
+            "version": 5,
             "buy_mode": true,
             "quantity": "alone;double",
             "white_list": {},
-            "delay": 2,
-            "notify_all": true,
-            "notify": true,
-            "del_alones": true,
-            "black_list": [],
-            "first_check_on_bot": false
-        }
-    ],
-    [
-        "ТЕСТОВЫЙ МАТЧ. Мск. 05 Май 19:30",
-        "otdel",
-        "https://www.ak-bars.ru/tickets/13744",
-        {
-            "version": 1,
-            "buy_mode": true,
-            "quantity": "alone;double",
-            "white_list": {
-                "Сектор 3": {
-                    "7": [0, 100],
-                    "8": [0, 100],
-                    "9": [0, 100],
-                    "10": [0, 100],
-                    "11": [0, 100],
-                    "12": [0, 100],
-                    "13": [0, 100],
-                    "14": [0, 100]
-                },
-                "Сектор 13": {
-                    "7": [0, 100],
-                    "8": [0, 100],
-                    "9": [0, 100],
-                    "10": [0, 100],
-                    "11": [0, 100],
-                    "12": [0, 100],
-                    "13": [0, 100],
-                    "14": [0, 100],
-                    "15": [0, 100],
-                    "16": [0, 100],
-                    "17": [0, 100],
-                    "18": [0, 100],
-                    "19": [0, 100]
-                }
-            },
             "delay": 15,
             "notify_all": true,
             "notify": true,

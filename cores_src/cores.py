@@ -2,7 +2,10 @@ import io
 import base64
 import zipfile
 import statistics
+from http.cookiejar import CookieJar, Cookie
+from tempfile import NamedTemporaryFile
 
+import requests
 from screeninfo import get_monitors
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
@@ -131,6 +134,7 @@ class BotCore(threading.Thread):
         self.last_update = None
         self.tele_profile = []
         self.last_time_body = time.time()
+
     def __str__(self):
         if self.bot_name:
             chr_tab = str(self.ChrTab).ljust(3)
@@ -493,13 +497,18 @@ class BotCore(threading.Thread):
             driver = webdriver.Chrome(chrome_options=chrome_options)
         except Exception as exc:
             try:
-                print(f'EXCEPTION {exc}, retrying')
+                print(f'EXCEPTION 1 {exc}, retrying')
                 chrome_options.binary_location = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
                 driver = webdriver.Chrome(chrome_options=chrome_options)
             except Exception as exc:
-                print(f'EXCEPTION {exc}, retrying')
+                print(f'EXCEPTION 2 {exc}, retrying')
                 chrome_options.binary_location = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
-                driver = webdriver.Chrome(chrome_options=chrome_options)
+                try:
+                    driver = webdriver.Chrome(chrome_options=chrome_options)
+                    print('Thread has started after the 2 tries')
+                except Exception as exc:
+                    print(f'EXCEPTION 3: has not started after 3 tries: {exc}')
+                    return
         # delfile
         return driver
 
@@ -952,7 +961,7 @@ class BotCore(threading.Thread):
                             key,
                             to_state,
                             url='',
-                            comments={},
+                            comments=None,
                             appeared='билеты',
                             separator=' ',
                             print_minus=True,
@@ -968,6 +977,9 @@ class BotCore(threading.Thread):
         # Если to_state передается списком, при release=False
         # не будет первого сообщения об отсутствии билетов
         # comments может быть передан как словарь или список
+
+        if comments is None:
+            comments = {}
 
         def check_for_repeat(to_state):
             if repeater == 1:
@@ -2405,6 +2417,120 @@ def start_bots(needed_events, BotInit, auto_chrtab=False, inc=0,
         if first:
             time.sleep(0.1)
     return tabs
+
+
+def download(url, name=None, session=None, save=True, temp=False, **kwargs):
+    if save and not temp:
+        if not os.path.exists('downloads'):
+            os.mkdir('downloads')
+    if not session:
+        r = requests.get(url, **kwargs)
+    else:
+        r = session.get(url, **kwargs)
+    if not name:
+        if 'content-disposition' in r.headers:
+            disposition = r.headers['content-disposition']
+            disposition += ' '
+            name = double_split(disposition, 'filename=', ' ')
+            name = name.replace('"', '')
+        else:
+            name = url.split('/')[-1]
+    addition = ''
+    name_parts = name.split('.')
+    if len(name_parts) > 1:
+        format_ = '.' + name_parts.pop()
+        name = '.'.join(name_parts)
+    else:
+        name = name_parts.pop()
+        format_ = ''
+    if temp:
+        fo = NamedTemporaryFile()
+        fo.write(r.content)
+        return fo
+    elif save:
+        while os.path.exists(f'downloads\\{addition}{name}{format_}'):
+            addition += '#'
+        with open(f'downloads\\{addition}{name}{format_}', 'wb+') as f:
+            f.write(r.content)
+        return r.text
+    else:
+        return r.content
+
+
+def make_cookie(selenium_cookie, domain=None):
+    return Cookie(
+        version=0,
+        name=selenium_cookie['name'],
+        value=selenium_cookie['value'],
+        port=None,
+        port_specified=False,
+        domain=selenium_cookie['domain'] if not domain else domain,
+        domain_specified=True,
+        domain_initial_dot=False,
+        path=selenium_cookie['path'],
+        path_specified=True,
+        secure=selenium_cookie['secure'],
+        expires=selenium_cookie['expiry'] if 'expiry' in selenium_cookie else None,
+        discard=False,
+        comment=None,
+        comment_url=None,
+        rest=None,
+        rfc2109=False
+    )
+
+
+def driver_to_session_old(domain, driver):
+    if '://' in domain:
+        domain = domain.split('://')[1]
+    if '/' in domain:
+        domain = domain.split('/')[0]
+    if 'www.' in domain:
+        domain.replace('www.', '')
+    domain_spl = domain.split('.')
+    domain = domain_spl[-2] + '.' + domain_spl[-1]
+    all_cookies = driver.get_cookies()
+    cookies = {cookie['name']: cookie['value'] for cookie in all_cookies if domain in cookie['domain']}
+    session = requests.Session()
+    for cookie in cookies:
+        session.cookies[cookie] = cookies[cookie]
+    return session
+
+
+def driver_to_session(driver: webdriver.Chrome, domain=None, session=None):
+    driver_cookies = driver.get_cookies()
+    cookies = CookieJar()
+    for driver_cookie in driver_cookies:
+        cookie = make_cookie(driver_cookie, domain)
+        cookies.set_cookie(cookie)
+
+    session = session if session else requests.Session()
+    session.cookies = cookies
+    return session
+
+
+def session_to_driver(session, url, domain=None, driver_class=None):
+
+    current_session = session if session else requests.Session()
+    cookies_selenium = []
+    for cookie in current_session.cookies:
+        domain = cookie.domain if not domain else domain
+        #if domain.startswith('.'):
+        #    domain = domain[1:]
+        cookie_dict = {
+            "name": cookie.name,
+            "path": cookie.path,
+            "value": cookie.value,
+            "domain": domain
+        }
+        cookies_selenium.append(cookie_dict)
+
+    driver = driver_class() if driver_class else webdriver.Chrome()
+    driver.get(url)
+    driver.delete_all_cookies()
+    for cookie in cookies_selenium:
+        driver.add_cookie(cookie)
+    driver.get(url)
+    return driver
 
 
 def screen_r(text, addition=''):

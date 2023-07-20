@@ -1,5 +1,4 @@
 from requests.exceptions import SSLError
-from urllib3 import HTTPSConnectionPool
 
 from cores_src.event_bot_sample import *
 from authorization import TNAQueue, ERRORS
@@ -8,7 +7,7 @@ from authorization import TNAQueue, ERRORS
 class EventParser(EventParserSample):
     driver_source = None
     counter_step = 1
-    delay = 10
+    delay = 240
 
     def __init__(self, ChrTab, event_name, URL, bot_name,
                  api_token, **init_kwargs):
@@ -67,7 +66,7 @@ class EventParser(EventParserSample):
             except SSLError:
                 print('#', end='')
 
-        if '"status":200' not in r.text:
+        if ('"status":200' not in r.text) and ('"status": 200' not in r.text):
             screen_r(r.text)
             raise RuntimeError('--Не получен запрос--', r.text[:100])
 

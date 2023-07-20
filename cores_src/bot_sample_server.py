@@ -165,10 +165,11 @@ class SectorGrabberSample(BotCore):
     order_tab = ChrTab
     working = 0
     
-    def __init__(self, sectors_q, tickets_q):
+    def __init__(self, sectors_q, tickets_q, notifier=None):
         super().__init__(0)
         self.sectors_q = sectors_q
         self.tickets_q = tickets_q
+        self.notifier = notifier
         
     def get_from_queue(self):
         quest = self.sectors_q.get()
@@ -197,6 +198,8 @@ class SectorGrabberSample(BotCore):
         
     def body(self):
         tickets = self.get_tickets()
+        if self.notifier is not None:
+            self._notify(len(tickets))
         preparse(tickets)
         if not tickets:
             return True
@@ -205,7 +208,7 @@ class SectorGrabberSample(BotCore):
         if tickets:
             print(')', end='')
             print("Откупаю " + self.sector_data['name'])
-            print(f'Отфильтрованных билетов в {self.sector_data["name"]} {len(tickets)}')
+            #print(f'Отфильтрованных билетов в {self.sector_data["name"]} {len(tickets)}')
         else:
             return True
         self.send_tickets(tickets)
@@ -240,6 +243,9 @@ class SectorGrabberSample(BotCore):
             if ticket['seat'] in range(min_seat, max_seat + 1):
                 limited_tickets.append(ticket)
         return limited_tickets
+
+    def _notify(self, count):
+        pass
         
     def filter_(self, tickets):
         def sort_by_rowseat(ticket):
@@ -452,7 +458,7 @@ class OrderBotSample(BotCore):
             print(yellow('Account Returned\n'), end='')
             # self.account.deauthorize()
             self.accounts.put(self.account)
-
+        
     def on_except(self):
         self._return_account()
         print('Чекаут: ЭКСЕПШЕН!!!\n', end='')
@@ -462,10 +468,10 @@ class OrderBotSample(BotCore):
             self.finished_adders = 0
             for _ in range(self.cart_threads):
                 threading.Thread(target=self.adder).start()
-
+            
+            OrderBotSample.ready += 1
             multi_try(self.before_get_q, self._return_account, 'Sub', 1, self.release)
             self.get_from_queue()
-            OrderBotSample.ready += 1
             if not multi_try(self.before_order, self._return_account, 'Sub', 1, self.release):
                 OrderBotSample.ready -= 1
                 continue
@@ -479,6 +485,30 @@ class OrderBotSample(BotCore):
                 continue
             for _ in range(self.cart_threads - self.put_tickets):
                 self.cart_q.put(None)
+
+
+class SectorNotifier(BotCore):
+    driver_source = None
+    delay = 10
+
+    def __init__(self):
+        super().__init__(0)
+        self._events = {}
+
+    def bind(self, event, url):
+        key = (event, url,)
+        self._events[key] = {}
+
+    def put(self, event, url, sector_name, count):
+        key = (event, url,)
+        sectors_on_event = self._events[key]
+        sectors_on_event[sector_name] = count
+
+    def body(self):
+        for key, sectors_on_event in self._events.items():
+            event, url = key
+            self.change_ticket_state(event, sectors_on_event,
+                                     url, separator='\n')
 
 
 def reload_settings(needed_events):
@@ -496,7 +526,8 @@ def reload_settings(needed_events):
                 print(yellow(mes))
                 
                 
-def restart_threads(needed_events, observer_class, sectors_q, bots, accounts=None):
+def restart_threads(needed_events, observer_class, sectors_q, bots,
+                    accounts=None, notifier=None):
     global url_on_bots
     old_urls = url_on_bots.keys()
     new_events = {event[2]: event for event in needed_events}
@@ -510,7 +541,10 @@ def restart_threads(needed_events, observer_class, sectors_q, bots, accounts=Non
             accounts.put(bot.account)
         del url_on_bots[url]
         bots.remove(bot)
-        
+
+    if notifier is not None:
+        for event in needed_events:
+            notifier.bind(event[0], event[2])
     new_needed_events = [new_events[url] for url in to_start]
     new_bots = start_bots(new_needed_events, observer_class, False,
                           first=False, args=[sectors_q], is_buying_bot=True)
@@ -519,7 +553,8 @@ def restart_threads(needed_events, observer_class, sectors_q, bots, accounts=Non
     url_on_bots.update(new_url_on_bots)
                 
                 
-def reimport_settings_thread(observer_class, sectors_q, bots, accounts=None):
+def reimport_settings_thread(observer_class, sectors_q, bots, accounts=None,
+                             notifier=None):
     def reimport():
         start_time = time.time()
         #delete_module('needed')
@@ -528,7 +563,8 @@ def reimport_settings_thread(observer_class, sectors_q, bots, accounts=None):
         #reload_settings(needed.needed_events)
         with open('needed.json', encoding='utf-8') as needed:
             needed_events = json.load(needed)
-        restart_threads(needed_events, observer_class, sectors_q, bots, accounts)
+        restart_threads(needed_events, observer_class, sectors_q,
+                        bots, accounts, notifier)
         reload_settings(needed_events)
     to_except = lambda _: print('Error reimporting settings')
     while True:
@@ -563,7 +599,8 @@ def monitor(SectorGrabber, OrderBot, manager_socket, monitor_q=None):
     
     
 def start_buying_bots(observer_class, sector_class, order_class,
-                      sectors_q, tickets_q, accounts_q=None):
+                      sectors_q, tickets_q, accounts_q=None,
+                      notifier: SectorNotifier = None):
     start_buying_bot, _ = args_by_os_default()
     if not start_buying_bot:
         return 'Запущен с _e параметрами. Сокет откупщика не запущен'
@@ -573,22 +610,28 @@ def start_buying_bots(observer_class, sector_class, order_class,
     bots = []
     socket_info = bot_socket.run_socket(bots, accounts_q, is_buying_bot=True)
     global url_on_bots
+
+    # OBSERVER
     with open('needed.json', encoding='utf-8') as needed:
         needed_events = json.load(needed)
+    if notifier is not None:
+        for event in needed_events:
+            notifier.bind(event[0], event[2])
     new_bots = start_bots(needed_events, observer_class, False,
                           args=[sectors_q], is_buying_bot=True)
     bots.extend(new_bots)
     url_on_bots = {bot.URL: bot for bot in bots}
-        
+
+    # SECTORS
     threading.Thread(target=reimport_settings_thread,
                      args=(observer_class, sectors_q,
-                           bots, accounts_q)).start()
+                           bots, accounts_q, notifier)).start()
     if settings['order_multiplier'] != 1:
         mes = f'BE CAREFUL! ORDER MULTIPLIER IS EQUAL TO {settings["order_multiplier"]}'
         print(green(mes))
     
     for _ in range(settings['sector_threads']):
-        sector_class(sectors_q, tickets_q).start()
+        sector_class(sectors_q, tickets_q, notifier=notifier).start()
     for _ in range(settings['order_threads']):
         order_args = [tickets_q]
         order_kwargs = {}

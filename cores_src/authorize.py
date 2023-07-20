@@ -233,7 +233,9 @@ class AccountsQueue(threading.Thread):
         self.reauthorize = reauthorize
         
         self.session_threads = settings['session_threads']
+        self.rush = settings['rush']
         session_time = settings['session_duration']
+        assert session_time > 60, 'Session time should be more than 60'
         self.session_time = session_time - 30
         self.inspect_time = session_time // 2
         self.check_for_inspect_time = session_time // 12

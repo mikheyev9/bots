@@ -8,7 +8,7 @@ import authorization
 
 BotCore.tele_bool = settings['tele_bool']
 BotCore.release = True
-BotCore.proxy_centralized = True
+BotCore.proxy_centralized = False
 TEST = False
 
 
@@ -220,8 +220,8 @@ class ObserverBot(ObserverBotSample):
 
 
 class SectorGrabber(SectorGrabberSample):
-    def __init__(self, *init_args):
-        super().__init__(*init_args)
+    def __init__(self, *init_args, **init_kwargs):
+        super().__init__(*init_args, **init_kwargs)
 
     def tickets_request(self):
         account = self.from_observer['account']

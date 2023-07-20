@@ -16,7 +16,8 @@ default_settings = {
     'ban_time': 30,
     'long_ban_time': 600,
     'order_multiplier': 1,
-    'del_alones': True
+    'del_alones': True,
+    'sector_notifier': False
 }
 
 def check_config(settings):

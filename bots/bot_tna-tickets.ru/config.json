@@ -14,5 +14,7 @@
     "order_multiplier": 1,
     "del_alones": true,
     "limit": 8,
-    "first_check_on_bot": false
+    "first_check_on_bot": false,
+    "sector_notifier": false,
+    "rush": false
 }

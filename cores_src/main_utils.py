@@ -103,6 +103,7 @@ def get_source_path():
     s_path = path.split('\\')[:-1]
     return '\\'.join(s_path) + '\\cores_src\\'
 
+
 def parse_proxy(proxy):
     proxy_type = 'http'
     if type(proxy).__name__ == 'str':
