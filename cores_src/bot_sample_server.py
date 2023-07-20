@@ -205,7 +205,7 @@ class SectorGrabberSample(BotCore):
         if tickets:
             print(')', end='')
             print("Откупаю " + self.sector_data['name'])
-            #print(f'Отфильтрованных билетов в {self.sector_data["name"]} {len(tickets)}')
+            print(f'Отфильтрованных билетов в {self.sector_data["name"]} {len(tickets)}')
         else:
             return True
         self.send_tickets(tickets)
@@ -446,12 +446,15 @@ class OrderBotSample(BotCore):
         
     def after_get_q(self):
         pass
-        
-    def on_except(self):
+
+    def _return_account(self):
         if hasattr(self, 'accounts') and hasattr(self, 'account'):
             print(yellow('Account Returned\n'), end='')
-            self.account.deauthorize()
+            # self.account.deauthorize()
             self.accounts.put(self.account)
+
+    def on_except(self):
+        self._return_account()
         print('Чекаут: ЭКСЕПШЕН!!!\n', end='')
                
     def run(self):
@@ -459,11 +462,12 @@ class OrderBotSample(BotCore):
             self.finished_adders = 0
             for _ in range(self.cart_threads):
                 threading.Thread(target=self.adder).start()
-            
-            OrderBotSample.ready += 1
-            multi_try(self.before_get_q, fpass, 'Sub', 1, self.release)
+
+            multi_try(self.before_get_q, self._return_account, 'Sub', 1, self.release)
             self.get_from_queue()
-            if not multi_try(self.before_order, fpass, 'Sub', 1, self.release):
+            OrderBotSample.ready += 1
+            if not multi_try(self.before_order, self._return_account, 'Sub', 1, self.release):
+                OrderBotSample.ready -= 1
                 continue
             OrderBotSample.ready -= 1
             

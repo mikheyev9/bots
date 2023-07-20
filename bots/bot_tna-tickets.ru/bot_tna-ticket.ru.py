@@ -274,7 +274,7 @@ class SectorGrabber(SectorGrabberSample):
             ticket['row'] = double_split(ticket['name'], 'Ряд ', ' ')
             ticket['seat'] = double_split(ticket['name'], 'Место ', ' ')
             if ticket['zone_id'] in ['25', '59']:
-                print(yellow(f'Skipping tickets with price zone {ticket["zone_id"]}'))
+                # print(yellow(f'Skipping tickets with price zone {ticket["zone_id"]}'))
                 continue
             a_tickets.append(ticket)
         return a_tickets
@@ -645,10 +645,10 @@ class OrderBot(OrderBotSample):
         status = jsoned['status']
 
         if status != 200:
-            logger.warning(f'add_to_cart status {status}')
+            logger.warning(f'add_to_cart status {status} {len(self.ticket_descrs) + 1}')
             return
         else:
-            logger.debug('SUCCEEDED')
+            logger.debug(f'SUCCEEDED {len(self.ticket_descrs) + 1}')
         seat_ids = [ticket['seat_id'] for ticket in jsoned['result'] if 'seat_id' in ticket]
         if ticket['seat_id'] not in seat_ids:
             logger.warning(f'adding seat was not found in the cart')
@@ -676,14 +676,14 @@ class OrderBot(OrderBotSample):
         print(self.account)
         headers = {
             'accept': 'application/json, text/plain, */*',
-            'accept-language': 'en-MY,en;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,vi;q=0.5',
+            'accept-language': 'en-MY,en;q=0.9',
             'cache-control': 'no-cache',
             'content-length': '10',
             'content-type': 'application/x-www-form-urlencoded',
             'origin': 'https://www.ak-bars.ru',
             'pragma': 'no-cache',
             'referer': f'https://www.ak-bars.ru/tickets/{event_id}',
-            'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
+            'sec-ch-ua': '"Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"',
             'sec-ch-ua-mobile': '?0',
             'sec-ch-ua-platform': '"Windows"',
             'sec-fetch-dest': 'empty',
@@ -697,6 +697,7 @@ class OrderBot(OrderBotSample):
         r = self.account.post(url, headers=headers, data=data)
         if 'result' not in r.json():
             self.bprint(f'Create order error: {r.text}', color=Fore.RED)
+            return "НУЖНО ВОЙТИ В АККАУНТ, НЕТ ССЫЛКИ"
         checkout_data = r.json()['result']
         order_id = checkout_data['order_id']
         payment_link = checkout_data['payment_link']
@@ -837,7 +838,7 @@ if __name__ == '__main__':
     # Starting account pool
     api_token = get_api_token(requests.Session())
     accounts = start_accounts_queue(authorization.TNAQueue, api_token=api_token,
-                                    reauthorize=True)
+                                    reauthorize=False)
 
     # Defining global variables
     tickets_q = Queue()

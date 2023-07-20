@@ -3,7 +3,8 @@ from multiprocessing import Queue
 
 import requests
 import urllib3
-from requests.exceptions import SSLError, ProxyError
+from loguru import logger
+from requests.exceptions import SSLError, ProxyError, ReadTimeout
 from urllib3.exceptions import InsecureRequestWarning
 
 from .telecore import TeleCore
@@ -15,7 +16,8 @@ DEBUG_TELE_IDS = [454746771, 1128666119, 647298152]
 with open('config.json') as f:
     settings = json.load(f)
 ERRORS = ['500 Internal Server Error', '504 Gateway Time-out', '502 Bad Gateway',
-          'Сервис временно недоступен', '<span class="code-label">Error code 5']
+          'Сервис временно недоступен', '<span class="code-label">Error code 5',
+          'Internal server error']
 
 
 def load_proxies():
@@ -76,6 +78,7 @@ class Account:
         self.file_path = self.file_path.replace('*', '')
         self.last_session = 0
         self.pickling = True
+        self.extra = {}
         
         self.load_on_init()
         
@@ -115,7 +118,9 @@ class Account:
     def load(self):
         try:
             with open(self.file_path, 'rb') as f:
-                self.session.cookies, self.last_session = pickle.load(f)
+                self.session.cookies, self.last_session, self.extra = pickle.load(f)
+            for attr, value in self.extra.items():
+                setattr(self, attr, value)
         except:
             print('Redumping pickle for', self.login)
             self.save()
@@ -123,7 +128,7 @@ class Account:
     def save(self):
         if not self.pickling:
             return True
-        data = [self.session.cookies, self.last_session]
+        data = [self.session.cookies, self.last_session, self.extra]
         self.save_thread.put(self.file_path, data)
         
     def deauthorize(self):
@@ -169,6 +174,11 @@ class RushAccount(Account):
 
     def get(self, *args, **kwargs):
         kwargs['verify'] = False
+        kwargs['timeout'] = 30 + random.randint(-5, 5)
+        domain = double_split(args[0], '://', '/')
+        url = double_split(args[0], domain, '?')
+        if 'login' in url:
+            kwargs['timeout'] = 60 + random.randint(-10, 10)
         while True:
             try:
                 r = super().get(*args, **kwargs)
@@ -178,14 +188,21 @@ class RushAccount(Account):
                 else:
                     return r
             except ConnectionError:
-                print('$', end='')
+                print(f'{url}$', end='')
             except SSLError:
-                print('#', end='')
+                print(f'{url}#', end='')
             except ProxyError:
-                print('&', end='')
+                print(f'{url}&', end='')
+            except ReadTimeout:
+                print(f'{url}*', end='')
 
     def post(self, *args, **kwargs):
         kwargs['verify'] = False
+        kwargs['timeout'] = 30 + random.randint(-5, 5)
+        domain = double_split(args[0], '://', '/')
+        url = double_split(args[0], domain, '?')
+        if 'login' in url:
+            kwargs['timeout'] = 60 + random.randint(-10, 10)
         while True:
             try:
                 r = super().post(*args, **kwargs)
@@ -196,11 +213,13 @@ class RushAccount(Account):
                 else:
                     return r
             except ConnectionError:
-                print('$', end='')
+                print(f'{url}$', end='')
             except SSLError:
-                print('#', end='')
+                print(f'{url}#', end='')
             except ProxyError:
-                print('&', end='')
+                print(f'{url}&', end='')
+            except ReadTimeout:
+                print(f'{url}*', end='')
 
 
 class AccountsQueue(threading.Thread):
@@ -300,9 +319,12 @@ class AccountsQueue(threading.Thread):
             raise exception
         account.pickling = True
         account.save()
+        if settings['first_check_on_bot']:
+            self.ready.put(account)
+            return
         if not self.first_check(account):
             print(yellow('First check returned False'))
-            return False
+            return
             
         self.ready.put(account)
     
@@ -317,10 +339,12 @@ class AccountsQueue(threading.Thread):
             return False
         account.pickling = True
         account.save()
-            
+
+        if settings['first_check_on_bot']:
+            self.ready.put(account)
+            return
         if not self.first_check(account):
-            return False
-            
+            return
         self.ready.put(account)
             
     def put(self, *args):
@@ -347,7 +371,14 @@ class AccountsQueue(threading.Thread):
             
     def get(self):
         account = self.ready.get()
-        return account
+        if settings['first_check_on_bot']:
+            try:
+                if self.first_check(account):
+                    return account
+            except:
+                raise RuntimeError(f'Error on first check {account}')
+        else:
+            return account
         
     def first_check(self, account):
         pass
@@ -401,8 +432,8 @@ class AccountsQueue(threading.Thread):
 
         def inspect(account):
             self.inspector_working += 1
-            account.pickling = False
             if not self.is_logined(account):
+                account.pickling = False
                 print('While inspecting, not logined', account.login, account.password)
                 account = RushAccount(account.login, account.password)
                 try:
@@ -420,6 +451,10 @@ class AccountsQueue(threading.Thread):
                     return False
             account.pickling = True
             account.save()
+            if settings['first_check_on_bot']:
+                self.ready.put(account)
+                self.inspector_working -= 1
+                return False
             if not self.first_check(account):
                 self.inspector_working -= 1
                 return False

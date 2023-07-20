@@ -8,7 +8,7 @@ from authorization import TNAQueue, ERRORS
 class EventParser(EventParserSample):
     driver_source = None
     counter_step = 1
-    delay = 60
+    delay = 10
 
     def __init__(self, ChrTab, event_name, URL, bot_name,
                  api_token, **init_kwargs):

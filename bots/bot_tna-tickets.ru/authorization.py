@@ -11,6 +11,7 @@ from cores_src.cores import *
 ERRORS = ['500 Internal Server Error', '504 Gateway Time-out', '502 Bad Gateway',
           'Сервис временно недоступен', 'Error code 520', 'Error code 504',
           'Error code 502', 'Error code 524']
+SKIP_ACCS_WITH_CART = True
 
 
 class TNAQueue(authorize.AccountsQueue):
@@ -19,41 +20,14 @@ class TNAQueue(authorize.AccountsQueue):
         self.api_token = api_token
 
     def first_check(self, account):
-        url = f'https://api.tna-tickets.ru/api/v1/user/login-dls-token?' \
-              f'access-token={self.api_token}'
-        headers = {
-            'authority': 'api.tna-tickets.ru',
-            'method': 'POST',
-            'path': f'/api/v1/user/login-dls-token?access-token={self.api_token}',
-            'scheme': 'https',
-            'Accept': 'application/json, text/plain, */*',
-            'Accept-Language': 'ru-RU,ru;q=0.9',
-            'Content-Length': '575',
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'Origin': 'https://www.ak-bars.ru',
-            'Referer': 'https://www.ak-bars.ru/tickets/',
-            'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-platform': '"Windows"',
-            'Sec-Fetch-Dest': 'empty',
-            'Sec-Fetch-Mode': 'cors',
-            'Sec-Fetch-Site': 'same-site',
-            'User-Agent': self.user_agent
-        }
-        data = {'token': account.ak_token}
-        r = account.post(url, headers=headers, data=data)
-        if isinstance(r.json(), list):
-            logger.info(r.json())
-        acc_data = r.json()['result']
-        account.data = acc_data
 
         url = f'https://api.tna-tickets.ru/api/v1/order?access-token' \
-              f'={self.api_token}&user_token={acc_data["user_token"]}'
+              f'={self.api_token}&user_token={account.data["user_token"]}'
         headers = {
             'authority': 'api.tna-tickets.ru',
             'method': 'GET',
             'path': f'/api/v1/order?access-token={self.api_token}'
-                    f'&user_token={acc_data["user_token"]}',
+                    f'&user_token={account.data["user_token"]}',
             'scheme': 'https',
             'Accept': 'application/json, text/plain, */*',
             'Accept-Language': 'ru-RU,ru;q=0.9',
@@ -79,12 +53,12 @@ class TNAQueue(authorize.AccountsQueue):
 
         for order in to_del:
             url = f'https://api.tna-tickets.ru/api/v1/order/{order}/delete' \
-                  f'?access-token={self.api_token}&user_token={acc_data["user_token"]}'
+                  f'?access-token={self.api_token}&user_token={account.data["user_token"]}'
             headers = {
                 'authority': 'api.tna-tickets.ru',
                 'method': 'POST',
                 'path': f'/api/v1/order/{order}/delete?access-token'
-                        f'={self.api_token}&user_token={acc_data["user_token"]}',
+                        f'={self.api_token}&user_token={account.data["user_token"]}',
                 'scheme': 'https',
                 'Accept': 'application/json, text/plain, */*',
                 'Accept-Language': 'ru-RU,ru;q=0.9',
@@ -101,6 +75,30 @@ class TNAQueue(authorize.AccountsQueue):
             }
             r = account.post(url, data={'id': order}, headers=headers)
             print(green(f'Order {order} deleted on {account}'))
+
+        url = f'https://api.tna-tickets.ru/api/v1/booking/cart' \
+              f'?access-token={self.api_token}&user_token={account.data["user_token"]}'
+        headers = {
+            'accept': 'application/json, text/plain, */*',
+            'accept-language': 'en-MY,en;q=0.9,ru-RU;q=0.8,ru;q=0.7,en-US;q=0.6,vi;q=0.5',
+            'cache-control': 'no-cache',
+            'origin': 'https://www.ak-bars.ru',
+            'pragma': 'no-cache',
+            'referer': 'https://www.ak-bars.ru/',
+            'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+            'sec-fetch-dest': 'empty',
+            'sec-fetch-mode': 'cors',
+            'sec-fetch-site': 'cross-site',
+            'user-agent': self.user_agent,
+        }
+        r = account.get(url, headers=headers)
+        count = r.json()["result"]
+        count = len(count) if count else 0
+        logger.info(f'{count} {account}')
+        if count and SKIP_ACCS_WITH_CART:
+            return False
         return True
 
     def is_logined(self, account):
@@ -174,8 +172,37 @@ class TNAQueue(authorize.AccountsQueue):
                 raise RuntimeError(f'Неизвестная ошибка авторизации: {error}')
 
         account.ak_token = r.headers.get('AK-Token', '')
+        account.extra['ak_token'] = account.ak_token
         if not account.ak_token:
             raise RuntimeError(f'В ответном headers отсутствует токен авторизации: {r.text}')
+        url = f'https://api.tna-tickets.ru/api/v1/user/login-dls-token?' \
+              f'access-token={self.api_token}'
+        headers = {
+            'authority': 'api.tna-tickets.ru',
+            'method': 'POST',
+            'path': f'/api/v1/user/login-dls-token?access-token={self.api_token}',
+            'scheme': 'https',
+            'Accept': 'application/json, text/plain, */*',
+            'Accept-Language': 'ru-RU,ru;q=0.9',
+            'Content-Length': '575',
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Origin': 'https://www.ak-bars.ru',
+            'Referer': 'https://www.ak-bars.ru/tickets/',
+            'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-site',
+            'User-Agent': self.user_agent
+        }
+        data = {'token': account.ak_token}
+        r = account.post(url, headers=headers, data=data)
+        if isinstance(r.json(), list):
+            logger.info(r.json())
+        acc_data = r.json()['result']
+        account.data = acc_data
+        account.extra['data'] = account.data
 
 
 if __name__ == '__main__':
