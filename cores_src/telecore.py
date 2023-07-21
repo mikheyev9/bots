@@ -30,6 +30,7 @@ class TeleCore(threading.Thread):
 
     def __init__(self):
         super().__init__()
+        self.bot = telebot.TeleBot('6002068146:AAHx8JmyW3QhhFK5hhdFIvTXs3XFlsWNraw')
 
     @staticmethod
     def send_message(mes, tele_ids):
@@ -86,7 +87,6 @@ class TeleCore(threading.Thread):
         tcp_socket.close()
         
     def run(self):
-        self.bot = telebot.TeleBot('6002068146:AAHx8JmyW3QhhFK5hhdFIvTXs3XFlsWNraw')
         while True:
             to_send = []
             while not self.q.empty():
@@ -117,6 +117,7 @@ class BillingCore(threading.Thread):
 
     def __init__(self):
         super().__init__()
+        self.bot = telebot.TeleBot('5741231744:AAGHiVougv4uoRia5I_behO9r1oMj1NEMI8')
 
     @staticmethod
     def send_message(mes, tele_ids):
@@ -161,7 +162,6 @@ class BillingCore(threading.Thread):
                     break
         
     def run(self):
-        self.bot = telebot.TeleBot('5741231744:AAGHiVougv4uoRia5I_behO9r1oMj1NEMI8')
         while True:
             to_send = []
             while not self.q.empty():
@@ -179,7 +179,6 @@ apply_proxy_telegram(1)
 TeleCore().start()
 
 if __name__ == '__main__':
-    TeleCore().start()
     for i in range(15):
         test_string = ''.join(str(i % 10) for i in range(random.randint(10, 60)))
         TeleCore.send_message(test_string, [454746771])
