@@ -58,7 +58,6 @@ class Main:
 
     async def main_search_availible_tickets(self):
         semaphore = asyncio.Semaphore(5)
-        tasks = []
         for sector_row_place in self.need_tickets:
             task = self._put_to_tickets_queue(sector_row_place, semaphore)
             await task
@@ -85,37 +84,51 @@ class Main:
 
     async def process_tickets_batch(self, tickets_batch, lock):
         user = await self._auth_account()
-        if user:
-            box = []
-            for ticket_info in tickets_batch:
-                ticket_info_, sector, row, place = ticket_info
-                resault_of_put = await user.put_ticket_to_cart(event_id=self.event_id, 
-                                              ticket_info=ticket_info_)
-                print(resault_of_put, ticket_info_.get('name'))
-                if resault_of_put:
-                    box.append(ticket_info_.get('name'))
-            #box_resaults = await asyncio.gather(*box, return_exceptions=True)  
-            if len(box) > 0:
-                url_for_payment, account = await user.pay_tickets_from_cart(self.event_id)
-                async with lock:
-                    path = os.path.join(self.current_directory, 'tickets.txt')
-                    with open(path, 'a', encoding='utf-8') as file:
-                        file.write(f"{url_for_payment}\n{account}\n{box}\n\n\n" )
-                print(url_for_payment, account)       
+        try:
+            if user:
+                box = []
+                for ticket_info in tickets_batch:
+                    ticket_info_, sector, row, place = ticket_info
+                    resault_of_put = await user.put_ticket_to_cart(event_id=self.event_id, 
+                                                ticket_info=ticket_info_)
+                    print(resault_of_put, ticket_info_.get('name'))
+                    if resault_of_put:
+                        box.append(ticket_info_.get('name'))
+                #box_resaults = await asyncio.gather(*box, return_exceptions=True)  
+                if len(box) > 0:
+                    url_for_payment, account = await user.pay_tickets_from_cart(self.event_id)
+                    async with lock:
+                        path = os.path.join(self.current_directory, 'tickets.txt')
+                        with open(path, 'a', encoding='utf-8') as file:
+                            file.write(f"{url_for_payment}\n{account}\n{box}\n\n\n" )
+                    print(url_for_payment, account)       
+        except Exception as ex:
+            print(ex)
+        finally:
+            if user:
+                await user.close_session()
     
 
     async def _monitor_tickets_queue(self, semaphore):
+        lock = asyncio.Lock()
         while True:
-            lock = asyncio.Lock()
             # Ожидаем получения 5 билетов из очереди
             tickets_batch = []
             for _ in range(4):
                 ticket = await self.tickets_queue.get()
                 tickets_batch.append(ticket)
             
+            async def process_with_error_handling(tickets_batch_, lock_):
+                try:
+                    await self.process_tickets_batch(tickets_batch_, lock_)
+                except Exception as ex:
+                    print(ex)  # Обработка исключения непосредственно в задаче
             # Создаем и запускаем задачу для обработки пакета билетов
+
             async with semaphore:
-                await asyncio.create_task(self.process_tickets_batch(tickets_batch, lock))
+                asyncio.create_task(process_with_error_handling(tickets_batch, lock))
+
+           
 
     async def main(self):
         tickets_queue = asyncio.Queue()

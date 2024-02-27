@@ -1,10 +1,15 @@
-https://www.pga.gazprombank.ru:443/pages/?lang=ru&merch_id=GX7UWIRPT48ZMJE576NTKMP0ZI8TGS8U&back_url_s=https%3A%2F%2Ftickets.ska.ru%2Fpersonal-thank-you%2F1672971&back_url_f=https%3A%2F%2Ftickets.ska.ru%2Fview-orders-list&o.order_id=1672971&o.tickets_count=3&o.action_id=2025%3B2025%3B2025&SUBMIT=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BA+%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%B5
-{'login': 'mikheyev98@gmail.com', 'password': 'Ai5F,;baB:rVf!8'}
-['Сектор 606 Ряд 10 Место 110', 'Сектор 606 Ряд 10 Место 111', 'Сектор 606 Ряд 10 Место 112']
-
-
-https://www.pga.gazprombank.ru:443/pages/?lang=ru&merch_id=GX7UWIRPT48ZMJE576NTKMP0ZI8TGS8U&back_url_s=https%3A%2F%2Ftickets.ska.ru%2Fpersonal-thank-you%2F1672973&back_url_f=https%3A%2F%2Ftickets.ska.ru%2Fview-orders-list&o.order_id=1672973&o.tickets_count=3&o.action_id=2025%3B2025%3B2025&SUBMIT=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BA+%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%B5
+https://www.pga.gazprombank.ru:443/pages/?lang=ru&merch_id=GX7UWIRPT48ZMJE576NTKMP0ZI8TGS8U&back_url_s=https%3A%2F%2Ftickets.ska.ru%2Fpersonal-thank-you%2F1673297&back_url_f=https%3A%2F%2Ftickets.ska.ru%2Fview-orders-list&o.order_id=1673297&o.tickets_count=2&o.action_id=2025%3B2025&SUBMIT=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BA+%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%B5
 {'login': 'mikheyev9@gmail.com', 'password': 'Ai5F,;baB:rVf!8'}
-['Сектор 606 Ряд 10 Место 114', 'Сектор 606 Ряд 11 Место 110', 'Сектор 606 Ряд 11 Место 111']
+['Сектор 606 Ряд 11 Место 117', 'Сектор 606 Ряд 11 Место 118']
+
+
+https://www.pga.gazprombank.ru:443/pages/?lang=ru&merch_id=GX7UWIRPT48ZMJE576NTKMP0ZI8TGS8U&back_url_s=https%3A%2F%2Ftickets.ska.ru%2Fpersonal-thank-you%2F1673560&back_url_f=https%3A%2F%2Ftickets.ska.ru%2Fview-orders-list&o.order_id=1673560&o.tickets_count=4&o.action_id=2025%3B2025%3B2025%3B2025&SUBMIT=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BA+%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%B5
+{'login': 'mikheyev98@gmail.com', 'password': 'Ai5F,;baB:rVf!8'}
+['Сектор 606 Ряд 10 Место 110', 'Сектор 606 Ряд 10 Место 111', 'Сектор 606 Ряд 10 Место 112', 'Сектор 606 Ряд 10 Место 113']
+
+
+https://www.pga.gazprombank.ru:443/pages/?lang=ru&merch_id=GX7UWIRPT48ZMJE576NTKMP0ZI8TGS8U&back_url_s=https%3A%2F%2Ftickets.ska.ru%2Fpersonal-thank-you%2F1673561&back_url_f=https%3A%2F%2Ftickets.ska.ru%2Fview-orders-list&o.order_id=1673561&o.tickets_count=4&o.action_id=2025%3B2025%3B2025%3B2025&SUBMIT=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BA+%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%B5
+{'login': 'mikheyev9@gmail.com', 'password': 'Ai5F,;baB:rVf!8'}
+['Сектор 606 Ряд 10 Место 114', 'Сектор 606 Ряд 10 Место 115', 'Сектор 606 Ряд 10 Место 116', 'Сектор 606 Ряд 10 Место 117']
 
 
