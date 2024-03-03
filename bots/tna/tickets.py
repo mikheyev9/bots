@@ -6,13 +6,20 @@ from bs4 import BeautifulSoup
 
 
 class Tickets:
+    '''
+    Занимае
+
+    async def find_place_in_sector('sector', 'row', 'place') проверка доступности билета по сектору, ряду, месту
+    async def update_sector('sector') обновить информацию о билетах в секторе
+    '''
     def __init__(self, url):
         self.url = url #https://tna-tickets.ru/tickets/booking?id=14758
+        self.cahe_time = 300 # 300 секунд = 5 минут, время которое должно пройти для повторного запроса
         self.start_time_epoch = time.time()
         self.event_id = url.split('=')[-1]
         self.access_token = None
-        self.sectors_ids = {}
-        self.main_structure = {}
+        self.sectors_ids = {} # у каждого сектора свой ид
+        self.main_structure = {} #здесь будут все доступные для покупки билеты (см структуру в update_sector)
 
         self.headers_sector =  {
             "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
@@ -46,14 +53,15 @@ class Tickets:
         }
 
 
-    @staticmethod
-    def check_time_passed(start_time):
+    def _check_time_passed(self, start_time):
         #проверяет, прошло ли более 5 минут с начальной точки отсчета
         current_time = time.time()
-        return current_time - start_time > 300  # 300 секунд = 5 минут
+        return current_time - start_time > self.cahe_time 
 
 
-    async def load_access_token(self):
+    async def _load_access_token(self):
+        '''Ищем токен для доступа к сайту https://tna-tickets.ru/
+        '''
         async with aiohttp.ClientSession() as session:
             async with session.get(self.url) as response:
                 text = await response.text()
@@ -65,7 +73,10 @@ class Tickets:
                 return self.access_token
             
 
-    async def _load_all_sectors(self):
+    async def _load_all_sectors(self)-> dict:
+        '''загружаем ид всех секторов и возвращаем словарь
+        '''
+
         url = f'https://api.tna-tickets.ru/api/v1/booking/{self.event_id}/sectors?access-token={self.access_token}&booking_ids'
         sectors_ids = {}
         async with aiohttp.ClientSession() as session:
@@ -78,7 +89,11 @@ class Tickets:
                     sector_id = sector.get('sector_id')
                     sectors_ids.setdefault(name, sector_id)
                 return sectors_ids
+            #sectors_ids = {'1': '1', '2': '394', '3': '881', '4': '1495', '5': '2045', '6': '2425', '7': '2901', '8': '3365',
+            # '9': '3872', '10': '4354', '11': '4778', '12': '5152', '13': '5658', '14': '6137', '15': '6644', 
+            #'16': '6977', '17': '7447', '18': '7945', '19': '8393', '20': '8851'} должен быть примерно таким
                     
+
     @staticmethod
     def _make_sector_row_seat(seat_name):
         #'Сектор 3A Ряд 3 Место 5'
@@ -87,13 +102,28 @@ class Tickets:
         sector = re.search(r'(?<=Сектор) *\d+', seat_name)[0].strip()
         row = re.search(r'(?<=Ряд) *\d+', seat_name)[0].strip()
         place = re.search(r'(?<=Место) *\d+', seat_name)[0].strip()
-        return sector, row, place         
+        return sector, row, place  # ('3', '3', '5')       
+
 
     async def update_sector(self, sector_number:str):
+        '''обновляем инфу о секторе
+
+        Если все ок вернем True и
+        создадим словрь self.main_structure
+        self.main_structure = {'3<это сектор>': 
+                    {'3<это ряд>': {'5<а это место в ряду>': {'seat_id': '893', 'seat_zone': '3', 'booking_id': '14758', 'name': 'Сектор 3A Ряд 3 Место 5'},
+                                '11<это тоже место в ряду>': {'seat_id': '899', 'seat_zone': '3', 'booking_id': '14758', 'name': 'Сектор 3A Ряд 3 Место 11'}...}
+            }
+        
+        если невозможно обновить вернем False
+        '''
+
         if not self.access_token:
-            access_token = await self.load_access_token()
+            access_token = await self._load_access_token()
             print(access_token, 'access_token')
+
         if sector_number not in self.sectors_ids:
+            #загружаем ид всех секторов например сектор '2' имеет ид '394'
             self.sectors_ids = await self._load_all_sectors()
 
         sector_id = self.sectors_ids.get(sector_number)
@@ -125,10 +155,19 @@ class Tickets:
 
 
     async def find_place_in_sector(self, sector:str, row:str, place:str):
-        if sector not in self.main_structure or self.check_time_passed(self.start_time_epoch):
+        '''Проверяем свободен ли сектор, ряд, место
+        Пример использования Tickets.find_place_in_sector('20', '28', '9')
+
+        Если место свободно вернет словарь:
+       {'seat_id': '9284', 'seat_zone': '21', 'booking_id': '14758', 'name': 'Сектор 20B Ряд 28 Место 9'}
+
+        Если недоступно вернет False
+        '''
+
+        if sector not in self.main_structure or self._check_time_passed(self.start_time_epoch):
+            #если сектора нет в кэше, либо время последнего запроса более чем 5 минут, инициируем новую проверку этого сектора
             self.start_time_epoch = time.time()
             update_sector = await self.update_sector(sector)
-            print(update_sector, 'update_sector')
         if sector in self.main_structure:
             all_rows = [ i for i in self.main_structure.get(sector, {})]
             if row in all_rows:
