@@ -2,7 +2,7 @@ import asyncio
 import os
 import json
 
-from aiogram import Bot, Dispatcher
+from aiogram import Bot
 
 from user import User
 from tickets import Tickets
@@ -124,7 +124,6 @@ class Controller:
                         continue
                     if resault_of_put:
                         box.append(ticket_info_.get('name'))
-                        
                 if len(box) > 0:
                     url_for_payment, account = await user.create_order()
                     message = f"{url_for_payment}\n{account}\n{box}\n\n\n"

@@ -6,13 +6,19 @@ from bs4 import BeautifulSoup
 
 
 class Tickets:
+    '''
+    async def find_place_in_sector(sector, row, place) если ОК вернет
+
+    если место не свободно вернет  False
+    '''
     def __init__(self, url):
         self.url = url #'https://tickets.ska.ru/view-available-zones/1928'
+        self.cahe_time = 300  # 300 секунд = 5 минут, время которое должно пройти для повторного запроса
 
         self.start_time_epoch = time.time()
-        self.all_free_sectors = []
-        self.all_tickets_structure = {}
-        self.all_prices_id = {}
+        self.all_free_sectors = {} #смотри _update_all_free_sectors
+        self.all_tickets_structure = {} # cм _update_rows_seats_in_sector
+        self.all_prices_id = {} # см _update_rows_seats_in_sector
 
         self.headers = {
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -31,14 +37,21 @@ class Tickets:
             'upgrade-insecure-requests': '1',
             "User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         }
-        
-    @staticmethod
-    def check_time_passed(start_time):
+
+    def _check_time_passed(self, start_time:int) -> bool:
         #проверяет, прошло ли более 5 минут с начальной точки отсчета
         current_time = time.time()
-        return current_time - start_time > 300  # 300 секунд = 5 минут
+        return current_time - start_time > self.cahe_time
         
-    async def update_all_free_sectors(self):
+    async def _update_all_free_sectors(self) -> dict:
+        '''
+        обновлет информацию обо всех доступных сектрах в self.all_free_sectors
+        {'202': {'url': 'https://tickets.ska.ru/seats-list/2062/550733'},
+         '203': {'url': 'https://tickets.ska.ru/seats-list/2062/551226'},
+         '204': {'url': 'https://tickets.ska.ru/seats-list/2062/551861'}, ...
+         }
+
+        '''
         async with aiohttp.ClientSession() as session:
             async with session.get(self.url, headers=self.headers) as response:
                 text = await response.text()
@@ -61,7 +74,6 @@ class Tickets:
                             url_to_sector = '/'.join(url_split[:-2]) + '/' + url_sector
                             sectors.update({'url':url_to_sector})
                             #print(url_to_sector)
-
                             all_sectors_structure.setdefault(str(sector), {}).update({
                                                             'url':url_to_sector
                                                             })
@@ -69,15 +81,38 @@ class Tickets:
                 self.all_free_sectors = all_sectors_structure
                 return dict_data
     
-    async def update_rows_seats_in_sector(self, sector_name: str):
+    async def _update_rows_seats_in_sector(self, sector_name: str) -> bool:
+        '''
+        обновление всех свободых мест в определенном секторе
+        устанавливает
+        self.all_tickets_structure
+            {'604': (это сектор)
+                {'4': (это ряд)
+                    {'3': (это место) {'categoryId': '1',
+                                    'id': '565455',
+                                    'name': 'Сектор 604 Ряд 4 Место 3',
+                                    'orderId': '',
+                                    'price': '1590.00',
+                                    'quant': '1'},
+                   '103': (это место){'categoryId': '1',
+                                    'id': '565470',
+                                    'name': 'Сектор 604 Ряд 4 Место 103',
+                                    'orderId': '',
+                                    'price': '1590.00',
+                                    'quant': '1'},
+                                    ...
+                                    }}}
+        self.all_prices_id
+         {'1': {'341': '1590.00', '293': '2290.00', '294': '2190.00', '295': '2390.00'},
+         '21': {'341': '795.00', '293': '1145.00', '294': '1095.00', '295': '1195.00'},...}
+        '''
         if sector_name not in self.all_free_sectors:
-            await self.update_all_free_sectors()
+            await self._update_all_free_sectors()
             #print(self.all_free_sectors, 'all_free_sectors')
             if sector_name not in self.all_free_sectors:
                 self.all_tickets_structure[sector_name] = {}
                 print(f"Sector:{sector_name} isnt availible")
                 return False
-            
         url = self.all_free_sectors[sector_name]['url']
         async with aiohttp.ClientSession() as session:
             async with session.get(url, headers=self.headers) as response:
@@ -87,7 +122,6 @@ class Tickets:
                     self.all_prices_id.setdefault(price["categoryId"], {}).update({
                         price["pricezoneId"]: price['value']
                     })
-
                 seats = json.get('seats')
                 if len(seats) <= 0:
                     return False
@@ -98,7 +132,7 @@ class Tickets:
                     name = seat.get('name')
                     price_zone = seat.get('pricezoneId')
                     price = self.all_prices_id[categoryId].get(price_zone)
-                    sector_row_place = self.parsing_seat(name)
+                    sector_row_place = self._parsing_seat(name)
                     if sector_row_place:
                         sector, row, place = sector_row_place
                         self.all_tickets_structure.setdefault(sector, {})
@@ -119,7 +153,7 @@ class Tickets:
                     
 
     @staticmethod   
-    def parsing_seat(seat_name):
+    def _parsing_seat(seat_name:str) -> tuple[str,str,str] | bool:
         #Сектор 304 Ряд 22 Место 107
         if not all(i in seat_name  for i in ('Сектор', 'Ряд', 'Место')):
             return False
@@ -128,15 +162,15 @@ class Tickets:
         place = re.search(r'(?<=Место) *\d+', seat_name)[0].strip()
         return sector, row, place         
 
-        
-    async def find_place_in_sector(self, sector, row, place):
-        if sector not in self.all_tickets_structure or self.check_time_passed(self.start_time_epoch):
+
+    async def find_place_in_sector(self, sector, row, place) -> dict | bool:
+        if sector not in self.all_tickets_structure or self._check_time_passed(self.start_time_epoch):
             self.start_time_epoch = time.time()
-            update_sector = await self.update_rows_seats_in_sector(sector)
+            update_sector = await self._update_rows_seats_in_sector(sector)
         if sector in self.all_tickets_structure:
-            all_rows = [ i for i in self.all_tickets_structure.get(sector, {})]
+            all_rows = [i for i in self.all_tickets_structure.get(sector, {})]
             if row in all_rows:
-                all_seats = [ i for i in self.all_tickets_structure[sector].get(row, {})]
+                all_seats = [i for i in self.all_tickets_structure[sector].get(row, {})]
                 if place in all_seats:
                     return self.all_tickets_structure[sector][row].get(place)
         return False

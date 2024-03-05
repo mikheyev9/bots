@@ -244,7 +244,7 @@ class User:
                                     data=pay_method) as response:
                 
                 text = await response.text()
-                with open('TEST.html', 'w', encoding='utf-8') as f:
+                with open('Testing/TEST.html', 'w', encoding='utf-8') as f:
                     f.write(text)
                 soup = BeautifulSoup(text, 'lxml')
                 form_gazprombank = soup.find('form', attrs={'action':"https://www.pga.gazprombank.ru:443/pages/"})
