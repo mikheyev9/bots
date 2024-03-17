@@ -18,7 +18,7 @@ class Main:
         self.need_tickets = self.dict_to_tuples(self.load_need_tickets())
 
         self.user_limit = 5  # лимит билетов для покупки на 1 пользователя
-        self.semaphore_limit = 10  # Семафор Количество одновременных задач на откупку
+        self.semaphore_limit = 5  # Семафор Количество одновременных задач на откупку
 
         self.BOT_API = '6946605710:AAHK16NDlOP0m0Eltgh6ZEWApQS4-kt8_4E'
         self.CHAT_ID = '-1002111209839'
@@ -58,9 +58,10 @@ class Main:
     async def _put_to_tickets_queue(self, sector_row_place: tuple):
         sector, row, place = sector_row_place
         is_place_availible = await self.Tickets.find_place_in_sector(sector, row, place)
-        print(is_place_availible, sector_row_place)
+        #print(is_place_availible, sector_row_place) проверка всех билетов
         if is_place_availible:
             await self.tickets_queue.put((is_place_availible, sector, row, place))
+            print(is_place_availible, sector_row_place, 'put_to_tickets_queue sucess')
             return True
         return False
     
@@ -96,17 +97,24 @@ class Main:
         user = await self._auth_account()
         try:
             if user:
+                print(user.account, user.proxy_url, user.auth_status, 'User_auth_information_status')
+                # for cookie in user.session.cookie_jar:
+                #     print(
+                #         f"Name: {cookie.key}, Value: {cookie.value}, Domain: {cookie['domain']}, Path: {cookie['path']}")
                 box = []  #инфа о добавленных билетах
                 for ticket_info in tickets_batch:
                     ticket_info_, sector, row, place = ticket_info
+                    #print(sector, row, place, 'trying_to_put it in the basket')
                     try:
                         resault_of_put = await user.put_ticket_to_cart(event_id=self.event_id,
                                                                      ticket_info=ticket_info_)
-                        print(resault_of_put, ticket_info_.get('name'))
-                    except Exception:
+                        print(resault_of_put, ticket_info_.get('name'), 'resault_of_put')
+                    except Exception as ex:
+                        print(ex, 'Error, cannot put ticket')
                         continue
                     if resault_of_put:
                         box.append(ticket_info_.get('name'))
+                print(box, 'tickets to buy')
                 if len(box) > 0:
                     url_for_payment, account = await user.pay_tickets_from_cart(self.event_id)
                     message = f"{url_for_payment}\n{account}\n{box}\n\n\n"
@@ -121,6 +129,7 @@ class Main:
             print(ex)
         finally:
             if user:
+                print('closing session user', user.account, user.proxy_url)
                 await user.close_session()
     
 
@@ -132,14 +141,16 @@ class Main:
             # Ожидаем получения 5 билетов из очереди
             tickets_batch = [] #корзина пользователя
             for _ in range(self.user_limit):
+                #print('await ticket from self.tickets_queue')
                 ticket = await self.tickets_queue.get()
+                #print('append ticket to batch')
                 tickets_batch.append(ticket)
-            
+            #print(tickets_batch, 'tickets_batch')
             async def process_with_error_handling(tickets_batch_, lock_):
                 try:
                     await self.process_tickets_batch(tickets_batch_, lock_)
                 except Exception as ex:
-                    print(ex)  # Обработка исключения непосредственно в задаче
+                    print(ex, 'wrong something')  # Обработка исключения непосредственно в задаче
 
             # Создаем и запускаем задачу для обработки пакета билетов
             async with semaphore:

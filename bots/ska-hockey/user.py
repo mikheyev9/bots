@@ -66,7 +66,7 @@ class User:
         self.account = account
         self.all_tickets = []
 
-        self.headers_post =  {
+        self.headers_post = {
             "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
             "accept-language": "en-US,en;q=0.9,ru;q=0.8",
             "cache-control": "max-age=0",
@@ -83,6 +83,14 @@ class User:
             "Referrer-Policy": "strict-origin-when-cross-origin",
             "User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         }
+
+    def _update_cookies(self, response_cookies):
+        for name, cookie in response_cookies.items():
+            self.cookies[name] = cookie.value
+
+    def _cookies_to_header(self):
+        # Преобразуем словарь cookies в строку для заголовка 'Cookie'
+        return "; ".join([f"{name}={value}" for name, value in self.cookies.items()])
 
     @staticmethod
     def make_proxy(proxy:str) -> tuple[str, BasicAuth]:
@@ -122,22 +130,23 @@ class User:
             "upgrade-insecure-requests": "1",
             "Referer": "https://tickets.ska.ru/",
             "Referrer-Policy": "strict-origin-when-cross-origin",
-            "User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-        }
+            "User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"        }
         url = 'https://pass.ska.ru/en/auth/?back_domain=tickets&back_url=%2F'
         try:
             async with self.session.get(url, headers=headers,
                                         proxy=self.proxy_url,
                                         proxy_auth=self.proxy_auth) as response:
+                self._update_cookies(response.cookies)
                 text = await response.text()
                 self.CSRF = self._find_csrf(text)
                 self.proxy_status = response.status
-                print(self.CSRF, 'CSRF token')
+                #(self.CSRF, 'CSRF token')
                 if not self.CSRF:
-                    raise aiohttp.ClientConnectorError
+                    print('CSRF token not found')
+                    raise AssertionError
                 return response.status
 
-        except aiohttp.ClientConnectorError as err:
+        except AssertionError as err:
             print(err)
             await self.close_session()
             return False
@@ -167,13 +176,18 @@ class User:
             'auth_type': 'email',
             'send_submit': 'Y'
         }
+        self.headers_post['Cookie'] = self._cookies_to_header()
         async with self.session.post(url='https://pass.ska.ru/en/auth/', 
                                      proxy=self.proxy_url,
                                      proxy_auth=self.proxy_auth,
                                      headers=self.headers_post, data=data) as response:
+            # print("Set-Cookie headers from the server response:", login, password)
+            # for cookie_name, cookie_value in response.cookies.items():
+            #     print(f"{cookie_name}: {cookie_value}")
+            self._update_cookies(response.cookies)
             if response.status == 200:
                 self.auth_status = True
-                print(response, self.auth_status, 'self.auth_status')
+                #print(response, self.auth_status, 'self.auth_status')
                 return True
             return False
 
@@ -182,7 +196,6 @@ class User:
         '''Положить билет в корзину пользователя
             Если все ок вернет True иначе False
         '''
-
         ticket = {
             'operation': 'add',
             'id': ticket_info['id'],
@@ -192,14 +205,37 @@ class User:
             'price': ticket_info['price'],
             'orderId': ''
         }
-
-        async with self.session.post(url=f'https://tickets.ska.ru/cart/{event_id}', 
-                                     headers=self.headers_post,
+        head = {
+            'Accept': '*/*',
+            'Accept-Encoding': 'gzip, deflate, br, zstd',
+            'Accept-Language': 'en-US,en;q=0.9,ru;q=0.8',
+            'Connection': 'keep-alive',
+            'Content-Length': '170',
+            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            'DNT': '1',
+            'Host': 'tickets.ska.ru',
+            'Origin': 'https://tickets.ska.ru',
+            'Referer': f'https://tickets.ska.ru/view-available-zones/2096',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-origin',
+            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+            'X-Requested-With': 'XMLHttpRequest',
+            'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Linux"'
+        }
+        head['Cookie'] = self._cookies_to_header()
+        async with self.session.post(url=f'https://tickets.ska.ru/cart/{event_id}',
+                                     headers=head,
                                      proxy=self.proxy_url,
                                      proxy_auth=self.proxy_auth, 
                                      data=ticket) as response:
             try:
+                #print(head)
+                self._update_cookies(response.cookies)
                 response = await response.json()
+                #print(response, 'response status of put_ticket_to_cart')
             except ContentTypeError:
                 return False
             if response.get('result', False) == True:
